@@ -1673,12 +1673,16 @@ function SolicitudesSection({
   rejectedIds,
   onApprove,
   onReject,
+  approvalResponses,
+  approvalLoading,
 }: {
   requests: AccessRequest[];
   approvedIds: Set<string>;
   rejectedIds: Set<string>;
   onApprove: (id: string) => void;
   onReject: (id: string) => void;
+  approvalResponses: Record<string, string>;
+  approvalLoading: Record<string, boolean>;
 }) {
   const pending = requests.filter(
     (r) => !approvedIds.has(r.id) && !rejectedIds.has(r.id)
@@ -1724,15 +1728,30 @@ function SolicitudesSection({
                       onClick={() => onApprove(req.id)}
                       className="flex-1 rounded-lg bg-green-600 py-2.5 text-xs font-bold text-white transition hover:bg-green-500 active:scale-95"
                     >
-                      Aprobar
+                      Aprobar y Ejecutar
                     </button>
                     <button
                       onClick={() => onReject(req.id)}
                       className="flex-1 rounded-lg bg-gray-700 py-2.5 text-xs font-bold text-gray-300 transition hover:bg-gray-600 active:scale-95"
                     >
-                      Rechazar
+                      Rechazar → Alternativas
                     </button>
                   </div>
+                  {/* Agent AI response after approval/rejection */}
+                  {approvalLoading[req.id] && (
+                    <div className="mt-3 flex items-center gap-3 rounded-lg bg-purple-500/10 border border-purple-500/20 p-3">
+                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-purple-400 border-t-transparent" />
+                      <p className="text-xs text-purple-300">{agent?.name?.split(' ')[0]} esta trabajando en esto...</p>
+                    </div>
+                  )}
+                  {approvalResponses[req.id] && !approvalLoading[req.id] && (
+                    <div className={`mt-3 rounded-lg p-3 border ${approvedIds.has(req.id) ? 'bg-green-500/5 border-green-500/20' : 'bg-yellow-500/5 border-yellow-500/20'}`}>
+                      <p className="text-[10px] font-bold uppercase tracking-wider mb-1 ${approvedIds.has(req.id) ? 'text-green-400' : 'text-yellow-400'}">
+                        {approvedIds.has(req.id) ? '✅ Ejecutando' : '🔄 Alternativas propuestas'}
+                      </p>
+                      <p className="text-xs text-gray-300 leading-relaxed whitespace-pre-wrap">{approvalResponses[req.id]}</p>
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -2571,18 +2590,83 @@ export default function DashboardPage() {
 
   const clearNotification = useCallback(() => setNotification(''), []);
 
-  function handleApprove(id: string) {
+  const [approvalResponses, setApprovalResponses] = useState<Record<string, string>>({});
+  const [approvalLoading, setApprovalLoading] = useState<Record<string, boolean>>({});
+
+  // Load approval responses from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('ia-negocio-approval-responses');
+      if (saved) setApprovalResponses(JSON.parse(saved));
+    } catch { /* ignore */ }
+  }, []);
+
+  async function handleApprove(id: string) {
     const req = requests.find((r) => r.id === id);
     const agent = getAgentById(req?.agentId || '');
     setApprovedIds((prev) => new Set(prev).add(id));
-    setNotification(`${agent?.avatar} ${agent?.name} dice: "Gracias jefe! Ya me pongo a trabajar en esto."`);
+    setNotification(`${agent?.avatar} ${agent?.name}: "Dale, ya me pongo a laburar en esto!"`);
+    setApprovalLoading(prev => ({ ...prev, [id]: true }));
+
+    try {
+      const res = await fetch('/api/agent-action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          agentId: req?.agentId,
+          task: `El dueño APROBÓ tu solicitud: "${req?.description}". Ejecutá esta tarea ahora. Explicá exactamente qué vas a hacer, paso a paso, y qué resultados esperás. Se concreto y actionable.`,
+        }),
+      });
+      const data = await res.json();
+      const response = data.status === 'ok' ? data.response : 'Error al conectar con el agente';
+      setApprovalResponses(prev => {
+        const updated = { ...prev, [id]: response };
+        localStorage.setItem('ia-negocio-approval-responses', JSON.stringify(updated));
+        return updated;
+      });
+      setNotification(`✅ ${agent?.name} ejecutó la tarea`);
+    } catch {
+      setApprovalResponses(prev => {
+        const updated = { ...prev, [id]: 'Error de conexion — intenta de nuevo' };
+        localStorage.setItem('ia-negocio-approval-responses', JSON.stringify(updated));
+        return updated;
+      });
+    }
+    setApprovalLoading(prev => ({ ...prev, [id]: false }));
   }
 
-  function handleReject(id: string) {
+  async function handleReject(id: string) {
     const req = requests.find((r) => r.id === id);
     const agent = getAgentById(req?.agentId || '');
     setRejectedIds((prev) => new Set(prev).add(id));
-    setNotification(`${agent?.avatar} ${agent?.name} dice: "Entendido, busco otra alternativa."`);
+    setNotification(`${agent?.avatar} ${agent?.name}: "Entendido, busco alternativas..."`);
+    setApprovalLoading(prev => ({ ...prev, [id]: true }));
+
+    try {
+      const res = await fetch('/api/agent-action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          agentId: req?.agentId,
+          task: `El dueño RECHAZÓ tu solicitud: "${req?.description}". Buscá alternativas o formas distintas de lograr el mismo objetivo sin lo que pediste. Proponé 2-3 alternativas concretas.`,
+        }),
+      });
+      const data = await res.json();
+      const response = data.status === 'ok' ? data.response : 'Error al conectar con el agente';
+      setApprovalResponses(prev => {
+        const updated = { ...prev, [id]: response };
+        localStorage.setItem('ia-negocio-approval-responses', JSON.stringify(updated));
+        return updated;
+      });
+      setNotification(`🔄 ${agent?.name} propuso alternativas`);
+    } catch {
+      setApprovalResponses(prev => {
+        const updated = { ...prev, [id]: 'Error de conexion — intenta de nuevo' };
+        localStorage.setItem('ia-negocio-approval-responses', JSON.stringify(updated));
+        return updated;
+      });
+    }
+    setApprovalLoading(prev => ({ ...prev, [id]: false }));
   }
 
   if (!authenticated) {
@@ -2686,6 +2770,8 @@ export default function DashboardPage() {
               rejectedIds={rejectedIds}
               onApprove={handleApprove}
               onReject={handleReject}
+              approvalResponses={approvalResponses}
+              approvalLoading={approvalLoading}
             />
           )}
 
