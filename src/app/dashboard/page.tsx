@@ -2628,6 +2628,39 @@ export default function DashboardPage() {
         return updated;
       });
       setNotification(`✅ ${agent?.name} ejecutó la tarea`);
+
+      // Generate a NEW request from this agent (they always have more ideas)
+      try {
+        const newReqRes = await fetch('/api/agent-action', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            agentId: req?.agentId,
+            task: `Acabas de completar: "${req?.description}". Ahora propone UNA nueva solicitud para mejorar el negocio. Responde SOLO en JSON: {"title":"titulo corto","description":"que queres hacer y por que","priority":"alta","type":"feature","estimatedImpact":"que impacto tendria","cost":"gratis o el costo"}`,
+          }),
+        });
+        const newReqData = await newReqRes.json();
+        if (newReqData.status === 'ok') {
+          try {
+            const jsonMatch = newReqData.response.match(/\{[\s\S]*\}/);
+            if (jsonMatch) {
+              const parsed = JSON.parse(jsonMatch[0]);
+              const newRequest: AccessRequest = {
+                id: `auto-${Date.now()}`,
+                agentId: req?.agentId || '',
+                title: parsed.title || 'Nueva propuesta',
+                description: parsed.description || '',
+                priority: (parsed.priority === 'alta' ? 'alta' : parsed.priority === 'media' ? 'media' : 'alta') as 'alta' | 'media' | 'baja',
+                type: 'permiso' as const,
+                status: 'pendiente' as const,
+                estimatedImpact: parsed.estimatedImpact || 'Mejora general',
+                cost: parsed.cost,
+              };
+              setRequests(prev => [...prev, newRequest]);
+            }
+          } catch { /* parse error, skip */ }
+        }
+      } catch { /* skip new request generation if fails */ }
     } catch {
       setApprovalResponses(prev => {
         const updated = { ...prev, [id]: 'Error de conexion — intenta de nuevo' };
