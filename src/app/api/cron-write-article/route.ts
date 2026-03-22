@@ -168,6 +168,48 @@ export const autoArticle_${article.slug.replace(/-/g, '_')}: Article = ${JSON.st
       `Update auto-articles index with ${article.slug}`
     );
 
+    // ====== STEP 5: Tomas (Ventas) — affiliate recommendations ======
+    const tomasReport = await callClaude(
+      `Sos Tomas Alvarez, Agente de Ventas y Afiliados de IA Negocio. El sitio ia-negocio.vercel.app tiene 40+ articulos sobre IA para negocios. Tu trabajo es encontrar oportunidades de monetizacion con programas de afiliados. Responde en español argentino, maximo 150 palabras.`,
+      `Marco acaba de escribir un articulo nuevo: "${article.title}". Analiza: 1) Que productos/servicios de IA se pueden recomendar como afiliado en este articulo, 2) Que programas de afiliados especificos aplicar (con nombre y URL), 3) Donde exactamente insertar los links en el articulo. Se concreto y practico.`,
+      400
+    );
+
+    // ====== STEP 6: Carlos (Dev) — improvement suggestion ======
+    const carlosReport = await callClaude(
+      `Sos Carlos Mendez, Dev Lead de IA Negocio (ia-negocio.vercel.app, Next.js en Vercel). Tu CEO Sofia te pide que pienses en mejoras tecnicas y nuevas funcionalidades. Responde en español argentino, maximo 100 palabras.`,
+      `Es ${today}. El sitio tiene 40+ articulos, dashboard privado, agentes IA. Pensá: 1) Que mejora tecnica concreta se puede hacer esta semana para mejorar SEO o performance, 2) Alguna funcionalidad nueva que le agregue valor al sitio. Dale una propuesta a Sofia.`,
+      300
+    );
+
+    // ====== STEP 7: Save daily team report ======
+    const dailyReport = `# Reporte Diario — ${today}
+
+## Sofia (CEO) — Directiva del dia
+${sofiaDirective}
+
+## Marco (Contenido) — Articulo publicado
+- **Titulo:** ${article.title}
+- **Slug:** ${article.slug}
+- **Categoria:** ${article.category}
+- **URL:** https://ia-negocio.vercel.app/blog/${article.slug}
+
+## Tomas (Ventas) — Oportunidades de afiliados
+${tomasReport}
+
+## Carlos (Dev) — Mejoras propuestas
+${carlosReport}
+
+---
+*Reporte generado automaticamente por el equipo IA de IA Negocio*
+`;
+
+    await commitToGitHub(
+      `reports/${today}.md`,
+      dailyReport,
+      `Reporte diario del equipo IA — ${today}`
+    );
+
     return NextResponse.json({
       status: 'ok',
       sofiaDirective: sofiaDirective.slice(0, 200),
@@ -176,7 +218,9 @@ export const autoArticle_${article.slug.replace(/-/g, '_')}: Article = ${JSON.st
         title: article.title,
         date: today,
       },
-      message: `Sofia dirigio → Marco escribio → Articulo publicado automaticamente`,
+      tomasRecommendations: tomasReport.slice(0, 200),
+      carlosIdeas: carlosReport.slice(0, 200),
+      message: `Sofia dirigio → Marco escribio → Tomas analizo afiliados → Carlos propuso mejoras → Todo publicado`,
     });
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Unknown error';
