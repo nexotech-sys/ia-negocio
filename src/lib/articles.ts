@@ -14,6 +14,7 @@ export interface Article {
 import { extraArticles } from './articles-extra';
 import { batch2Articles } from './articles-batch2';
 import { batch3Articles } from './articles-batch3';
+import { autoArticles } from './auto-articles';
 
 export const articles: Article[] = [
   {
@@ -902,7 +903,7 @@ export const articles: Article[] = [
   },
 ];
 
-const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles];
+const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles, ...autoArticles];
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return allArticlesData.find((article) => article.slug === slug);

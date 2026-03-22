@@ -4,85 +4,179 @@ const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO = 'nexotech-sys/ia-negocio';
 
-// Vercel Cron calls this daily — Marco writes a new article autonomously
+async function callClaude(system: string, userMsg: string, maxTokens = 4000) {
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': ANTHROPIC_API_KEY!,
+      'anthropic-version': '2023-06-01',
+    },
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: maxTokens,
+      system,
+      messages: [{ role: 'user', content: userMsg }],
+    }),
+  });
+  if (!res.ok) throw new Error(`Claude API: ${res.status}`);
+  const data = await res.json();
+  return data.content?.[0]?.text || '';
+}
+
+async function commitToGitHub(path: string, content: string, message: string) {
+  // Get current file SHA if it exists
+  let sha: string | undefined;
+  try {
+    const existing = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+      headers: { Authorization: `Bearer ${GITHUB_TOKEN}`, 'User-Agent': 'ia-negocio-bot' },
+    });
+    if (existing.ok) {
+      const data = await existing.json();
+      sha = data.sha;
+    }
+  } catch { /* file doesn't exist yet */ }
+
+  const body: Record<string, string> = {
+    message,
+    content: Buffer.from(content).toString('base64'),
+  };
+  if (sha) body.sha = sha;
+
+  const res = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'ia-negocio-bot',
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`GitHub commit failed: ${res.status} - ${err}`);
+  }
+  return res.json();
+}
+
+// This runs every day at 9am via Vercel Cron
 export async function GET(request: NextRequest) {
-  // Verify cron secret
   const authHeader = request.headers.get('authorization');
   if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  if (!ANTHROPIC_API_KEY) {
-    return NextResponse.json({ error: 'No API key' }, { status: 500 });
+  if (!ANTHROPIC_API_KEY || !GITHUB_TOKEN) {
+    return NextResponse.json({ error: 'Missing API keys' }, { status: 500 });
   }
 
   try {
-    // Step 1: Ask Claude to generate a new article
-    const aiResponse = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 4000,
-        system: `Sos Marco Riquelme, Director de Contenido de IA Negocio. Escribis articulos SEO en español argentino (usa "vos", "podes", "tenes") sobre inteligencia artificial para negocios y emprendedores.
+    const today = new Date().toISOString().split('T')[0];
 
-IMPORTANTE: Responde SOLO con un JSON valido, sin texto adicional. El formato EXACTO:
+    // ====== STEP 1: Sofia (CEO) thinks about strategy ======
+    const sofiaDirective = await callClaude(
+      `Sos Sofia Navarro, CEO de IA Negocio, un blog SEO en español sobre IA para negocios (ia-negocio.vercel.app). Pensas como Elon Musk: ambiciosa, practica, enfocada en crecimiento. Tu equipo tiene: Marco (contenido), Luna (SEO), Diego (marketing), Tomas (ventas/afiliados), Ana (analytics), Carlos (tech), Valentina (finanzas). Responde en español argentino.`,
+      `Es ${today}. Analiza que articulo nuevo deberia escribir Marco hoy para maximizar trafico SEO. Pensa en keywords de alto volumen que emprendedores latinoamericanos buscan sobre IA. Dame: 1) El tema exacto, 2) La keyword principal, 3) Por que este tema va a traer trafico. Se concisa, maximo 100 palabras.`,
+      500
+    );
+
+    // ====== STEP 2: Marco writes the article based on Sofia's direction ======
+    const articleJson = await callClaude(
+      `Sos Marco Riquelme, Director de Contenido de IA Negocio. Tu CEO Sofia te dio esta directiva:
+
+"${sofiaDirective}"
+
+Escribi el articulo que Sofia pidio. Usa español argentino (vos, podes, tenes). El articulo debe ser SEO-optimizado, practico y util para emprendedores latinoamericanos.
+
+RESPONDE SOLO CON JSON VALIDO, sin texto antes ni despues:
 {
-  "slug": "slug-del-articulo",
-  "title": "Titulo del Articulo",
-  "description": "Descripcion breve de 1-2 oraciones",
+  "slug": "slug-seo-del-articulo",
+  "title": "Titulo Atractivo del Articulo",
+  "description": "Descripcion breve de 1-2 oraciones para SEO",
   "category": "Guias",
-  "date": "${new Date().toISOString().split('T')[0]}",
-  "readTime": "10 min",
-  "tags": ["tag1", "tag2", "tag3"],
-  "metaTitle": "Meta titulo SEO",
-  "metaDescription": "Meta descripcion SEO de maximo 160 caracteres",
-  "content": "<h2>Titulo</h2><p>Contenido HTML completo del articulo con h2, p, ul, li. Minimo 800 palabras.</p>"
+  "date": "${today}",
+  "readTime": "10 min de lectura",
+  "tags": ["tag1", "tag2", "tag3", "tag4"],
+  "metaTitle": "Meta titulo optimizado para Google (max 60 chars)",
+  "metaDescription": "Meta descripcion optimizada (max 155 chars)",
+  "content": "<h2>...</h2><p>...</p> (HTML completo, minimo 800 palabras, con h2, p, ul, li, strong)"
 }`,
-        messages: [{
-          role: 'user',
-          content: `Escribi un articulo nuevo sobre un tema trending de IA para negocios que todavia no haya sido cubierto. Elige un tema especifico y practico. Responde SOLO con el JSON.`,
-        }],
-      }),
-    });
+      `Escribi el articulo ahora. Solo JSON, nada mas.`,
+      4000
+    );
 
-    if (!aiResponse.ok) {
-      return NextResponse.json({ error: `Claude API error: ${aiResponse.status}` }, { status: 500 });
-    }
-
-    const aiData = await aiResponse.json();
-    const articleText = aiData.content?.[0]?.text || '';
-
-    // Parse the JSON article
+    // Parse article
     let article;
     try {
-      article = JSON.parse(articleText);
+      article = JSON.parse(articleJson);
     } catch {
-      // Try to extract JSON from the response
-      const jsonMatch = articleText.match(/\{[\s\S]*\}/);
-      if (jsonMatch) {
-        article = JSON.parse(jsonMatch[0]);
-      } else {
-        return NextResponse.json({ error: 'Could not parse article JSON' }, { status: 500 });
-      }
+      const match = articleJson.match(/\{[\s\S]*\}/);
+      if (match) article = JSON.parse(match[0]);
+      else throw new Error('Could not parse article');
     }
 
-    // Step 2: Log the article (for now just return it — GitHub push requires PAT)
-    // In future: commit to GitHub repo automatically
+    // ====== STEP 3: Publish to GitHub (triggers auto-deploy) ======
+    const fileContent = `import { type Article } from '../articles';
+
+// Auto-generated by Marco (AI Agent) on ${today}
+// Directive from Sofia (CEO): ${sofiaDirective.slice(0, 100).replace(/"/g, "'")}...
+
+export const autoArticle_${article.slug.replace(/-/g, '_')}: Article = ${JSON.stringify(article, null, 2)};
+`;
+
+    const fileName = `src/lib/auto-articles/${article.slug}.ts`;
+    await commitToGitHub(
+      fileName,
+      fileContent,
+      `Marco escribe: ${article.title} (auto-generated by AI agent)`
+    );
+
+    // ====== STEP 4: Update the barrel file that imports all auto articles ======
+    // Read existing barrel or create new one
+    let barrelContent: string;
+    try {
+      const barrelRes = await fetch(`https://api.github.com/repos/${REPO}/contents/src/lib/auto-articles/index.ts`, {
+        headers: { Authorization: `Bearer ${GITHUB_TOKEN}`, 'User-Agent': 'ia-negocio-bot' },
+      });
+      if (barrelRes.ok) {
+        const barrelData = await barrelRes.json();
+        const existing = Buffer.from(barrelData.content, 'base64').toString('utf-8');
+        // Add new import
+        const varName = `autoArticle_${article.slug.replace(/-/g, '_')}`;
+        const importLine = `import { ${varName} } from './${article.slug}';\n`;
+        const exportMatch = existing.match(/export const autoArticles[^=]*=\s*\[([\s\S]*?)\];/);
+        if (exportMatch) {
+          barrelContent = importLine + existing.replace(
+            /export const autoArticles[^=]*=\s*\[([\s\S]*?)\];/,
+            `export const autoArticles: Article[] = [${exportMatch[1]}  ${varName},\n];`
+          );
+        } else {
+          barrelContent = existing + importLine;
+        }
+      } else {
+        throw new Error('No barrel yet');
+      }
+    } catch {
+      const varName = `autoArticle_${article.slug.replace(/-/g, '_')}`;
+      barrelContent = `import { type Article } from '../articles';\nimport { ${varName} } from './${article.slug}';\n\nexport const autoArticles: Article[] = [\n  ${varName},\n];\n`;
+    }
+
+    await commitToGitHub(
+      'src/lib/auto-articles/index.ts',
+      barrelContent,
+      `Update auto-articles index with ${article.slug}`
+    );
 
     return NextResponse.json({
       status: 'ok',
-      message: `Marco escribio: "${article.title}"`,
-      article: {
+      sofiaDirective: sofiaDirective.slice(0, 200),
+      articlePublished: {
         slug: article.slug,
         title: article.title,
-        category: article.category,
-        date: article.date,
+        date: today,
       },
+      message: `Sofia dirigio → Marco escribio → Articulo publicado automaticamente`,
     });
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : 'Unknown error';
