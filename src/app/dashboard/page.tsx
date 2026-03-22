@@ -2264,11 +2264,32 @@ function KPIsSection() {
 /* ------------------------------------------------------------------ */
 
 function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void }) {
+  // Load from localStorage on mount
   const [googleEmail, setGoogleEmail] = useState('');
   const [googleConnected, setGoogleConnected] = useState(false);
   const [credentials, setCredentials] = useState<Record<string, string>>({});
   const [connected, setConnected] = useState<Record<string, boolean>>({});
   const [expandedSection, setExpandedSection] = useState<string | null>('google');
+
+  // Persist to localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('ia-negocio-integrations');
+      if (saved) {
+        const data = JSON.parse(saved);
+        if (data.credentials) setCredentials(data.credentials);
+        if (data.connected) setConnected(data.connected);
+        if (data.googleEmail) { setGoogleEmail(data.googleEmail); setGoogleConnected(true); }
+      }
+    } catch { /* ignore */ }
+  }, []);
+
+  // Save whenever connected changes
+  useEffect(() => {
+    if (Object.keys(connected).length > 0 || googleEmail) {
+      localStorage.setItem('ia-negocio-integrations', JSON.stringify({ credentials, connected, googleEmail: googleConnected ? googleEmail : '' }));
+    }
+  }, [connected, credentials, googleEmail, googleConnected]);
 
   // Essential integrations for THIS project only
   const essentialServices = [
