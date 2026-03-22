@@ -2,7 +2,12 @@
   "crons": [
     {
       "path": "/api/cron-write-article",
-      "schedule": "0 9 * * *"
+      "schedule": "0 8 * * *"
     }
-  ]
+  ],
+  "functions": {
+    "src/app/api/cron-write-article/route.ts": {
+      "maxDuration": 60
+    }
+  }
 }
