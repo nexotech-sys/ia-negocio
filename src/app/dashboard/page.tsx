@@ -42,7 +42,7 @@ function getDepartmentStats(department: string) {
 function getCompanyKPIs(): { name: string; value: string; trend: 'up' | 'down' | 'stable' }[] {
   return [
     { name: 'Articulos Publicados', value: '120+', trend: 'up' },
-    { name: 'Trafico Mensual', value: 'Pre-launch', trend: 'stable' },
+    { name: 'Trafico Mensual', value: 'Indexando', trend: 'up' },
     { name: 'Ingresos Mensuales', value: '$0', trend: 'stable' },
     { name: 'Agentes Activos', value: `${getActiveAgents().length}/${agents.length}`, trend: 'up' },
     { name: 'Eficiencia Promedio', value: `${getAverageEfficiency()}%`, trend: 'up' },
@@ -960,9 +960,8 @@ function OverviewSection({
         <h2 className="text-2xl font-extrabold text-white">Buen dia, Nacho</h2>
         <p className="mt-1 text-sm capitalize text-gray-400">{time}</p>
         <p className="mt-3 text-sm text-gray-300">
-          Estamos en fase pre-lanzamiento. Tu equipo de {agents.length} agentes IA esta siendo configurado. {workingAgents.length} trabajando activamente,{' '}
-          {analyzingAgents.length} analizando datos. Todavia no hay trafico ni ingresos — el foco ahora es preparar contenido,
-          conectar integraciones y dejar todo listo para el lanzamiento.
+          Nexo Articles esta en linea con 120+ articulos publicados. Tu equipo de {agents.length} agentes IA esta operando. {workingAgents.length} trabajando activamente,{' '}
+          {analyzingAgents.length} analizando datos. Google esta indexando el contenido — el trafico organico empieza a crecer.
         </p>
       </div>
 
