@@ -2303,10 +2303,13 @@ function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void })
     } catch { /* ignore */ }
   }, []);
 
-  // Save whenever connected changes
+  // Save whenever ANY state changes
   useEffect(() => {
-    if (Object.keys(connected).length > 0 || googleEmail) {
-      localStorage.setItem('ia-negocio-integrations', JSON.stringify({ credentials, connected, googleEmail: googleConnected ? googleEmail : '' }));
+    const hasData = Object.keys(connected).length > 0 || Object.keys(credentials).length > 0 || googleEmail;
+    if (hasData) {
+      try {
+        localStorage.setItem('ia-negocio-integrations', JSON.stringify({ credentials, connected, googleEmail: googleConnected ? googleEmail : '' }));
+      } catch { /* storage full or unavailable */ }
     }
   }, [connected, credentials, googleEmail, googleConnected]);
 
