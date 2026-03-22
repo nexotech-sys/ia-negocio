@@ -14,8 +14,8 @@ async function askClaude(systemPrompt: string, userPrompt: string): Promise<stri
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
-      model: 'claude-haiku-4-5-20241022',
-      max_tokens: 4000,
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 2000,
       system: systemPrompt,
       messages: [{ role: 'user', content: userPrompt }],
     }),
