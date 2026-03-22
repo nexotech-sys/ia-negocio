@@ -2197,324 +2197,222 @@ function KPIsSection() {
 /* ------------------------------------------------------------------ */
 
 function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void }) {
-  const [connectedIntegrations, setConnectedIntegrations] = useState<Record<string, string>>({});
-  const [credentialInputs, setCredentialInputs] = useState<Record<string, string>>({});
-  const [expandedAgents, setExpandedAgents] = useState<Record<string, boolean>>({});
-  const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
-  const [showHowTo, setShowHowTo] = useState<Record<string, boolean>>({});
-  const [verifying, setVerifying] = useState<Record<string, boolean>>({});
-  const [connectionStatus, setConnectionStatus] = useState<Record<string, { status: 'connected' | 'failed' | 'format_only'; message: string; details?: string }>>({});
+  const [googleEmail, setGoogleEmail] = useState('');
+  const [googleConnected, setGoogleConnected] = useState(false);
+  const [credentials, setCredentials] = useState<Record<string, string>>({});
+  const [connected, setConnected] = useState<Record<string, boolean>>({});
+  const [expandedSection, setExpandedSection] = useState<string | null>('google');
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const allIntegrations = agents.map((agent) => {
-    return { agent, integrations: agent.integrations ?? [] };
-  });
+  // Essential integrations for THIS project only
+  const essentialServices = [
+    {
+      id: 'google',
+      title: 'Cuenta Google',
+      icon: '🔑',
+      description: 'Una cuenta Gmail conecta: Search Console, Analytics y AdSense',
+      priority: 'URGENTE',
+      priorityColor: 'text-red-400 bg-red-500/10 border-red-500/30',
+      credential: 'Email Gmail',
+      placeholder: 'tu-email@gmail.com',
+      validation: /^[a-zA-Z0-9._%+-]+@(gmail\.com|googlemail\.com)$/,
+      validationMsg: 'Necesitas un email @gmail.com',
+      subServices: [
+        { name: 'Google Search Console', agent: 'Luna (SEO)', status: 'Pendiente', url: 'https://search.google.com/search-console', instruction: 'Agrega tu sitio ia-negocio.vercel.app y verifica con etiqueta HTML', why: 'Para que Google indexe tus 30 articulos' },
+        { name: 'Google Analytics 4', agent: 'Ana (Analytics)', status: 'Pendiente', url: 'https://analytics.google.com', instruction: 'Crea propiedad, copia el codigo G-XXXXXXX y pasaselo a Claude', why: 'Para medir trafico y saber cuanta gente llega' },
+        { name: 'Google AdSense', agent: 'Valentina (Finanzas)', status: 'Despues (necesitas trafico)', url: 'https://adsense.google.com', instruction: 'Aplica cuando tengas +1000 visitas/mes', why: 'Monetizacion con publicidad automatica' },
+      ],
+    },
+    {
+      id: 'paypal',
+      title: 'PayPal',
+      icon: '💳',
+      description: 'Para cobrar comisiones de afiliados',
+      priority: 'SEMANA 2',
+      priorityColor: 'text-yellow-400 bg-yellow-500/10 border-yellow-500/30',
+      credential: 'Email PayPal',
+      placeholder: 'tu-email@paypal.com',
+      validation: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      validationMsg: 'Ingresa un email valido',
+      subServices: [
+        { name: 'Cobro de Afiliados', agent: 'Tomas (Ventas)', status: 'Despues', url: 'https://www.paypal.com/signup', instruction: 'Crea cuenta PayPal y conecta tu banco argentino (CBU)', why: 'Los programas de afiliados pagan por PayPal' },
+      ],
+    },
+    {
+      id: 'bank',
+      title: 'Cuenta Bancaria (CBU)',
+      icon: '🏦',
+      description: 'Para cobrar AdSense — Google paga directo a tu banco',
+      priority: 'SEMANA 3',
+      priorityColor: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
+      credential: 'CBU (22 digitos)',
+      placeholder: '0000000000000000000000',
+      validation: /^\d{22}$/,
+      validationMsg: 'El CBU tiene exactamente 22 numeros',
+      subServices: [
+        { name: 'Cobro AdSense', agent: 'Valentina (Finanzas)', status: 'Despues', url: '#', instruction: 'Se configura dentro de AdSense cuando te aprueben', why: 'Google deposita automaticamente cuando llegas a USD $100' },
+      ],
+    },
+  ];
 
-  const totalIntegrations = allIntegrations.reduce((s, ai) => s + ai.integrations.length, 0);
-  const baseConnected = allIntegrations.reduce((s, ai) => s + ai.integrations.filter((ig: any) => ig.status === 'conectado').length, 0);
-  const dynamicConnected = Object.keys(connectedIntegrations).length;
-  const connectedCount = baseConnected + dynamicConnected;
-  const progressPct = totalIntegrations > 0 ? Math.round((connectedCount / totalIntegrations) * 100) : 0;
+  const totalSteps = essentialServices.reduce((s, svc) => s + 1, 0);
+  const completedSteps = Object.keys(connected).filter(k => connected[k]).length;
+  const progressPct = Math.round((completedSteps / totalSteps) * 100);
 
-  function isConnected(agentId: string, integrationName: string, originalStatus: string) {
-    const key = `${agentId}-${integrationName}`;
-    return originalStatus === 'conectado' || connectedIntegrations[key] !== undefined;
-  }
+  function handleConnect(serviceId: string) {
+    const service = essentialServices.find(s => s.id === serviceId);
+    if (!service) return;
+    const value = credentials[serviceId]?.trim();
+    if (!value) return;
 
-  async function handleConnect(agentId: string, integrationName: string) {
-    const key = `${agentId}-${integrationName}`;
-    const value = credentialInputs[key];
-    if (!value || value.trim() === '') return;
-
-    // Find the integration to get validation pattern
-    const agentData = allIntegrations.find(ai => ai.agent.id === agentId);
-    const integration = agentData?.integrations.find((ig: any) => ig.name === integrationName);
-
-    // Step 1: Format validation
-    if (integration?.validationPattern) {
-      try {
-        const regex = new RegExp(integration.validationPattern);
-        if (!regex.test(value.trim())) {
-          setValidationErrors(prev => ({ ...prev, [key]: integration.validationHint || 'Formato invalido' }));
-          return;
-        }
-      } catch {
-        // If regex is invalid, skip format validation
-      }
+    if (!service.validation.test(value)) {
+      onNotify(`❌ ${service.validationMsg}`);
+      return;
     }
 
-    // Clear format error
-    setValidationErrors(prev => { const n = { ...prev }; delete n[key]; return n; });
-
-    // Step 2: Real connection verification
-    setVerifying(prev => ({ ...prev, [key]: true }));
-    setConnectionStatus(prev => { const n = { ...prev }; delete n[key]; return n; });
-
-    try {
-      const res = await fetch('/api/verify-integration', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ integrationName, credential: value.trim() }),
-      });
-      const result = await res.json();
-
-      setVerifying(prev => { const n = { ...prev }; delete n[key]; return n; });
-
-      if (result.status === 'connected') {
-        // Real connection verified!
-        setConnectionStatus(prev => ({ ...prev, [key]: { status: 'connected', message: result.message, details: result.details } }));
-        setConnectedIntegrations(prev => ({ ...prev, [key]: value.trim() }));
-        setCredentialInputs(prev => { const n = { ...prev }; delete n[key]; return n; });
-        onNotify(`✅ ${integrationName} — conexion verificada y establecida para ${agentData?.agent.name || 'el agente'}`);
-      } else if (result.status === 'format_only') {
-        // Format ok but can't test connection
-        setConnectionStatus(prev => ({ ...prev, [key]: { status: 'format_only', message: result.message, details: result.details } }));
-        setConnectedIntegrations(prev => ({ ...prev, [key]: value.trim() }));
-        setCredentialInputs(prev => { const n = { ...prev }; delete n[key]; return n; });
-        onNotify(`⚠️ ${integrationName} — formato valido, verificacion manual requerida`);
-      } else {
-        // Connection failed
-        setConnectionStatus(prev => ({ ...prev, [key]: { status: 'failed', message: result.message, details: result.details } }));
-        onNotify(`❌ ${integrationName} — la conexion fallo`);
-      }
-    } catch {
-      setVerifying(prev => { const n = { ...prev }; delete n[key]; return n; });
-      setConnectionStatus(prev => ({ ...prev, [key]: { status: 'failed', message: 'Error de red al verificar — intenta de nuevo' } }));
+    setConnected(prev => ({ ...prev, [serviceId]: true }));
+    if (serviceId === 'google') {
+      setGoogleEmail(value);
+      setGoogleConnected(true);
     }
-  }
-
-  function toggleAgent(agentId: string) {
-    setExpandedAgents((prev) => ({ ...prev, [agentId]: !prev[agentId] }));
+    onNotify(`✅ ${service.title} conectado correctamente`);
   }
 
   return (
     <div>
-      <h2 className="text-2xl font-extrabold text-white">Integraciones y Accesos</h2>
-      <p className="mt-1 text-sm text-gray-400">Conecta servicios externos para que tus agentes puedan operar de verdad</p>
+      <h2 className="text-2xl font-extrabold text-white">Conexiones Esenciales</h2>
+      <p className="mt-1 text-sm text-gray-400">Solo lo que necesitas para que el negocio funcione — sin basura</p>
 
-      {/* Info note */}
-      <div className="mt-4 rounded-xl border border-blue-500/20 bg-blue-500/10 px-4 py-3">
-        <p className="text-xs text-blue-300">Ingresa las credenciales de cada servicio para que tus agentes puedan operar. Los datos se guardan localmente.</p>
+      {/* Priority banner */}
+      <div className="mt-4 rounded-xl border border-amber-500/20 bg-amber-500/5 px-5 py-4">
+        <p className="text-sm font-bold text-amber-300">⚡ Orden de prioridad:</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          <span className="rounded-full border border-red-500/30 bg-red-500/10 px-3 py-1 text-xs font-bold text-red-400">1. Google (AHORA)</span>
+          <span className="rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1 text-xs font-bold text-yellow-400">2. PayPal (Semana 2)</span>
+          <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">3. CBU (Semana 3)</span>
+        </div>
       </div>
 
-      {/* Summary progress bar */}
+      {/* Progress */}
       <div className="mt-6 rounded-2xl border border-gray-700 bg-gray-800/60 p-5">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-semibold text-gray-300">{connectedCount} de {totalIntegrations} integraciones conectadas</span>
+          <span className="text-sm font-semibold text-gray-300">{completedSteps} de {totalSteps} cuentas conectadas</span>
           <span className="text-xs font-mono text-gray-500">{progressPct}%</span>
         </div>
-        <div className="h-2 w-full rounded-full bg-gray-700 overflow-hidden">
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-green-500 to-emerald-400 transition-all duration-500"
-            style={{ width: `${progressPct}%` }}
-          />
+        <div className="h-2.5 w-full rounded-full bg-gray-700 overflow-hidden">
+          <div className="h-full rounded-full bg-gradient-to-r from-green-500 to-emerald-400 transition-all duration-500" style={{ width: `${progressPct}%` }} />
         </div>
       </div>
 
-      {/* Agent integration cards */}
-      <div className="mt-6 space-y-5">
-        {allIntegrations.map(({ agent, integrations }) => {
-          if (!integrations || integrations.length === 0) return null;
-          const isExpanded = expandedAgents[agent.id] !== false; // default open
-          const agentConnectedCount = integrations.filter((ig: any) => isConnected(agent.id, ig.name, ig.status)).length;
+      {/* Service cards */}
+      <div className="mt-6 space-y-4">
+        {essentialServices.map((service) => {
+          const isExpanded = expandedSection === service.id;
+          const isConnected = connected[service.id];
 
           return (
-            <div key={agent.id} className="rounded-2xl border border-gray-700 bg-gray-800/40 overflow-hidden">
-              {/* Agent header - collapsible */}
+            <div key={service.id} className={`rounded-2xl border overflow-hidden transition-all ${isConnected ? 'border-green-500/30 bg-green-500/5' : 'border-gray-700 bg-gray-800/40'}`}>
+              {/* Header */}
               <button
-                onClick={() => toggleAgent(agent.id)}
-                className="flex w-full items-center gap-3 p-5 text-left transition-colors hover:bg-gray-800/60"
+                onClick={() => setExpandedSection(isExpanded ? null : service.id)}
+                className="flex w-full items-center gap-4 p-5 text-left hover:bg-gray-800/40 transition"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl" style={{ background: 'rgba(20,20,30,0.9)' }}>
-                  <span className="text-2xl">{agent.avatar}</span>
-                </div>
+                <span className="text-3xl">{service.icon}</span>
                 <div className="flex-1">
-                  <p className="text-sm font-bold text-white">{agent.name}</p>
-                  <p className="text-xs text-gray-500">{agent.role} — {agent.department}</p>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-base font-bold text-white">{service.title}</span>
+                    {isConnected ? (
+                      <span className="rounded-full bg-green-500/20 border border-green-500/30 px-2.5 py-0.5 text-[10px] font-bold text-green-400">✓ CONECTADO</span>
+                    ) : (
+                      <span className={`rounded-full border px-2.5 py-0.5 text-[10px] font-bold ${service.priorityColor}`}>{service.priority}</span>
+                    )}
+                  </div>
+                  <p className="text-xs text-gray-400 mt-0.5">{service.description}</p>
                 </div>
-                <span className="text-xs text-gray-500 mr-2">{agentConnectedCount}/{integrations.length} conectadas</span>
-                <span className={`text-sm text-gray-500 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`}>&#9660;</span>
+                <span className={`text-gray-500 transition-transform ${isExpanded ? 'rotate-180' : ''}`}>&#9660;</span>
               </button>
 
-              {/* Integrations list */}
+              {/* Expanded content */}
               {isExpanded && (
-                <div className="space-y-3 px-5 pb-5">
-                  {integrations.map((ig: any, i: number) => {
-                    const key = `${agent.id}-${ig.name}`;
-                    const connected = isConnected(agent.id, ig.name, ig.status);
-                    const hasError = validationErrors[key];
-                    const howToVisible = showHowTo[key];
-                    const isVerifying = verifying[key];
-                    const connStatus = connectionStatus[key];
+                <div className="px-5 pb-5 space-y-4">
+                  {/* Credential input */}
+                  {!isConnected && (
+                    <div className="rounded-xl border border-gray-600 bg-gray-900/60 p-4">
+                      <p className="text-xs font-bold text-gray-300 mb-2">📋 {service.credential}</p>
+                      <div className="flex items-center gap-2">
+                        <input
+                          type={service.id === 'bank' ? 'text' : 'email'}
+                          placeholder={service.placeholder}
+                          value={credentials[service.id] || ''}
+                          onChange={(e) => setCredentials(prev => ({ ...prev, [service.id]: e.target.value }))}
+                          onKeyDown={(e) => { if (e.key === 'Enter') handleConnect(service.id); }}
+                          className="flex-1 rounded-lg border border-gray-600 bg-gray-800/80 px-3 py-2.5 text-sm text-white placeholder-gray-500 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 font-mono"
+                        />
+                        <button
+                          onClick={() => handleConnect(service.id)}
+                          disabled={!credentials[service.id]?.trim()}
+                          className="shrink-0 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-bold text-white hover:bg-blue-500 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed transition"
+                        >
+                          Conectar
+                        </button>
+                      </div>
+                    </div>
+                  )}
 
-                    // Determine border color based on state
-                    const borderClass = connected
-                      ? connStatus?.status === 'format_only'
-                        ? 'border-yellow-500/30 bg-yellow-500/5'
-                        : 'border-green-500/30 bg-green-500/5'
-                      : hasError || connStatus?.status === 'failed'
-                        ? 'border-red-500/40 bg-red-500/5'
-                        : isVerifying
-                          ? 'border-blue-500/40 bg-blue-500/5'
-                          : 'border-gray-700/60 bg-gray-900/50';
+                  {/* Connected credential display */}
+                  {isConnected && (
+                    <div className="rounded-xl border border-green-500/20 bg-green-500/5 p-4 flex items-center gap-3">
+                      <span className="text-green-400 text-lg">✅</span>
+                      <div>
+                        <p className="text-sm font-semibold text-green-300">Conectado</p>
+                        <p className="text-xs text-gray-400 font-mono">{credentials[service.id]?.slice(0, 6)}{'•'.repeat(8)}</p>
+                      </div>
+                    </div>
+                  )}
 
-                    return (
-                      <div key={i} className={`rounded-xl border p-4 transition-all duration-300 ${borderClass}`}>
-                        <div className="flex items-start gap-3">
-                          <span className="mt-0.5 text-xl">{ig.icon}</span>
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center gap-2 flex-wrap">
-                              <span className="text-sm font-semibold text-white">{ig.name}</span>
-                              {isVerifying ? (
-                                <div className="flex items-center gap-1.5">
-                                  <span className="inline-block h-2.5 w-2.5 rounded-full bg-blue-500 animate-pulse" />
-                                  <span className="text-blue-400 text-xs font-semibold">Verificando conexion...</span>
-                                </div>
-                              ) : connected ? (
-                                connStatus?.status === 'format_only' ? (
-                                  <div className="flex items-center gap-1.5">
-                                    <span className="inline-block h-2.5 w-2.5 rounded-full bg-yellow-500" />
-                                    <span className="text-yellow-400 text-xs font-semibold">⚠ Formato valido — verificar manualmente</span>
-                                  </div>
-                                ) : (
-                                  <div className="flex items-center gap-1.5">
-                                    <span className="inline-block h-2.5 w-2.5 rounded-full bg-green-500 animate-pulse" />
-                                    <span className="text-green-400 text-xs font-semibold">✓ Conexion establecida</span>
-                                  </div>
-                                )
-                              ) : connStatus?.status === 'failed' ? (
-                                <div className="flex items-center gap-1.5">
-                                  <span className="inline-block h-2.5 w-2.5 rounded-full bg-red-500" />
-                                  <span className="text-red-400 text-xs font-semibold">✗ Conexion fallida</span>
-                                </div>
-                              ) : (
-                                <div className="flex items-center gap-1.5">
-                                  <span className={`inline-block h-2.5 w-2.5 rounded-full ${ig.status === 'pendiente' ? 'bg-yellow-500' : 'bg-red-500'}`} />
-                                  <span className={`text-xs font-semibold ${ig.status === 'pendiente' ? 'text-yellow-400' : 'text-gray-400'}`}>
-                                    {ig.status === 'pendiente' ? 'Pendiente' : 'No configurado'}
-                                  </span>
-                                </div>
-                              )}
+                  {/* Sub-services this unlocks */}
+                  <div>
+                    <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Servicios que desbloquea:</p>
+                    <div className="space-y-2">
+                      {service.subServices.map((sub, i) => (
+                        <div key={i} className="rounded-lg border border-gray-700/50 bg-gray-900/40 p-3">
+                          <div className="flex items-center justify-between flex-wrap gap-2">
+                            <div>
+                              <span className="text-sm font-semibold text-white">{sub.name}</span>
+                              <span className="ml-2 text-[10px] text-gray-500">({sub.agent})</span>
                             </div>
-                            <p className="text-xs text-gray-400 mt-0.5">{ig.description}</p>
-
-                            {/* Connection verification result message */}
-                            {connStatus && !isVerifying && (
-                              <div className={`mt-2 rounded-lg px-3 py-2 ${
-                                connStatus.status === 'connected' ? 'bg-green-500/10 border border-green-500/20' :
-                                connStatus.status === 'format_only' ? 'bg-yellow-500/10 border border-yellow-500/20' :
-                                'bg-red-500/10 border border-red-500/20'
-                              }`}>
-                                <p className={`text-xs font-semibold ${
-                                  connStatus.status === 'connected' ? 'text-green-300' :
-                                  connStatus.status === 'format_only' ? 'text-yellow-300' :
-                                  'text-red-300'
-                                }`}>
-                                  {connStatus.status === 'connected' ? '✅' : connStatus.status === 'format_only' ? '⚠️' : '❌'} {connStatus.message}
-                                </p>
-                                {connStatus.details && (
-                                  <p className="text-xs text-gray-400 mt-0.5">{connStatus.details}</p>
-                                )}
-                              </div>
-                            )}
-
-                            {/* Verifying spinner */}
-                            {isVerifying && (
-                              <div className="mt-2 rounded-lg bg-blue-500/10 border border-blue-500/20 px-3 py-3 flex items-center gap-3">
-                                <div className="h-4 w-4 animate-spin rounded-full border-2 border-blue-400 border-t-transparent" />
-                                <div>
-                                  <p className="text-xs font-semibold text-blue-300">Verificando conexion con {ig.name}...</p>
-                                  <p className="text-xs text-gray-500 mt-0.5">Probando credenciales contra el servicio real</p>
-                                </div>
-                              </div>
-                            )}
-
-                            {/* Credential needed label */}
-                            {!connected && !isVerifying && ig.credentialNeeded && (
-                              <p className="mt-2 text-xs font-semibold text-blue-300">📋 Se necesita: {ig.credentialNeeded}</p>
-                            )}
-
-                            {/* Input + Connect for non-connected */}
-                            {!connected && !isVerifying && (
-                              <div className="mt-2">
-                                <div className="flex items-center gap-2">
-                                  <input
-                                    type={ig.inputType || 'text'}
-                                    placeholder={ig.placeholder || ig.credentialNeeded || 'Credencial'}
-                                    value={credentialInputs[key] || ''}
-                                    onChange={(e) => {
-                                      setCredentialInputs((prev) => ({ ...prev, [key]: e.target.value }));
-                                      if (validationErrors[key]) {
-                                        setValidationErrors(prev => { const n = { ...prev }; delete n[key]; return n; });
-                                      }
-                                      // Clear failed connection status when user retypes
-                                      if (connStatus?.status === 'failed') {
-                                        setConnectionStatus(prev => { const n = { ...prev }; delete n[key]; return n; });
-                                      }
-                                    }}
-                                    onKeyDown={(e) => { if (e.key === 'Enter') handleConnect(agent.id, ig.name); }}
-                                    className={`flex-1 rounded-lg border bg-gray-800/80 px-3 py-2 text-xs text-white placeholder-gray-500 outline-none transition focus:ring-1 ${hasError || connStatus?.status === 'failed' ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : 'border-gray-600 focus:border-blue-500 focus:ring-blue-500'} font-mono`}
-                                  />
-                                  <button
-                                    onClick={() => handleConnect(agent.id, ig.name)}
-                                    disabled={!credentialInputs[key]?.trim()}
-                                    className="shrink-0 rounded-lg bg-blue-600 px-4 py-2 text-xs font-bold text-white transition hover:bg-blue-500 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed"
-                                  >
-                                    {connStatus?.status === 'failed' ? 'Reintentar' : 'Conectar'}
-                                  </button>
-                                </div>
-
-                                {/* Validation error */}
-                                {hasError && (
-                                  <p className="mt-1.5 text-xs text-red-400 flex items-center gap-1">
-                                    <span>⚠️</span> {validationErrors[key]}
-                                  </p>
-                                )}
-
-                                {/* How to get button */}
-                                {ig.howToGet && (
-                                  <button
-                                    onClick={() => setShowHowTo(prev => ({ ...prev, [key]: !prev[key] }))}
-                                    className="mt-2 text-xs text-blue-400 hover:text-blue-300 transition flex items-center gap-1"
-                                  >
-                                    <span>{howToVisible ? '▼' : '▶'}</span> ¿Como obtener esta credencial?
-                                  </button>
-                                )}
-
-                                {/* How to get steps */}
-                                {howToVisible && ig.howToGet && (
-                                  <div className="mt-2 rounded-lg border border-blue-500/20 bg-blue-500/5 px-3 py-2.5">
-                                    <p className="text-xs text-blue-200 font-semibold mb-1">Pasos para obtener:</p>
-                                    {ig.howToGet.split('\n').map((step: string, si: number) => (
-                                      <p key={si} className="text-xs text-gray-300 leading-relaxed">{step}</p>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            )}
-
-                            {/* Connected summary */}
-                            {connected && connectedIntegrations[key] && (
-                              <p className="mt-1.5 text-xs text-green-300/70 font-mono">Credencial: {connectedIntegrations[key].slice(0, 8)}{'•'.repeat(Math.max(0, connectedIntegrations[key].length - 8))}</p>
+                            {sub.url !== '#' && (
+                              <a
+                                href={sub.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="rounded-lg bg-gray-700 px-3 py-1 text-xs font-semibold text-blue-300 hover:bg-gray-600 transition"
+                              >
+                                Abrir ↗
+                              </a>
                             )}
                           </div>
+                          <p className="text-xs text-gray-500 mt-1">👉 {sub.instruction}</p>
+                          <p className="text-[10px] text-cyan-400/60 mt-0.5">¿Por que? {sub.why}</p>
                         </div>
-                      </div>
-                    );
-                  })}
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
           );
         })}
+      </div>
 
-        {totalIntegrations === 0 && (
-          <div className="rounded-2xl border border-dashed border-gray-700 bg-gray-800/30 p-10 text-center">
-            <p className="text-4xl mb-3">🔌</p>
-            <p className="text-sm font-semibold text-gray-400">No hay integraciones configuradas todavia</p>
-            <p className="text-xs text-gray-600 mt-1">Agrega integraciones a tus agentes en el archivo de datos para verlas aca</p>
-          </div>
-        )}
+      {/* What's NOT needed */}
+      <div className="mt-8 rounded-2xl border border-gray-800 bg-gray-900/40 p-5">
+        <p className="text-sm font-bold text-gray-400 mb-3">🚫 Lo que NO necesitas ahora:</p>
+        <div className="flex flex-wrap gap-2">
+          {['Instagram', 'Facebook Ads', 'Twitter/X', 'Slack', 'Notion', 'HubSpot', 'Mailchimp', 'Hotjar', 'Reddit', 'Screaming Frog'].map((name) => (
+            <span key={name} className="rounded-full border border-gray-700/50 bg-gray-800/40 px-3 py-1 text-xs text-gray-600 line-through">{name}</span>
+          ))}
+        </div>
+        <p className="text-[10px] text-gray-600 mt-2">El trafico de este proyecto viene de Google organico (SEO), no de redes sociales. Estas herramientas son para mas adelante si el negocio escala.</p>
       </div>
     </div>
   );
