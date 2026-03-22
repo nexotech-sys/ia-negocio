@@ -2521,6 +2521,28 @@ export default function DashboardPage() {
   const [activeSection, setActiveSection] = useState<Section>('overview');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Load approvals from localStorage on mount
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('ia-negocio-approvals');
+      if (saved) {
+        const data = JSON.parse(saved);
+        if (data.approved) setApprovedIds(new Set(data.approved));
+        if (data.rejected) setRejectedIds(new Set(data.rejected));
+      }
+    } catch { /* ignore */ }
+  }, []);
+
+  // Save approvals whenever they change
+  useEffect(() => {
+    if (approvedIds.size > 0 || rejectedIds.size > 0) {
+      localStorage.setItem('ia-negocio-approvals', JSON.stringify({
+        approved: Array.from(approvedIds),
+        rejected: Array.from(rejectedIds),
+      }));
+    }
+  }, [approvedIds, rejectedIds]);
+
   // Lock body scroll when dashboard is active
   useEffect(() => {
     document.body.style.overflow = 'hidden';
