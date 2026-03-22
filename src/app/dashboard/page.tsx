@@ -420,6 +420,31 @@ function AgentDetailModal({
   onApprove: (id: string) => void;
   onReject: (id: string) => void;
 }) {
+  const [aiResponse, setAiResponse] = useState<string | null>(null);
+  const [aiLoading, setAiLoading] = useState(false);
+  const [customTask, setCustomTask] = useState('');
+
+  async function askAgent(task?: string) {
+    setAiLoading(true);
+    setAiResponse(null);
+    try {
+      const res = await fetch('/api/agent-action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ agentId: agent.id, task: task || undefined }),
+      });
+      const data = await res.json();
+      if (data.status === 'ok') {
+        setAiResponse(data.response);
+      } else {
+        setAiResponse(`Error: ${data.error || 'No se pudo conectar'}`);
+      }
+    } catch {
+      setAiResponse('Error de conexion — intenta de nuevo');
+    }
+    setAiLoading(false);
+  }
+
   const agentRequests = requests.filter(
     (r) => r.agentId === agent.id && !approvedIds.has(r.id) && !rejectedIds.has(r.id)
   );
@@ -462,6 +487,14 @@ function AgentDetailModal({
                 {agent.department}
               </span>
             </div>
+            {/* AI Action Button */}
+            <button
+              onClick={() => askAgent()}
+              disabled={aiLoading}
+              className="ml-auto shrink-0 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 text-xs font-bold text-white hover:from-purple-500 hover:to-blue-500 active:scale-95 transition disabled:opacity-50"
+            >
+              {aiLoading ? '⏳ Pensando...' : '🧠 Pedir Reporte'}
+            </button>
           </div>
           <div className="mt-3 flex items-center gap-3">
             <StatusDot status={agent.status} size="lg" />
@@ -476,6 +509,40 @@ function AgentDetailModal({
           <div>
             <p className="text-sm italic text-gray-400">{agent.personality}</p>
             <p className="mt-1 text-xs font-medium text-gray-600">{agent.motto}</p>
+          </div>
+
+          {/* AI Live Panel */}
+          <div className="rounded-xl border border-purple-500/30 bg-purple-500/5 p-4">
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-purple-400">🧠 Agente IA en Vivo</p>
+            <div className="flex gap-2 mb-3">
+              <input
+                type="text"
+                placeholder={`Pedile algo a ${agent.name.split(' ')[0]}...`}
+                value={customTask}
+                onChange={(e) => setCustomTask(e.target.value)}
+                onKeyDown={(e) => { if (e.key === 'Enter' && customTask.trim()) { askAgent(customTask); setCustomTask(''); } }}
+                className="flex-1 rounded-lg border border-gray-600 bg-gray-800/80 px-3 py-2 text-xs text-white placeholder-gray-500 outline-none focus:border-purple-500"
+              />
+              <button
+                onClick={() => { if (customTask.trim()) { askAgent(customTask); setCustomTask(''); } }}
+                disabled={!customTask.trim() || aiLoading}
+                className="rounded-lg bg-purple-600 px-3 py-2 text-xs font-bold text-white hover:bg-purple-500 disabled:opacity-40 transition"
+              >
+                Enviar
+              </button>
+            </div>
+            {aiLoading && (
+              <div className="flex items-center gap-3 rounded-lg bg-gray-800/60 p-3">
+                <div className="h-4 w-4 animate-spin rounded-full border-2 border-purple-400 border-t-transparent" />
+                <p className="text-xs text-purple-300">{agent.name.split(' ')[0]} esta pensando...</p>
+              </div>
+            )}
+            {aiResponse && !aiLoading && (
+              <div className="rounded-lg bg-gray-800/60 p-3 border border-purple-500/20">
+                <p className="text-xs text-gray-200 leading-relaxed whitespace-pre-wrap">{aiResponse}</p>
+                <p className="text-[9px] text-gray-600 mt-2">Generado por IA — {new Date().toLocaleString('es-AR')}</p>
+              </div>
+            )}
           </div>
 
           {agentMessage && (
