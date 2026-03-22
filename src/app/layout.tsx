@@ -66,7 +66,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* Google AdSense - descomentar cuando esté aprobado */}
+        {/* Google Analytics — REEMPLAZAR G-XXXXXXXXXX con tu ID real */}
+        {/* Paso: analytics.google.com > Admin > Flujos de datos > copiar ID de medicion */}
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');` }} /> */}
+
+        {/* Google AdSense — descomentar cuando este aprobado */}
         {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
