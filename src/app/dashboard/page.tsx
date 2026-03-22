@@ -41,7 +41,7 @@ function getDepartmentStats(department: string) {
 
 function getCompanyKPIs(): { name: string; value: string; trend: 'up' | 'down' | 'stable' }[] {
   return [
-    { name: 'Articulos Publicados', value: '30', trend: 'up' },
+    { name: 'Articulos Publicados', value: '40', trend: 'up' },
     { name: 'Trafico Mensual', value: 'Pre-launch', trend: 'stable' },
     { name: 'Ingresos Mensuales', value: '$0', trend: 'stable' },
     { name: 'Agentes Activos', value: `${getActiveAgents().length}/${agents.length}`, trend: 'up' },
