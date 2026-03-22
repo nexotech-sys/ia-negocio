@@ -18,10 +18,10 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2">
               <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                IA
+                Nexo
               </span>
               <span className="text-xl font-bold text-gray-900 dark:text-white">
-                Negocio
+                Articles
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="mt-10 border-t border-gray-200 pt-6 dark:border-gray-800">
           <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
             <p className="text-xs text-gray-500 dark:text-gray-500">
-              &copy; 2026 IA Negocio. Todos los derechos reservados.
+              &copy; 2026 Nexo Articles. Todos los derechos reservados.
             </p>
             <p className="text-xs text-gray-400 dark:text-gray-600">
               Algunos links son de afiliados. Esto no afecta nuestras

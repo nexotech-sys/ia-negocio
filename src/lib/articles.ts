@@ -14,6 +14,10 @@ export interface Article {
 import { extraArticles } from './articles-extra';
 import { batch2Articles } from './articles-batch2';
 import { batch3Articles } from './articles-batch3';
+import { batch5Articles } from './articles-batch5';
+import { batch6Articles } from './articles-batch6';
+import { batch7Articles } from './articles-batch7';
+import { batch8Articles } from './articles-batch8';
 import { autoArticles } from './auto-articles';
 
 export const articles: Article[] = [
@@ -903,7 +907,7 @@ export const articles: Article[] = [
   },
 ];
 
-const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles, ...autoArticles];
+const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles, ...batch5Articles, ...batch6Articles, ...batch7Articles, ...batch8Articles, ...autoArticles];
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return allArticlesData.find((article) => article.slug === slug);

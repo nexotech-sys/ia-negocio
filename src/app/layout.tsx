@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     google: "n9sryPftfUfUn21UjVRIrOspia-ECnndBgd8xPAdbro",
   },
   title: {
-    default: "IA Negocio - Inteligencia Artificial para Emprendedores",
-    template: "%s | IA Negocio",
+    default: "Nexo Articles - Inteligencia Artificial para Emprendedores",
+    template: "%s | Nexo Articles",
   },
   description:
     "Guías prácticas, herramientas y estrategias de inteligencia artificial para emprendedores y negocios. Aprendé a usar IA para crecer tu empresa.",
@@ -34,18 +34,18 @@ export const metadata: Metadata = {
     "marketing con IA",
     "IA en español",
   ],
-  authors: [{ name: "Equipo IA Negocio" }],
+  authors: [{ name: "Equipo Nexo Articles" }],
   openGraph: {
     type: "website",
     locale: "es_AR",
-    siteName: "IA Negocio",
-    title: "IA Negocio - Inteligencia Artificial para Emprendedores",
+    siteName: "Nexo Articles",
+    title: "Nexo Articles - Inteligencia Artificial para Emprendedores",
     description:
       "Guías prácticas, herramientas y estrategias de inteligencia artificial para emprendedores y negocios.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "IA Negocio - Inteligencia Artificial para Emprendedores",
+    title: "Nexo Articles - Inteligencia Artificial para Emprendedores",
     description:
       "Guías prácticas, herramientas y estrategias de inteligencia artificial para emprendedores y negocios.",
   },

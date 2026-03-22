@@ -41,7 +41,7 @@ function getDepartmentStats(department: string) {
 
 function getCompanyKPIs(): { name: string; value: string; trend: 'up' | 'down' | 'stable' }[] {
   return [
-    { name: 'Articulos Publicados', value: '40', trend: 'up' },
+    { name: 'Articulos Publicados', value: '120+', trend: 'up' },
     { name: 'Trafico Mensual', value: 'Pre-launch', trend: 'stable' },
     { name: 'Ingresos Mensuales', value: '$0', trend: 'stable' },
     { name: 'Agentes Activos', value: `${getActiveAgents().length}/${agents.length}`, trend: 'up' },
@@ -218,7 +218,7 @@ function LoginGate({ onAuth }: { onAuth: () => void }) {
             🏢
           </div>
           <h1 className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-2xl font-extrabold text-transparent">
-            IA Negocio
+            Nexo Articles
           </h1>
           <p className="mt-1 text-sm text-gray-500">Centro de Comando — Acceso Privado</p>
         </div>
@@ -850,7 +850,7 @@ function Sidebar({
         </div>
         <div>
           <h1 className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-lg font-extrabold text-transparent">
-            IA Negocio
+            Nexo Articles
           </h1>
           <p className="text-[10px] text-gray-600">Centro de Comando</p>
         </div>
@@ -1098,7 +1098,7 @@ function OficinaSection({
       <div className="flex items-center justify-between">
         <div>
           <h2 className="text-2xl font-extrabold text-white">Oficina Virtual</h2>
-          <p className="text-sm text-gray-500">Coworking IA Negocio — {agents.filter(a => a.status === 'working').length} agentes activos ahora</p>
+          <p className="text-sm text-gray-500">Coworking Nexo Articles — {agents.filter(a => a.status === 'working').length} agentes activos ahora</p>
         </div>
         {/* Live activity ticker */}
         <div className="hidden sm:flex items-center gap-2 rounded-full border border-gray-700 bg-gray-800/80 px-4 py-2">
@@ -2759,7 +2759,7 @@ export default function DashboardPage() {
         <div className="flex items-center gap-2">
           <span className="text-lg">🏢</span>
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-sm font-extrabold text-transparent">
-            IA Negocio
+            Nexo Articles
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -2821,7 +2821,7 @@ export default function DashboardPage() {
 
           {/* Footer */}
           <footer className="mt-10 border-t border-gray-800 py-6 text-center text-xs text-gray-600">
-            IA Negocio — Dashboard privado — {agents.length} agentes IA operando 24/7
+            Nexo Articles — Dashboard privado — {agents.length} agentes IA operando 24/7
           </footer>
         </div>
       </main>

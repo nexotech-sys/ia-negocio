@@ -19,10 +19,10 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-            IA
+            Nexo
           </span>
           <span className="text-2xl font-bold text-gray-900 dark:text-white">
-            Negocio
+            Articles
           </span>
         </Link>
 
