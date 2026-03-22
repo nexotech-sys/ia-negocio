@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "n9sryPftfUfUn21UjVRIrOspia-ECnndBgd8xPAdbro",
+  },
   title: {
     default: "IA Negocio - Inteligencia Artificial para Emprendedores",
     template: "%s | IA Negocio",
