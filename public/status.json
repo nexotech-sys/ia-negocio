@@ -1,0 +1,66 @@
+{
+  "lastUpdate": "2026-03-25",
+  "article": {
+    "title": "IA Cuántica para Negocios 2026: La Nueva Revolución que Multiplicará tu ROI por 10",
+    "slug": "ia-cuantica-negocios-2026-revolucion-roi"
+  },
+  "calendarTasks": [
+    {
+      "date": "2024-12-19",
+      "task": "Revisar métricas de engagement del artículo IA Cuántica",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-20",
+      "task": "Configurar primera campaña AdSense",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-21",
+      "task": "Investigar productos tech para links de afiliados",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Implementar estructura de afiliados en próximos 3 artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Análisis semanal de palabras clave con mejor CTR",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Optimizar artículos con menor tiempo de permanencia",
+      "agent": "Nacho",
+      "priority": "baja"
+    }
+  ],
+  "integrationRequests": [
+    {
+      "agent": "Nacho",
+      "service": "AdSense",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "Implementar links de afiliados en artículos tech",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analizar comportamiento de usuarios para optimizar conversión",
+      "urgent": false
+    }
+  ],
+  "weeklyNote": "Proyecto en fase de monetización. Base sólida de contenido establecida, es momento de activar ingresos con AdSense y afiliados."
+}
