@@ -1,0 +1,49 @@
+name: "Health Check Semanal"
+
+on:
+  schedule:
+    # Corre cada lunes a las 14:00 UTC (11:00 AM Argentina)
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Verificar sitio principal"
+        run: |
+          echo "=== Health Check Nexo Articles ==="
+
+          # Verificar homepage
+          HTTP=$(curl -s -o /dev/null -w "%{http_code}" "https://ia-negocio.vercel.app")
+          echo "Homepage: $HTTP"
+
+          # Verificar dashboard
+          HTTP2=$(curl -s -o /dev/null -w "%{http_code}" "https://ia-negocio.vercel.app/dashboard")
+          echo "Dashboard: $HTTP2"
+
+          # Verificar sitemap
+          HTTP3=$(curl -s -o /dev/null -w "%{http_code}" "https://ia-negocio.vercel.app/sitemap.xml")
+          echo "Sitemap: $HTTP3"
+
+          # Verificar API de agentes
+          HTTP4=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://ia-negocio.vercel.app/api/agent-action" -H "Content-Type: application/json" -d '{"agentId":"sofia","task":"ping"}')
+          echo "API Agentes: $HTTP4"
+
+          # Contar articulos en sitemap
+          URLS=$(curl -s "https://ia-negocio.vercel.app/sitemap.xml" | grep -c "<loc>")
+          echo "URLs en sitemap: $URLS"
+
+          echo "=== Health Check Completo ==="
+
+      - name: "Verificar robots.txt"
+        run: |
+          ROBOTS=$(curl -s "https://ia-negocio.vercel.app/robots.txt")
+          echo "$ROBOTS"
+
+          # Verificar que el dashboard esta oculto
+          if echo "$ROBOTS" | grep -q "Disallow: /dashboard/"; then
+            echo "Dashboard oculto de Google: OK"
+          else
+            echo "ALERTA: Dashboard NO esta oculto de Google"
+          fi

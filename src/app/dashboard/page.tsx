@@ -41,8 +41,8 @@ function getDepartmentStats(department: string) {
 
 function getCompanyKPIs(): { name: string; value: string; trend: 'up' | 'down' | 'stable' }[] {
   return [
-    { name: 'Articulos Publicados', value: '120+', trend: 'up' },
-    { name: 'Trafico Mensual', value: 'Indexando', trend: 'up' },
+    { name: 'Articulos Publicados', value: '155', trend: 'up' },
+    { name: 'Trafico Mensual', value: 'Google indexando', trend: 'up' },
     { name: 'Ingresos Mensuales', value: '$0', trend: 'stable' },
     { name: 'Agentes Activos', value: `${getActiveAgents().length}/${agents.length}`, trend: 'up' },
     { name: 'Eficiencia Promedio', value: `${getAverageEfficiency()}%`, trend: 'up' },
@@ -138,7 +138,7 @@ const typeIcons: Record<string, string> = {
   aprobacion: '✅',
 };
 
-type Section = 'overview' | 'oficina' | 'departamentos' | 'solicitudes' | 'actividad' | 'integraciones' | 'kpis' | 'pagos';
+type Section = 'overview' | 'oficina' | 'departamentos' | 'solicitudes' | 'actividad' | 'integraciones' | 'kpis' | 'pagos' | 'calendario';
 
 /* ------------------------------------------------------------------ */
 /*  SMALL HELPERS                                                      */
@@ -839,6 +839,7 @@ function Sidebar({
     { key: 'integraciones', icon: '🔌', label: 'Integraciones' },
     { key: 'kpis', icon: '📊', label: 'KPIs' },
     { key: 'pagos', icon: '💳', label: 'Pagos' },
+    { key: 'calendario', icon: '📅', label: 'Calendario' },
   ];
 
   const sidebarContent = (
@@ -960,8 +961,8 @@ function OverviewSection({
         <h2 className="text-2xl font-extrabold text-white">Buen dia, Nacho</h2>
         <p className="mt-1 text-sm capitalize text-gray-400">{time}</p>
         <p className="mt-3 text-sm text-gray-300">
-          Nexo Articles esta en linea con 120+ articulos publicados. Tu equipo de {agents.length} agentes IA esta operando. {workingAgents.length} trabajando activamente,{' '}
-          {analyzingAgents.length} analizando datos. Google esta indexando el contenido — el trafico organico empieza a crecer.
+          Nexo Articles esta en linea con 150 articulos publicados. Tu equipo de {agents.length} agentes IA esta operativo. {workingAgents.length} trabajando activamente,{' '}
+          {analyzingAgents.length} analizando datos. Search Console y Analytics conectados. Google indexando contenido — esperando trafico organico.
         </p>
       </div>
 
@@ -1029,6 +1030,38 @@ function OverviewSection({
 /*  SECTION: OFICINA (Conference Table)                                */
 /* ------------------------------------------------------------------ */
 
+function PixelChar({ color, isTyping, size = 1 }: { color: string; isTyping: boolean; size?: number }) {
+  const s = size;
+  const skin = '#FDB';
+  return (
+    <div className="relative" style={{ width: 24*s, height: 32*s, imageRendering: 'pixelated' }}>
+      {/* Hair */}
+      <div style={{ position: 'absolute', top: 0, left: 5*s, width: 14*s, height: 4*s, backgroundColor: color, borderRadius: `${3*s}px ${3*s}px 0 0` }} />
+      {/* Face */}
+      <div style={{ position: 'absolute', top: 4*s, left: 5*s, width: 14*s, height: 8*s, backgroundColor: skin, borderRadius: `0 0 ${2*s}px ${2*s}px` }} />
+      {/* Eyes */}
+      <div style={{ position: 'absolute', top: 7*s, left: 8*s, width: 3*s, height: 2*s, backgroundColor: '#333', borderRadius: '50%' }} />
+      <div style={{ position: 'absolute', top: 7*s, left: 14*s, width: 3*s, height: 2*s, backgroundColor: '#333', borderRadius: '50%' }} />
+      {/* Mouth */}
+      <div style={{ position: 'absolute', top: 10*s, left: 10*s, width: 4*s, height: 1*s, backgroundColor: '#c88', borderRadius: 1*s }} />
+      {/* Body */}
+      <div style={{ position: 'absolute', top: 12*s, left: 2*s, width: 20*s, height: 12*s, backgroundColor: color, borderRadius: `${2*s}px ${2*s}px 0 0` }}>
+        {/* Collar */}
+        <div style={{ width: 6*s, height: 2*s, backgroundColor: '#fff8', margin: '0 auto', borderRadius: `0 0 ${2*s}px ${2*s}px` }} />
+      </div>
+      {/* Arms */}
+      <div className={isTyping ? 'animate-pulse' : ''} style={{ position: 'absolute', top: 14*s, left: 0, width: 3*s, height: 8*s, backgroundColor: skin, borderRadius: 1*s, animationDuration: '0.4s' }} />
+      <div className={isTyping ? 'animate-pulse' : ''} style={{ position: 'absolute', top: 14*s, right: 0, width: 3*s, height: 8*s, backgroundColor: skin, borderRadius: 1*s, animationDuration: '0.6s' }} />
+      {/* Legs */}
+      <div style={{ position: 'absolute', top: 24*s, left: 5*s, width: 5*s, height: 6*s, backgroundColor: '#334', borderRadius: `0 0 ${1*s}px ${1*s}px` }} />
+      <div style={{ position: 'absolute', top: 24*s, right: 5*s, width: 5*s, height: 6*s, backgroundColor: '#334', borderRadius: `0 0 ${1*s}px ${1*s}px` }} />
+      {/* Shoes */}
+      <div style={{ position: 'absolute', bottom: 0, left: 4*s, width: 6*s, height: 3*s, backgroundColor: '#222', borderRadius: `0 0 ${2*s}px ${2*s}px` }} />
+      <div style={{ position: 'absolute', bottom: 0, right: 4*s, width: 6*s, height: 3*s, backgroundColor: '#222', borderRadius: `0 0 ${2*s}px ${2*s}px` }} />
+    </div>
+  );
+}
+
 function OficinaSection({
   onSelectAgent,
   pendingCountMap,
@@ -1037,350 +1070,681 @@ function OficinaSection({
   pendingCountMap: Record<string, number>;
 }) {
   const [hoveredAgent, setHoveredAgent] = useState<string | null>(null);
-  const [time, setTime] = useState(0);
+  const [hoveredRoom, setHoveredRoom] = useState<string | null>(null);
+  const [typingAgent, setTypingAgent] = useState('marco');
+  const [tick, setTick] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => setTime((t) => t + 1), 3000);
+    const id = setInterval(() => {
+      setTick((t) => t + 1);
+      const activeIds = ['marco', 'luna', 'carlos', 'diego', 'ana', 'sofia', 'tomas', 'valentina'];
+      setTypingAgent(prev => {
+        const idx = activeIds.indexOf(prev);
+        return activeIds[(idx + 1) % activeIds.length];
+      });
+    }, 2500);
     return () => clearInterval(id);
   }, []);
 
-  // Shared desks — agents that collaborate sit at the same table
-  const desks: {
-    id: string;
-    zone: string;
-    zoneColor: string;
-    agents: string[];
-    top: string;
-    left: string;
-    w: string;
-    h: string;
-    deskStyle: 'L' | 'straight' | 'round' | 'corner';
-  }[] = [
-    { id: 'ceo', zone: 'Sala Ejecutiva', zoneColor: '#eab308', agents: ['sofia'], top: '3%', left: '35%', w: '30%', h: '20%', deskStyle: 'corner' },
-    { id: 'content', zone: 'Redaccion', zoneColor: '#a855f7', agents: ['marco', 'luna'], top: '28%', left: '2%', w: '33%', h: '22%', deskStyle: 'L' },
-    { id: 'tech', zone: 'Dev Lab', zoneColor: '#3b82f6', agents: ['carlos', 'ana'], top: '28%', left: '65%', w: '33%', h: '22%', deskStyle: 'L' },
-    { id: 'growth', zone: 'Growth Hub', zoneColor: '#f97316', agents: ['diego', 'tomas'], top: '58%', left: '8%', w: '36%', h: '22%', deskStyle: 'straight' },
-    { id: 'finance', zone: 'Finanzas', zoneColor: '#22c55e', agents: ['valentina'], top: '58%', left: '56%', w: '36%', h: '22%', deskStyle: 'corner' },
-  ];
-
-  // Data flow lines between desks
-  const flows: { from: string; to: string; label: string }[] = [
-    { from: 'ceo', to: 'content', label: 'Estrategia' },
-    { from: 'ceo', to: 'tech', label: 'Prioridades' },
-    { from: 'content', to: 'growth', label: 'Contenido' },
-    { from: 'tech', to: 'finance', label: 'Reportes' },
-    { from: 'ceo', to: 'finance', label: 'KPIs' },
-    { from: 'growth', to: 'finance', label: 'ROI' },
-  ];
-
-  const getDeskCenter = (deskId: string) => {
-    const d = desks.find((dk) => dk.id === deskId);
-    if (!d) return { x: 50, y: 50 };
-    return { x: parseFloat(d.left) + parseFloat(d.w) / 2, y: parseFloat(d.top) + parseFloat(d.h) / 2 };
+  const pixelColors: Record<string, string> = {
+    sofia: '#eab308', marco: '#a855f7', luna: '#06b6d4', carlos: '#3b82f6',
+    diego: '#f97316', tomas: '#10b981', ana: '#ec4899', valentina: '#22c55e',
   };
 
-  const activityMessages = [
-    { agent: 'marco', msg: 'Escribiendo articulo #16...' },
-    { agent: 'luna', msg: 'Analizando keywords...' },
-    { agent: 'carlos', msg: 'Optimizando performance...' },
-    { agent: 'diego', msg: 'Preparando campana...' },
-    { agent: 'ana', msg: 'Procesando metricas...' },
-    { agent: 'sofia', msg: 'Revisando reportes...' },
-    { agent: 'tomas', msg: 'Contactando afiliados...' },
-    { agent: 'valentina', msg: 'Actualizando proyecciones...' },
+  // Collaboration pairs for meeting room indicator
+  const collabPairs: { pair: [string, string]; label: string }[] = [
+    { pair: ['marco', 'luna'],   label: 'Contenido + SEO' },
+    { pair: ['carlos', 'ana'],   label: 'Tecnologia + Datos' },
+    { pair: ['diego', 'tomas'],  label: 'Marketing + Ventas' },
   ];
-  const currentActivity = activityMessages[time % activityMessages.length];
+
+  // ---- Room definitions: position as % of the 16/9 container ----
+  // Layout:
+  //  Col A: 0–44%   Col B (hall): 44–56%   Col C: 56–100%
+  //  Row 1: 0–33%   Row 2: 33–66%          Row 3: 66–100%
+
+  const rooms = [
+    {
+      id: 'sofia',
+      label: 'Oficina de Sofia',
+      sublabel: 'CEO - Direccion Ejecutiva',
+      x: 0, y: 0, w: 44, h: 33,
+      color: pixelColors.sofia,
+      agentIds: ['sofia'],
+    },
+    {
+      id: 'meeting',
+      label: 'Sala de Reuniones',
+      sublabel: 'Mesa de trabajo',
+      x: 56, y: 0, w: 44, h: 33,
+      color: '#6366f1',
+      agentIds: [],
+    },
+    {
+      id: 'redaccion',
+      label: 'Redaccion y SEO',
+      sublabel: 'Marco + Luna',
+      x: 0, y: 33, w: 44, h: 33,
+      color: pixelColors.marco,
+      agentIds: ['marco', 'luna'],
+    },
+    {
+      id: 'devlab',
+      label: 'Tecnologia y Datos',
+      sublabel: 'Carlos + Ana',
+      x: 56, y: 33, w: 44, h: 33,
+      color: pixelColors.carlos,
+      agentIds: ['carlos', 'ana'],
+    },
+    {
+      id: 'growth',
+      label: 'Marketing y Ventas',
+      sublabel: 'Diego + Tomas',
+      x: 0, y: 66, w: 44, h: 34,
+      color: pixelColors.diego,
+      agentIds: ['diego', 'tomas'],
+    },
+    {
+      id: 'finanzas',
+      label: 'Finanzas',
+      sublabel: 'Valentina',
+      x: 56, y: 66, w: 44, h: 34,
+      color: pixelColors.valentina,
+      agentIds: ['valentina'],
+    },
+  ];
+
+  // Agent positions within their room (relative to room, in %)
+  const agentRoomPos: Record<string, { rx: number; ry: number }> = {
+    sofia:     { rx: 50, ry: 58 },
+    marco:     { rx: 28, ry: 60 },
+    luna:      { rx: 72, ry: 60 },
+    carlos:    { rx: 28, ry: 60 },
+    ana:       { rx: 72, ry: 60 },
+    diego:     { rx: 28, ry: 60 },
+    tomas:     { rx: 72, ry: 60 },
+    valentina: { rx: 50, ry: 60 },
+  };
+
+  // Meeting room chair positions (around oval table), in % of room
+  const meetingChairs = [
+    { x: 50, y: 15 }, { x: 75, y: 22 }, { x: 88, y: 45 }, { x: 80, y: 70 },
+    { x: 60, y: 82 }, { x: 40, y: 82 }, { x: 20, y: 70 }, { x: 12, y: 45 },
+  ];
+  const meetingChairLabels = ['Sofia', 'Marco', 'Luna', 'Carlos', 'Ana', 'Diego', 'Tomas', 'Valentina'];
+
+  // Active collab pair (cycles with tick)
+  const activeCollabIdx = Math.floor(tick / 4) % collabPairs.length;
+  const activePair = collabPairs[activeCollabIdx];
+
+  // Helper: desk renderer
+  function Desk({ color, monitors = 2 }: { color: string; monitors?: number }) {
+    return (
+      <div style={{ position: 'relative', display: 'inline-block' }}>
+        {/* Monitors */}
+        <div style={{ display: 'flex', gap: '3px', justifyContent: 'center', marginBottom: '2px' }}>
+          {Array.from({ length: monitors }).map((_, mi) => (
+            <div key={mi} style={{
+              width: '16px', height: '11px',
+              backgroundColor: '#0d1117',
+              border: `1px solid ${color}70`,
+              borderRadius: '1px',
+              boxShadow: `0 0 4px ${color}40`,
+              position: 'relative',
+              overflow: 'hidden',
+            }}>
+              <div style={{
+                position: 'absolute', inset: '1px',
+                background: `linear-gradient(135deg, ${color}20 0%, transparent 60%)`,
+              }} />
+              {/* tiny code lines */}
+              <div style={{ position: 'absolute', top: '2px', left: '2px', right: '2px', height: '1px', backgroundColor: color, opacity: 0.5 }} />
+              <div style={{ position: 'absolute', top: '4px', left: '2px', width: '60%', height: '1px', backgroundColor: color, opacity: 0.3 }} />
+              <div style={{ position: 'absolute', top: '6px', left: '2px', width: '80%', height: '1px', backgroundColor: color, opacity: 0.3 }} />
+            </div>
+          ))}
+        </div>
+        {/* Desk surface */}
+        <div style={{
+          width: monitors === 2 ? '38px' : '22px',
+          height: '14px',
+          backgroundColor: '#2d1f10',
+          border: `1px solid ${color}30`,
+          borderRadius: '2px',
+          boxShadow: `inset 0 1px 0 rgba(255,255,255,0.05), 0 2px 4px rgba(0,0,0,0.4)`,
+          position: 'relative',
+        }}>
+          {/* keyboard */}
+          <div style={{
+            position: 'absolute', bottom: '2px', left: '50%', transform: 'translateX(-50%)',
+            width: '18px', height: '3px',
+            backgroundColor: '#1a1a2a', border: '1px solid #333', borderRadius: '1px',
+          }} />
+        </div>
+        {/* Chair behind desk */}
+        <div style={{
+          width: '14px', height: '7px',
+          backgroundColor: '#1e1e2e',
+          border: '1px solid #333',
+          borderRadius: '0 0 4px 4px',
+          margin: '2px auto 0',
+        }} />
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between">
+
+      {/* ====== Header ====== */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-2xl font-extrabold text-white">Oficina Virtual</h2>
-          <p className="text-sm text-gray-500">Coworking Nexo Articles — {agents.filter(a => a.status === 'working').length} agentes activos ahora</p>
+          <h2
+            className="text-white font-bold tracking-widest uppercase"
+            style={{ fontFamily: 'monospace', fontSize: '15px', letterSpacing: '3px', textShadow: '0 0 12px #eab30860' }}
+          >
+            &#9632; NEXO ARTICLES HQ
+          </h2>
+          <p className="text-[10px] text-gray-500 mt-1 font-mono">
+            {agents.filter(a => a.status === 'working').length} agentes activos &bull; {new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' })}
+          </p>
         </div>
-        {/* Live activity ticker */}
-        <div className="hidden sm:flex items-center gap-2 rounded-full border border-gray-700 bg-gray-800/80 px-4 py-2">
+        {/* Live ticker */}
+        <div className="hidden sm:flex items-center gap-2 rounded border border-green-500/20 bg-green-500/5 px-3 py-1.5">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
           </span>
-          <span className="text-xs text-gray-400">
-            <span className="font-semibold text-white">{agents.find(a => a.id === currentActivity.agent)?.name.split(' ')[0]}</span>{' '}
-            {currentActivity.msg}
+          <span className="text-[10px] text-green-400 font-mono">
+            {agents.find(a => a.id === typingAgent)?.name.split(' ')[0]}: {agents.find(a => a.id === typingAgent)?.currentTask.slice(0, 30)}...
           </span>
         </div>
       </div>
 
-      {/* ====== Floor Plan ====== */}
-      <div className="rounded-2xl border border-gray-700/60 bg-gray-900/80 p-4 sm:p-6 shadow-2xl shadow-black/40">
-        <div
-          className="relative mx-auto w-full overflow-hidden rounded-xl"
-          style={{
-            aspectRatio: '16 / 9',
-            background: `
-              radial-gradient(ellipse at 30% 20%, rgba(59,130,246,0.04) 0%, transparent 50%),
-              radial-gradient(ellipse at 70% 80%, rgba(168,85,247,0.04) 0%, transparent 50%),
-              linear-gradient(rgba(15,23,42,0.98), rgba(15,23,42,0.98)),
-              repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(55,65,81,0.15) 49px, rgba(55,65,81,0.15) 50px),
-              repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(55,65,81,0.15) 49px, rgba(55,65,81,0.15) 50px)
-            `,
-          }}
-        >
-          {/* SVG layer — connection flows between desks */}
-          <svg className="absolute inset-0 h-full w-full pointer-events-none" style={{ zIndex: 1 }}>
-            <defs>
-              {flows.map((f, i) => (
-                <linearGradient key={`g${i}`} id={`flow${i}`} x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor={desks.find(d => d.id === f.from)?.zoneColor || '#666'} stopOpacity="0.4" />
-                  <stop offset="100%" stopColor={desks.find(d => d.id === f.to)?.zoneColor || '#666'} stopOpacity="0.4" />
-                </linearGradient>
-              ))}
-              <marker id="flowArrow" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
-                <path d="M0,0 L6,2 L0,4" fill="rgba(156,163,175,0.5)" />
-              </marker>
-            </defs>
-            {flows.map((f, i) => {
-              const from = getDeskCenter(f.from);
-              const to = getDeskCenter(f.to);
-              const mx = (from.x + to.x) / 2;
-              const my = (from.y + to.y) / 2;
-              return (
-                <g key={i}>
-                  <line
-                    x1={`${from.x}%`} y1={`${from.y}%`}
-                    x2={`${to.x}%`} y2={`${to.y}%`}
-                    stroke={`url(#flow${i})`}
-                    strokeWidth="1.5"
-                    strokeDasharray="8 5"
-                    markerEnd="url(#flowArrow)"
-                    opacity={0.6}
-                  />
-                  <text x={`${mx}%`} y={`${my - 1.5}%`} textAnchor="middle" fill="rgba(156,163,175,0.4)" fontSize="8" fontWeight="500">
-                    {f.label}
-                  </text>
-                </g>
-              );
-            })}
-          </svg>
+      {/* ====== Floor Plan Office ====== */}
+      <div
+        className="rounded-2xl border border-gray-700 bg-gray-950 shadow-2xl overflow-hidden"
+        style={{ aspectRatio: '16/9', position: 'relative' }}
+      >
+        {/* Outer office background */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(255,255,255,0.015) 19px, rgba(255,255,255,0.015) 20px), repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(255,255,255,0.015) 19px, rgba(255,255,255,0.015) 20px), #0d1117',
+        }} />
 
-          {/* Decorative elements — plants, coffee machine, whiteboard */}
-          <div className="absolute top-[2%] right-[2%] text-lg opacity-60 z-[3]">🪴</div>
-          <div className="absolute bottom-[3%] left-[2%] text-lg opacity-60 z-[3]">🪴</div>
-          <div className="absolute bottom-[3%] right-[2%] text-lg opacity-60 z-[3]">☕</div>
-          <div className="absolute top-[2%] left-[2%] flex flex-col items-center opacity-40 z-[3]">
-            <div className="w-8 h-5 rounded-sm border border-gray-600 bg-gray-800/80 flex items-center justify-center text-[6px] text-gray-500">WIFI</div>
-          </div>
-          <div className="absolute top-[2%] left-[18%] flex items-center gap-1 opacity-30 z-[3]">
-            <div className="w-16 h-3 rounded-full border border-gray-600 bg-gray-800/80 flex items-center justify-center text-[5px] text-gray-500 tracking-wider">IA NEGOCIO</div>
-          </div>
+        {/* === HALLWAYS === */}
+        {/* Vertical hallway */}
+        <div style={{
+          position: 'absolute',
+          left: '44%', top: 0, width: '12%', height: '100%',
+          backgroundColor: 'rgba(255,255,255,0.018)',
+          borderLeft: '1px solid rgba(100,100,120,0.25)',
+          borderRight: '1px solid rgba(100,100,120,0.25)',
+        }} />
+        {/* Horizontal hallway row1->row2 */}
+        <div style={{
+          position: 'absolute',
+          left: 0, top: '33%', width: '100%', height: '0',
+          borderTop: '1px solid rgba(100,100,120,0.25)',
+        }} />
+        {/* Horizontal hallway row2->row3 */}
+        <div style={{
+          position: 'absolute',
+          left: 0, top: '66%', width: '100%', height: '0',
+          borderTop: '1px solid rgba(100,100,120,0.25)',
+        }} />
 
-          {/* Desk zones */}
-          {desks.map((desk) => {
-            const deskAgents = desk.agents.map(id => agents.find(a => a.id === id)).filter(Boolean) as Agent[];
-            const isMulti = deskAgents.length > 1;
-            const anyHovered = desk.agents.some(id => hoveredAgent === id);
+        {/* === HALLWAY LABELS === */}
+        <div style={{
+          position: 'absolute',
+          left: '44%', top: '45%',
+          width: '12%',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: '6px', color: 'rgba(156,163,175,0.35)',
+          fontFamily: 'monospace', fontWeight: 'bold', letterSpacing: '2px',
+          writingMode: 'vertical-rl', textOrientation: 'mixed',
+          userSelect: 'none',
+        }}>
+          PASILLO
+        </div>
+
+        {/* === ROOMS === */}
+        {rooms.map((room) => {
+          const isHoveredR = hoveredRoom === room.id;
+          const isMeetingRoom = room.id === 'meeting';
+          const isCollabActive = isMeetingRoom && (tick % 8 < 5);
+
+          return (
+            <div
+              key={room.id}
+              onMouseEnter={() => setHoveredRoom(room.id)}
+              onMouseLeave={() => setHoveredRoom(null)}
+              style={{
+                position: 'absolute',
+                left: `${room.x}%`, top: `${room.y}%`,
+                width: `${room.w}%`, height: `${room.h}%`,
+                boxSizing: 'border-box',
+                border: `1px solid rgba(100,100,120,0.3)`,
+                borderTop: `2px solid ${room.color}`,
+                backgroundColor: isHoveredR
+                  ? `${room.color}08`
+                  : `${room.color}04`,
+                transition: 'background-color 0.3s',
+                overflow: 'hidden',
+              }}
+            >
+              {/* Room floor subtle grid */}
+              <div style={{
+                position: 'absolute', inset: 0,
+                background: 'repeating-linear-gradient(0deg, transparent, transparent 11px, rgba(255,255,255,0.012) 11px, rgba(255,255,255,0.012) 12px), repeating-linear-gradient(90deg, transparent, transparent 11px, rgba(255,255,255,0.012) 11px, rgba(255,255,255,0.012) 12px)',
+                pointerEvents: 'none',
+              }} />
+
+              {/* Room label */}
+              <div style={{
+                position: 'absolute', top: '4px', left: '50%', transform: 'translateX(-50%)',
+                display: 'flex', flexDirection: 'column', alignItems: 'center',
+                zIndex: 2, pointerEvents: 'none',
+              }}>
+                <span style={{
+                  fontSize: '6px', fontFamily: 'monospace', fontWeight: 'bold',
+                  color: room.color, letterSpacing: '1.5px', whiteSpace: 'nowrap',
+                  textShadow: `0 0 6px ${room.color}60`,
+                }}>
+                  {room.label.toUpperCase()}
+                </span>
+                <span style={{
+                  fontSize: '5px', fontFamily: 'monospace', color: 'rgba(156,163,175,0.4)',
+                  letterSpacing: '0.5px', whiteSpace: 'nowrap',
+                }}>
+                  {room.sublabel}
+                </span>
+              </div>
+
+              {/* Door opening — gap in bottom wall */}
+              <div style={{
+                position: 'absolute', bottom: '-1px',
+                left: isMeetingRoom ? '30%' : room.id === 'finanzas' ? '35%' : '40%',
+                width: '20%', height: '3px',
+                backgroundColor: '#0d1117',
+              }} />
+
+              {/* === MEETING ROOM SPECIAL CONTENT === */}
+              {isMeetingRoom && (
+                <>
+                  {/* Oval table */}
+                  <div style={{
+                    position: 'absolute',
+                    left: '20%', top: '30%', width: '60%', height: '45%',
+                    backgroundColor: '#2d1f10',
+                    borderRadius: '50%',
+                    border: `2px solid ${isCollabActive ? '#6366f1' : '#3d2d1a'}`,
+                    boxShadow: isCollabActive ? '0 0 12px rgba(99,102,241,0.3)' : '0 2px 8px rgba(0,0,0,0.5)',
+                    transition: 'border-color 0.5s, box-shadow 0.5s',
+                    zIndex: 2,
+                  }}>
+                    <div style={{
+                      position: 'absolute', inset: '15%',
+                      borderRadius: '50%',
+                      background: 'linear-gradient(135deg, rgba(255,255,255,0.04), transparent)',
+                    }} />
+                  </div>
+
+                  {/* 8 chairs around table */}
+                  {meetingChairs.map((ch, ci) => (
+                    <div
+                      key={ci}
+                      title={meetingChairLabels[ci]}
+                      style={{
+                        position: 'absolute',
+                        left: `calc(20% + ${ch.x}% * 0.6 - 4px)`,
+                        top: `calc(30% + ${ch.y}% * 0.45 - 4px)`,
+                        width: '8px', height: '8px',
+                        borderRadius: '50%',
+                        backgroundColor: '#1e1e2e',
+                        border: `1px solid rgba(99,102,241,0.4)`,
+                        zIndex: 3,
+                      }}
+                    />
+                  ))}
+
+                  {/* Meeting indicator */}
+                  {isCollabActive && (
+                    <div style={{
+                      position: 'absolute', bottom: '8%', left: '50%',
+                      transform: 'translateX(-50%)',
+                      zIndex: 5, whiteSpace: 'nowrap',
+                      padding: '2px 6px',
+                      backgroundColor: 'rgba(99,102,241,0.15)',
+                      border: '1px solid rgba(99,102,241,0.5)',
+                      borderRadius: '3px',
+                    }}>
+                      <span style={{ fontSize: '5px', fontFamily: 'monospace', color: '#818cf8', fontWeight: 'bold' }}>
+                        &#9670; {activePair.label}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Hover tooltip */}
+                  {isHoveredR && (
+                    <div style={{
+                      position: 'absolute', top: '20%', left: '50%',
+                      transform: 'translateX(-50%)',
+                      zIndex: 10, whiteSpace: 'nowrap',
+                      padding: '3px 8px',
+                      backgroundColor: 'rgba(0,0,0,0.9)',
+                      border: '1px solid #6366f1',
+                      borderRadius: '3px',
+                    }}>
+                      {collabPairs.map((cp) => (
+                        <div key={cp.label} style={{ fontSize: '5px', fontFamily: 'monospace', color: '#a5b4fc', margin: '1px 0' }}>
+                          {cp.label}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Corner plants */}
+                  {[{ l: '3%', t: '6%' }, { l: '88%', t: '6%' }].map((p, pi) => (
+                    <div key={pi} style={{ position: 'absolute', left: p.l, top: p.t }}>
+                      <div style={{ width: '6px', height: '6px', backgroundColor: '#1a6a2a', borderRadius: '50% 50% 0 50%', transform: 'rotate(-20deg)' }} />
+                      <div style={{ width: '5px', height: '5px', backgroundColor: '#1d7a30', borderRadius: '50% 0 50% 50%', marginTop: '-3px', transform: 'rotate(20deg)' }} />
+                      <div style={{ width: '5px', height: '4px', backgroundColor: '#7a5030', margin: '0 auto', borderRadius: '0 0 2px 2px' }} />
+                    </div>
+                  ))}
+                </>
+              )}
+
+              {/* === SOFIA'S OFFICE === */}
+              {room.id === 'sofia' && (
+                <>
+                  {/* Big CEO desk */}
+                  <div style={{
+                    position: 'absolute',
+                    left: '20%', top: '32%', width: '60%', height: '35%',
+                    backgroundColor: '#2d1f10',
+                    border: `2px solid ${pixelColors.sofia}40`,
+                    borderRadius: '3px',
+                    boxShadow: `0 2px 8px rgba(0,0,0,0.5), 0 0 10px ${pixelColors.sofia}15`,
+                    zIndex: 2,
+                  }}>
+                    {/* 3 monitors */}
+                    <div style={{ position: 'absolute', top: '-12px', left: '5%', right: '5%', display: 'flex', gap: '4px', justifyContent: 'center' }}>
+                      {[0,1,2].map(mi => (
+                        <div key={mi} style={{
+                          width: '18px', height: '12px',
+                          backgroundColor: '#0d1117',
+                          border: `1px solid ${pixelColors.sofia}60`,
+                          borderRadius: '1px',
+                          boxShadow: `0 0 5px ${pixelColors.sofia}30`,
+                        }}>
+                          <div style={{ width: '100%', height: '100%', background: `radial-gradient(ellipse at 50% 20%, ${pixelColors.sofia}25, transparent)` }} />
+                        </div>
+                      ))}
+                    </div>
+                    {/* Keyboard */}
+                    <div style={{
+                      position: 'absolute', bottom: '4px', left: '50%', transform: 'translateX(-50%)',
+                      width: '30px', height: '5px',
+                      backgroundColor: '#1a1a2a', border: '1px solid #333', borderRadius: '1px',
+                    }} />
+                  </div>
+                  {/* CEO chair */}
+                  <div style={{
+                    position: 'absolute',
+                    left: '50%', top: '68%', transform: 'translateX(-50%)',
+                    width: '18px', height: '10px',
+                    backgroundColor: '#1e1e2e', border: `1px solid ${pixelColors.sofia}30`,
+                    borderRadius: '0 0 5px 5px',
+                    zIndex: 2,
+                  }} />
+                  {/* Corner plants */}
+                  {[{ l: '3%', t: '8%' }, { l: '88%', t: '8%' }].map((p, pi) => (
+                    <div key={pi} style={{ position: 'absolute', left: p.l, top: p.t }}>
+                      <div style={{ width: '6px', height: '6px', backgroundColor: '#1a6a2a', borderRadius: '50% 50% 0 50%', transform: 'rotate(-20deg)' }} />
+                      <div style={{ width: '5px', height: '5px', backgroundColor: '#1d7a30', borderRadius: '50% 0 50% 50%', marginTop: '-3px', transform: 'rotate(20deg)' }} />
+                      <div style={{ width: '5px', height: '4px', backgroundColor: '#7a5030', margin: '0 auto', borderRadius: '0 0 2px 2px' }} />
+                    </div>
+                  ))}
+                </>
+              )}
+
+              {/* === TWO-PERSON ROOMS (redaccion, devlab, growth) === */}
+              {['redaccion', 'devlab', 'growth'].includes(room.id) && (
+                <div style={{
+                  position: 'absolute',
+                  left: '8%', top: '38%', right: '8%',
+                  display: 'flex', gap: '8%', justifyContent: 'center',
+                  zIndex: 2, pointerEvents: 'none',
+                }}>
+                  <Desk color={pixelColors[room.agentIds[0]] || '#888'} monitors={2} />
+                  <Desk color={pixelColors[room.agentIds[1]] || '#888'} monitors={2} />
+                </div>
+              )}
+
+              {/* === FINANZAS (single desk) === */}
+              {room.id === 'finanzas' && (
+                <div style={{
+                  position: 'absolute',
+                  left: '50%', top: '38%', transform: 'translateX(-50%)',
+                  zIndex: 2, pointerEvents: 'none',
+                }}>
+                  <Desk color={pixelColors.valentina} monitors={2} />
+                </div>
+              )}
+
+            </div>
+          );
+        })}
+
+        {/* === PIXEL CHARACTERS === */}
+        {rooms.flatMap((room) =>
+          room.agentIds.map((agentId) => {
+            const agent = agents.find(a => a.id === agentId);
+            if (!agent) return null;
+            const pos = agentRoomPos[agentId] || { rx: 50, ry: 60 };
+            // Absolute position: room top-left + relative pos within room
+            const absX = room.x + pos.rx * room.w / 100;
+            const absY = room.y + pos.ry * room.h / 100;
+            const pending = pendingCountMap[agent.id] || 0;
+            const firstName = agent.name.split(' ')[0];
+            const isActive = agent.status === 'working' || agent.status === 'analyzing';
+            const isHovered = hoveredAgent === agentId;
+            const isTypingNow = typingAgent === agentId && isActive;
 
             return (
-              <div
-                key={desk.id}
-                className="absolute transition-all duration-300"
-                style={{ top: desk.top, left: desk.left, width: desk.w, height: desk.h, zIndex: 2 }}
+              <button
+                key={agentId}
+                onClick={() => onSelectAgent(agent)}
+                onMouseEnter={() => setHoveredAgent(agentId)}
+                onMouseLeave={() => setHoveredAgent(null)}
+                className="absolute flex flex-col items-center hover:scale-110"
+                style={{
+                  left: `${absX}%`,
+                  top: `${absY}%`,
+                  transform: 'translate(-50%, -50%)',
+                  zIndex: isHovered ? 25 : 10,
+                  transition: 'transform 0.2s',
+                }}
               >
-                {/* Zone label */}
-                <div className="absolute -top-[2px] left-1/2 -translate-x-1/2 -translate-y-full z-10">
-                  <span
-                    className="inline-block rounded-full px-2.5 py-0.5 text-[8px] font-bold tracking-wider uppercase"
-                    style={{ backgroundColor: `${desk.zoneColor}15`, color: desk.zoneColor, border: `1px solid ${desk.zoneColor}30` }}
+                {/* Hover speech bubble */}
+                {isHovered && (
+                  <div
+                    className="absolute whitespace-nowrap"
+                    style={{ bottom: '100%', left: '50%', transform: 'translateX(-50%)', marginBottom: '4px', zIndex: 30 }}
                   >
-                    {desk.zone}
+                    <div style={{
+                      padding: '3px 7px',
+                      backgroundColor: 'rgba(0,0,0,0.95)',
+                      border: `1px solid ${pixelColors[agentId]}`,
+                      borderRadius: '4px',
+                      fontSize: '7px',
+                      color: '#fff',
+                      fontFamily: 'monospace',
+                      maxWidth: '120px',
+                      textOverflow: 'ellipsis',
+                      overflow: 'hidden',
+                    }}>
+                      {agent.currentTask.slice(0, 28)}...
+                    </div>
+                    <div style={{
+                      width: '4px', height: '4px',
+                      backgroundColor: 'rgba(0,0,0,0.95)',
+                      border: `1px solid ${pixelColors[agentId]}`,
+                      borderTop: 'none', borderLeft: 'none',
+                      transform: 'rotate(45deg)',
+                      margin: '-2px auto 0',
+                    }} />
+                  </div>
+                )}
+
+                {/* Typing bubble */}
+                {isTypingNow && !isHovered && (
+                  <div
+                    className="absolute whitespace-nowrap animate-bounce"
+                    style={{ bottom: '100%', left: '50%', transform: 'translateX(-50%)', marginBottom: '4px', animationDuration: '2.5s' }}
+                  >
+                    <div style={{
+                      padding: '2px 5px',
+                      backgroundColor: 'rgba(0,0,0,0.9)',
+                      border: `1px solid ${pixelColors[agentId]}80`,
+                      borderRadius: '3px',
+                      fontSize: '6px',
+                      color: pixelColors[agentId],
+                      fontFamily: 'monospace',
+                    }}>
+                      &#9679;&#9679;&#9679;
+                    </div>
+                  </div>
+                )}
+
+                {/* Active pulse dot */}
+                {isActive && (
+                  <div
+                    className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-green-500 animate-pulse"
+                    style={{ zIndex: 15, animationDuration: '1.5s' }}
+                  />
+                )}
+
+                {/* Pixel character */}
+                <PixelChar color={pixelColors[agentId] || '#888'} isTyping={isTypingNow} size={0.8} />
+
+                {/* Name tag */}
+                <div style={{ marginTop: '1px', textAlign: 'center', pointerEvents: 'none' }}>
+                  <span style={{
+                    fontSize: '6px', fontFamily: 'monospace', fontWeight: 'bold',
+                    color: pixelColors[agentId],
+                    display: 'block',
+                  }}>
+                    {firstName}
                   </span>
                 </div>
 
-                {/* Desk surface — a real desk shape */}
-                <div
-                  className={`absolute inset-0 rounded-xl transition-all duration-300 ${anyHovered ? 'shadow-lg' : ''}`}
-                  style={{
-                    background: `linear-gradient(135deg, rgba(30,41,59,0.9) 0%, rgba(15,23,42,0.95) 100%)`,
-                    border: `1px solid ${anyHovered ? desk.zoneColor + '60' : 'rgba(55,65,81,0.4)'}`,
-                    boxShadow: anyHovered ? `0 0 30px ${desk.zoneColor}15, inset 0 1px 0 rgba(255,255,255,0.03)` : 'inset 0 1px 0 rgba(255,255,255,0.03)',
-                  }}
-                >
-                  {/* Desk inner texture — monitor/screen area */}
-                  <div className="absolute top-2 left-1/2 -translate-x-1/2 flex gap-1">
-                    {deskAgents.map((_, idx) => (
-                      <div key={idx} className="w-8 h-5 rounded-sm border border-gray-700/50 bg-gray-950/60" style={{ boxShadow: `0 0 4px ${desk.zoneColor}10` }}>
-                        <div className="w-full h-[2px] rounded-full mt-1 mx-auto" style={{ width: '60%', backgroundColor: `${desk.zoneColor}40` }} />
-                        <div className="w-full h-[1px] rounded-full mt-0.5 mx-auto" style={{ width: '40%', backgroundColor: `${desk.zoneColor}20` }} />
-                      </div>
-                    ))}
-                  </div>
+                {/* Pending badge */}
+                {pending > 0 && (
+                  <span
+                    className="absolute -top-1.5 -right-1.5 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-red-500 text-[6px] font-bold text-white animate-bounce"
+                    style={{ animationDuration: '2s', zIndex: 20 }}
+                  >
+                    {pending}
+                  </span>
+                )}
 
-                  {/* Desk items — keyboard, coffee, notebook */}
-                  {deskAgents.map((_, idx) => (
-                    <div key={`items-${idx}`} className="absolute bottom-2 text-[7px] opacity-30" style={{ left: isMulti ? `${20 + idx * 45}%` : '40%' }}>
-                      ⌨️
-                    </div>
-                  ))}
-                </div>
-
-                {/* Chair(s) behind desk */}
-                <div className={`absolute -bottom-3 left-1/2 -translate-x-1/2 flex ${isMulti ? 'gap-6 sm:gap-10' : ''}`}>
-                  {deskAgents.map((_, idx) => (
-                    <div key={`chair-${idx}`} className="relative">
-                      {/* Chair back */}
-                      <div className="w-6 h-3 rounded-t-lg border border-gray-700/40 bg-gray-800/60 mx-auto" style={{ borderBottom: 'none' }} />
-                      {/* Chair seat */}
-                      <div className="w-7 h-2 rounded-b-sm border border-gray-700/40 bg-gray-800/40 mx-auto" />
-                    </div>
-                  ))}
-                </div>
-
-                {/* Agent avatars ON the desk */}
-                <div className={`absolute top-[30%] left-0 w-full flex items-center justify-center ${isMulti ? 'gap-2 sm:gap-6' : ''}`} style={{ zIndex: 5 }}>
-                  {deskAgents.map((agent) => {
-                    const pending = pendingCountMap[agent.id] || 0;
-                    const firstName = agent.name.split(' ')[0];
-                    const isActive = agent.status === 'working' || agent.status === 'analyzing';
-                    const isHovered = hoveredAgent === agent.id;
-
-                    return (
-                      <button
-                        key={agent.id}
-                        onClick={() => onSelectAgent(agent)}
-                        onMouseEnter={() => setHoveredAgent(agent.id)}
-                        onMouseLeave={() => setHoveredAgent(null)}
-                        className="relative flex flex-col items-center transition-transform duration-200 hover:scale-110 group"
-                      >
-                        {/* Glow ring for active agents */}
-                        {isActive && (
-                          <div
-                            className="absolute -inset-2 rounded-full animate-pulse opacity-30"
-                            style={{ background: `radial-gradient(circle, ${desk.zoneColor}40, transparent 70%)`, animationDuration: '2s' }}
-                          />
-                        )}
-
-                        {/* Avatar */}
-                        <div className="relative">
-                          <div
-                            className={`flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full ring-2 transition-all duration-200 ${
-                              isHovered ? 'ring-offset-2 ring-offset-gray-900 scale-110' : ''
-                            }`}
-                            style={{
-                              backgroundColor: 'rgba(15,23,42,0.9)',
-                              borderColor: desk.zoneColor,
-                              boxShadow: isHovered ? `0 0 20px ${desk.zoneColor}40, inset 0 0 0 2px ${desk.zoneColor}` : `0 0 8px ${desk.zoneColor}15, inset 0 0 0 2px ${desk.zoneColor}80`,
-                            }}
-                          >
-                            <span className="text-lg sm:text-xl">{agent.avatar}</span>
-                          </div>
-                          {/* Status indicator */}
-                          <span className="absolute -bottom-0.5 -right-0.5">
-                            <StatusDot status={agent.status} />
-                          </span>
-                          {/* Pending badge */}
-                          {pending > 0 && (
-                            <span className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[9px] font-bold text-white shadow-lg shadow-red-500/40 animate-bounce" style={{ animationDuration: '2s' }}>
-                              {pending}
-                            </span>
-                          )}
-                        </div>
-
-                        {/* Name + role */}
-                        <span className="mt-1 text-[10px] sm:text-[11px] font-bold text-gray-200">{firstName}</span>
-                        <span className="text-[8px] sm:text-[9px] font-medium" style={{ color: desk.zoneColor }}>{agent.role.split(' ')[0]}</span>
-
-                        {/* Thought bubble on hover */}
-                        {isHovered && isActive && (
-                          <div
-                            className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg px-2.5 py-1 text-[9px] text-white shadow-xl"
-                            style={{ backgroundColor: 'rgba(15,23,42,0.95)', border: `1px solid ${desk.zoneColor}40`, zIndex: 20 }}
-                          >
-                            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 rotate-45" style={{ backgroundColor: 'rgba(15,23,42,0.95)', borderRight: `1px solid ${desk.zoneColor}40`, borderBottom: `1px solid ${desk.zoneColor}40` }} />
-                            {agent.currentTask.length > 35 ? agent.currentTask.slice(0, 33) + '..' : agent.currentTask}
-                          </div>
-                        )}
-                      </button>
-                    );
-                  })}
-
-                  {/* Collaboration indicator for shared desks */}
-                  {isMulti && (
-                    <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-1 rounded-full border border-gray-700/30 bg-gray-800/60 px-2 py-0.5">
-                      <span className="text-[7px]">🤝</span>
-                      <span className="text-[7px] text-gray-500">Colaborando</span>
-                    </div>
-                  )}
-                </div>
-              </div>
+                {/* Hover glow ring */}
+                {isHovered && (
+                  <div
+                    className="absolute inset-0 rounded-lg pointer-events-none"
+                    style={{ boxShadow: `0 0 14px ${pixelColors[agentId]}60` }}
+                  />
+                )}
+              </button>
             );
-          })}
+          })
+        )}
 
-          {/* Glass partition lines */}
-          <div className="absolute top-[25%] left-[36%] w-[0.5px] h-[30%] bg-gradient-to-b from-transparent via-gray-600/20 to-transparent" />
-          <div className="absolute top-[25%] left-[64%] w-[0.5px] h-[30%] bg-gradient-to-b from-transparent via-gray-600/20 to-transparent" />
-          <div className="absolute top-[53%] left-[10%] w-[80%] h-[0.5px] bg-gradient-to-r from-transparent via-gray-600/15 to-transparent" />
+        {/* === HALLWAY ELEMENTS === */}
+        {/* Coffee machine */}
+        <div style={{ position: 'absolute', left: '45%', top: '36%', zIndex: 5 }}>
+          <div style={{ width: '10px', height: '12px', backgroundColor: '#333', border: '1px solid #555', borderRadius: '2px 2px 0 0' }}>
+            <div style={{ width: '5px', height: '4px', backgroundColor: '#c44', borderRadius: '50%', margin: '1px auto', boxShadow: '0 0 3px #c44' }} />
+          </div>
         </div>
+        {/* Water cooler */}
+        <div style={{ position: 'absolute', left: '45%', top: '68%', zIndex: 5 }}>
+          <div style={{ width: '8px', height: '7px', backgroundColor: '#5af', borderRadius: '4px 4px 2px 2px', border: '1px solid #28a', margin: '0 auto', boxShadow: '0 0 4px rgba(80,160,255,0.4)' }} />
+          <div style={{ width: '10px', height: '10px', backgroundColor: '#444', borderRadius: '1px', margin: '0 auto', border: '1px solid #555' }} />
+        </div>
+
       </div>
 
       {/* ====== Agent Status Strip ====== */}
       <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
         {agents.map((agent) => {
           const isActive = agent.status === 'working';
+          const color = pixelColors[agent.id] || '#888';
+          const isTypingNow = typingAgent === agent.id;
           return (
             <button
               key={agent.id}
               onClick={() => onSelectAgent(agent)}
-              className={`flex flex-col items-center gap-1 rounded-xl border p-2 transition-all hover:scale-105 ${
-                isActive ? 'border-green-500/30 bg-green-500/5' : 'border-gray-800 bg-gray-900/40'
-              }`}
+              className="flex flex-col items-center gap-1 rounded-lg border p-2 transition-all hover:scale-105"
+              style={{
+                borderColor: isTypingNow ? color + '60' : isActive ? '#22c55e30' : '#1f2937',
+                backgroundColor: isTypingNow ? color + '10' : isActive ? 'rgba(34,197,94,0.04)' : 'rgba(17,24,39,0.4)',
+              }}
             >
-              <span className="text-lg">{agent.avatar}</span>
-              <span className="text-[9px] font-semibold text-gray-300">{agent.name.split(' ')[0]}</span>
-              <span className={`text-[8px] px-1.5 py-0.5 rounded-full font-medium ${
-                agent.status === 'working' ? 'bg-green-500/20 text-green-400' :
-                agent.status === 'analyzing' ? 'bg-blue-500/20 text-blue-400' :
+              <div className="scale-75">
+                <PixelChar color={color} isTyping={isTypingNow} size={1} />
+              </div>
+              <span className="text-[8px] font-mono font-bold" style={{ color }}>{agent.name.split(' ')[0]}</span>
+              <span className={`text-[7px] px-1 py-0.5 rounded font-mono ${
+                agent.status === 'working'   ? 'bg-green-500/20 text-green-400' :
+                agent.status === 'analyzing' ? 'bg-blue-500/20 text-blue-400'  :
                 'bg-gray-700/40 text-gray-500'
               }`}>
-                {agent.status === 'working' ? 'Activo' : agent.status === 'analyzing' ? 'Analizando' : 'Standby'}
+                {agent.status === 'working' ? 'ON' : agent.status === 'analyzing' ? 'SCAN' : 'IDLE'}
               </span>
             </button>
           );
         })}
       </div>
 
-      {/* ====== Mensajes del Equipo ====== */}
+      {/* ====== Terminal del Equipo ====== */}
       <div className="rounded-2xl border border-gray-800 bg-gray-900/60 p-6">
-        <h3 className="mb-4 flex items-center gap-2 text-sm font-bold text-white">
-          <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-purple-500/10 text-xs">💬</span>
-          Mensajes del Equipo
+        <h3 className="mb-4 flex items-center gap-2 text-sm font-bold text-white font-mono">
+          <span className="text-green-400">&gt;_</span> Terminal del Equipo
         </h3>
         <div className="grid gap-3 sm:grid-cols-2">
           {agents.map((agent) => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const msg = (agent as any).messageToOwner as string | undefined;
+            const color = pixelColors[agent.id] || '#888';
             return (
               <div
                 key={agent.id}
-                className={`rounded-xl border ${DEPT_BORDER[agent.department]} bg-gray-800/40 p-4 transition-all hover:bg-gray-800/70 cursor-pointer group`}
+                className="rounded-lg border border-gray-700/50 bg-gray-950/80 p-3 transition-all hover:border-gray-600 cursor-pointer font-mono"
                 onClick={() => onSelectAgent(agent)}
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xl transition-transform group-hover:scale-110">{agent.avatar}</span>
-                  <div>
-                    <p className="text-xs font-bold text-white">{agent.name}</p>
-                    <p className={`text-[10px] ${DEPT_TEXT[agent.department]}`}>{agent.department}</p>
+                  <div className="scale-50 -mx-1">
+                    <PixelChar color={color} isTyping={false} size={1} />
                   </div>
-                  <StatusDot status={agent.status} />
+                  <div>
+                    <p className="text-[10px] font-bold" style={{ color }}>{agent.name}</p>
+                    <p className="text-[8px] text-gray-600">{agent.department}</p>
+                  </div>
+                  <div className="ml-auto"><StatusDot status={agent.status} /></div>
                 </div>
-                <p className="text-xs text-gray-400 italic leading-relaxed">
-                  {msg || `"Trabajando en: ${agent.currentTask.length > 60 ? agent.currentTask.slice(0, 60) + '...' : agent.currentTask}"`}
+                <p className="text-[10px] text-green-400/70 leading-relaxed">
+                  <span className="text-gray-600">&gt; </span>
+                  {msg || `Trabajando en: ${agent.currentTask.length > 50 ? agent.currentTask.slice(0, 48) + '..' : agent.currentTask}`}
                 </p>
               </div>
             );
           })}
         </div>
       </div>
+
     </div>
   );
 }
@@ -1872,6 +2236,552 @@ function ActividadSection() {
 }
 
 /* ------------------------------------------------------------------ */
+/*  SECTION: CALENDARIO                                                 */
+/* ------------------------------------------------------------------ */
+
+function CalendarioSection() {
+  const [selectedDate, setSelectedDate] = useState<string | null>(null);
+  const [currentMonth, setCurrentMonth] = useState(() => { const d = new Date(); return { year: d.getFullYear(), month: d.getMonth() }; });
+  const [completedTasks, setCompletedTasks] = useState<Record<string, 'verified' | 'failed' | 'checking'>>({});
+  const [reportData, setReportData] = useState<Record<string, string>>({});
+  const [loadingReport, setLoadingReport] = useState<string | null>(null);
+  const [expandedTask, setExpandedTask] = useState<string | null>(null);
+  const [taskInputs, setTaskInputs] = useState<Record<string, string>>({});
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [dynamicStatus, setDynamicStatus] = useState<any>(null);
+  const today = new Date();
+
+  // Load saved task inputs from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('nexo_task_inputs');
+      if (saved) setTaskInputs(JSON.parse(saved));
+    } catch { /* ignore */ }
+    // Load dynamic status from Sofia's daily updates
+    fetch('/status.json').then(r => r.ok ? r.json() : null).then(d => { if (d) setDynamicStatus(d); }).catch(() => {});
+  }, []);
+
+  const saveTaskInput = (key: string, value: string) => {
+    const updated = { ...taskInputs, [key]: value };
+    setTaskInputs(updated);
+    try { localStorage.setItem('nexo_task_inputs', JSON.stringify(updated)); } catch { /* ignore */ }
+  };
+
+  const generateReport = async (taskKey: string, weekNum: number, reportType: string) => {
+    setLoadingReport(taskKey);
+    try {
+      const prompt = reportType === 'semanal'
+        ? `Sos Sofia, CEO de Nexo Articles. Genera el informe semanal #${weekNum} para Nacho. Incluí: 1) Estado general del negocio 2) Articulos publicados (150 base + cron diario) 3) Estado SEO e indexacion en Google 4) Metricas clave 5) Proximos pasos. Se breve y concreta, usa bullet points. El sitio es ia-negocio.vercel.app con 150+ articulos de IA para negocios en español.`
+        : reportType === 'mensual'
+        ? `Sos Sofia, CEO de Nexo Articles. Genera el informe mensual para Nacho. Incluí: 1) Resumen ejecutivo del mes 2) Crecimiento de contenido 3) Trafico organico y tendencias SEO 4) Estado de monetizacion (AdSense/afiliados) 5) Recomendaciones estrategicas 6) Plan para el proximo mes. Se concreta. El sitio es ia-negocio.vercel.app.`
+        : `Sos Sofia, CEO de Nexo Articles. Genera el informe trimestral para Nacho. Incluí: 1) Resumen de 3 meses 2) Metricas de crecimiento 3) Ingresos generados 4) ROI del proyecto 5) Evaluacion de replicar el modelo en Nexo Web, Nexo Trade y Melococo 6) Plan Q2. Se concreta.`;
+      const res = await fetch('/api/agent-action', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ agentId: 'sofia', task: prompt }),
+      });
+      const data = await res.json();
+      if (data.response) {
+        setReportData(prev => ({ ...prev, [taskKey]: data.response }));
+      } else {
+        setReportData(prev => ({ ...prev, [taskKey]: 'Error: No se pudo generar el informe. Verifica que tengas credito en la API.' }));
+      }
+    } catch {
+      setReportData(prev => ({ ...prev, [taskKey]: 'Error de conexion. Intenta de nuevo.' }));
+    }
+    setLoadingReport(null);
+  };
+  const todayStr = today.toISOString().split('T')[0];
+
+  // Load completed tasks from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('nexo_calendar_completed');
+      if (saved) setCompletedTasks(JSON.parse(saved));
+    } catch { /* ignore */ }
+  }, []);
+
+  const saveCompleted = (updated: Record<string, 'verified' | 'failed' | 'checking'>) => {
+    setCompletedTasks(updated);
+    try { localStorage.setItem('nexo_calendar_completed', JSON.stringify(updated)); } catch { /* ignore */ }
+  };
+
+  const [verifyMsg, setVerifyMsg] = useState<Record<string, string>>({});
+
+  const verifyTask = async (taskKey: string, task: { link?: string; section?: string; task: string; agent: string; inputs?: { label: string; placeholder: string; inputKey: string }[] }) => {
+    const updated = { ...completedTasks, [taskKey]: 'checking' as const };
+    setCompletedTasks(updated);
+    setVerifyMsg(prev => ({ ...prev, [taskKey]: '' }));
+
+    await new Promise(r => setTimeout(r, 1200)); // Simular verificacion
+
+    // Si la tarea tiene inputs, verificar que esten completos y con formato valido
+    if (task.inputs && task.inputs.length > 0) {
+      const missing: string[] = [];
+      const invalid: string[] = [];
+
+      for (const inp of task.inputs) {
+        const val = (taskInputs[inp.inputKey] || '').trim();
+        if (!val) {
+          missing.push(inp.label);
+          continue;
+        }
+        // Validaciones de formato segun tipo
+        if (inp.inputKey === 'paypal_email') {
+          const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (!emailRegex.test(val)) {
+            invalid.push(`${inp.label}: "${val}" no es un email valido. Necesito tu email real de PayPal.`);
+          }
+        } else if (inp.inputKey === 'affiliate_jasper') {
+          if (!val.startsWith('https://') || !val.toLowerCase().includes('jasper')) {
+            invalid.push(`${inp.label}: el link debe ser de Jasper (contener "jasper" en la URL). Lo que pusiste no es un link de afiliado de Jasper. Entra a jasper.ai/partners, registrate, y copia tu link de referido.`);
+          }
+        } else if (inp.inputKey === 'affiliate_canva') {
+          if (!val.startsWith('https://') || (!val.toLowerCase().includes('canva') && !val.toLowerCase().includes('pxf.io'))) {
+            invalid.push(`${inp.label}: el link debe ser de Canva (contener "canva" o "pxf.io" en la URL). Lo que pusiste no es un link de afiliado de Canva. Entra a canva.com/affiliates, registrate, y copia tu link.`);
+          }
+        } else if (inp.inputKey === 'affiliate_hostinger') {
+          if (!val.startsWith('https://') || !val.toLowerCase().includes('hostinger')) {
+            invalid.push(`${inp.label}: el link debe ser de Hostinger (contener "hostinger" en la URL). Lo que pusiste no es un link de afiliado de Hostinger. Entra a hostinger.com/affiliates, registrate, y copia tu link.`);
+          }
+        } else if (inp.inputKey === 'adsense_code') {
+          if (!/^ca-pub-\d{10,20}$/.test(val)) {
+            invalid.push(`${inp.label}: debe tener formato "ca-pub-" seguido de 10-20 numeros. Ej: ca-pub-1234567890123456`);
+          }
+        } else if (inp.inputKey === 'adsense_cbu') {
+          if (val.length !== 22 || !/^\d{22}$/.test(val)) {
+            invalid.push(`${inp.label}: debe ser un CBU de exactamente 22 digitos numericos`);
+          }
+        }
+      }
+
+      if (missing.length > 0) {
+        const u = { ...completedTasks, [taskKey]: 'failed' as const };
+        saveCompleted(u);
+        setVerifyMsg(prev => ({ ...prev, [taskKey]: `Te falta completar: ${missing.join(', ')}. Toca "Como hacer?" y completa los campos.` }));
+        return;
+      }
+      if (invalid.length > 0) {
+        const u = { ...completedTasks, [taskKey]: 'failed' as const };
+        saveCompleted(u);
+        setVerifyMsg(prev => ({ ...prev, [taskKey]: invalid.join('. ') }));
+        return;
+      }
+
+      // Todo completo y formato valido
+      const u = { ...completedTasks, [taskKey]: 'verified' as const };
+      saveCompleted(u);
+      setVerifyMsg(prev => ({ ...prev, [taskKey]: `Datos verificados correctamente. ${task.agent} ya tiene acceso.` }));
+      return;
+    }
+
+    // Tareas sin inputs — verificar por tipo
+    if (task.task.includes('Informe')) {
+      // Informes: verificar si hay reporte generado
+      if (reportData[taskKey]) {
+        const u = { ...completedTasks, [taskKey]: 'verified' as const };
+        saveCompleted(u);
+        setVerifyMsg(prev => ({ ...prev, [taskKey]: 'Informe leido.' }));
+      } else {
+        const u = { ...completedTasks, [taskKey]: 'failed' as const };
+        saveCompleted(u);
+        setVerifyMsg(prev => ({ ...prev, [taskKey]: 'Primero tenes que tocar "Ver informe" para generarlo y leerlo.' }));
+      }
+      return;
+    }
+
+    if (task.task.includes('credito API')) {
+      try {
+        const res = await fetch('/api/agent-action', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ agentId: 'sofia', task: 'Di OK en una palabra' }) });
+        if (res.ok) {
+          const u = { ...completedTasks, [taskKey]: 'verified' as const };
+          saveCompleted(u);
+          setVerifyMsg(prev => ({ ...prev, [taskKey]: 'API funcionando correctamente. Hay credito disponible.' }));
+        } else {
+          const u = { ...completedTasks, [taskKey]: 'failed' as const };
+          saveCompleted(u);
+          setVerifyMsg(prev => ({ ...prev, [taskKey]: 'La API no responde. Recarga credito en console.anthropic.com/settings/billing' }));
+        }
+      } catch {
+        const u = { ...completedTasks, [taskKey]: 'failed' as const };
+        saveCompleted(u);
+        setVerifyMsg(prev => ({ ...prev, [taskKey]: 'Error de conexion. Verifica tu credito.' }));
+      }
+      return;
+    }
+
+    // Default — tareas sin requisitos especiales
+    const u = { ...completedTasks, [taskKey]: 'verified' as const };
+    saveCompleted(u);
+    setVerifyMsg(prev => ({ ...prev, [taskKey]: 'Completado.' }));
+  };
+
+  const resetTask = (taskKey: string) => {
+    const updated = { ...completedTasks };
+    delete updated[taskKey];
+    saveCompleted(updated);
+  };
+
+  // Tareas por fecha (key = YYYY-MM-DD)
+  type CalTask = { agent: string; avatar: string; task: string; priority: 'alta' | 'media' | 'baja'; link?: string; section?: string; steps?: string[]; inputs?: { label: string; placeholder: string; inputKey: string }[] };
+  const allTasks: Record<string, CalTask[]> = {};
+
+  const addTask = (daysFromNow: number, t: CalTask) => {
+    const d = new Date(today.getTime() + daysFromNow * 86400000);
+    const key = d.toISOString().split('T')[0];
+    if (!allTasks[key]) allTasks[key] = [];
+    allTasks[key].push(t);
+  };
+
+  // SOLO tareas que Nacho tiene que hacer personalmente + informes del CEO
+
+  // Viernes — Informe semanal de Sofia (CEO) cada viernes por 12 semanas
+  for (let w = 0; w < 12; w++) {
+    const daysUntilFriday = ((5 - today.getDay()) + 7) % 7 || 7;
+    addTask(daysUntilFriday + (w * 7), { agent: 'Sofia', avatar: '👩‍💼', task: `Informe semanal #${w + 1} — resumen de operaciones`, priority: 'media', section: 'kpis', steps: ['Toca "Ver informe" para que Sofia genere el reporte en tiempo real', 'Revisa los numeros y el estado general', 'Si todo esta bien, toca "Ya la hice" para marcar como leido'] });
+  }
+
+  // Semana 2 — Afiliados
+  addTask(14, { agent: 'Tomas', avatar: '🤝', task: 'Registrarte en Jasper AI como afiliado', priority: 'alta', link: 'https://www.jasper.ai/partners',
+    steps: ['Abri el link de abajo (Jasper Partners)', 'Registrate con tu email y nombre', 'Te van a aprobar en 1-3 dias', 'Cuando te aprueben, entra a tu panel de afiliado', 'Copia tu link de referido (algo como jasper.ai?ref=TUCODIGO)', 'Pegalo abajo para que Tomas lo inserte en los articulos'],
+    inputs: [{ label: 'Tu link de afiliado Jasper', placeholder: 'https://jasper.ai?ref=...', inputKey: 'affiliate_jasper' }]
+  });
+  addTask(14, { agent: 'Tomas', avatar: '🤝', task: 'Registrarte en Canva como afiliado', priority: 'alta', link: 'https://www.canva.com/affiliates/',
+    steps: ['Abri el link de Canva Affiliates', 'Toca "Join Now" o "Registrarse"', 'Completa con tu email y datos', 'Espera aprobacion (1-5 dias)', 'Cuando te aprueben, copia tu link de referido', 'Pegalo abajo'],
+    inputs: [{ label: 'Tu link de afiliado Canva', placeholder: 'https://canva.pxf.io/...', inputKey: 'affiliate_canva' }]
+  });
+  addTask(15, { agent: 'Tomas', avatar: '🤝', task: 'Registrarte en Hostinger como afiliado', priority: 'alta', link: 'https://www.hostinger.com/affiliates',
+    steps: ['Abri el link de Hostinger Affiliates', 'Toca "Sign Up" o "Registrarse"', 'Pone tu email, nombre y URL del sitio: ia-negocio.vercel.app', 'Espera aprobacion', 'Copia tu link de referido y pegalo abajo'],
+    inputs: [{ label: 'Tu link de afiliado Hostinger', placeholder: 'https://hostinger.com?ref=...', inputKey: 'affiliate_hostinger' }]
+  });
+
+  // Semana 3 — PayPal
+  addTask(21, { agent: 'Valentina', avatar: '💰', task: 'Crear cuenta de PayPal y conectar tu banco', priority: 'alta', link: 'https://www.paypal.com/ar/webapps/mpp/account-selection',
+    steps: ['Abri paypal.com y toca "Registrarse"', 'Elegi cuenta "Personal"', 'Pone tu email, nombre y crea una contrasena', 'Verifica tu email (te llega un mail)', 'Dentro de PayPal anda a "Cartera" o "Wallet"', 'Toca "Vincular banco" y pone tu CBU', 'Copia tu email de PayPal y pegalo abajo'],
+    inputs: [{ label: 'Tu email de PayPal', placeholder: 'tu-email@gmail.com', inputKey: 'paypal_email' }]
+  });
+
+  // Mes 2 — AdSense
+  addTask(45, { agent: 'Valentina', avatar: '💰', task: 'Aplicar a Google AdSense', priority: 'alta', link: 'https://adsense.google.com',
+    steps: ['Abri adsense.google.com con tu Gmail', 'Toca "Empezar"', 'URL del sitio: ia-negocio.vercel.app', 'Pone tu nombre completo y direccion', 'Acepta los terminos', 'Te van a dar un codigo de verificacion — pegalo abajo', 'Google tarda 2-14 dias en aprobar'],
+    inputs: [
+      { label: 'Codigo de AdSense (ca-pub-XXXXXXXXXX)', placeholder: 'ca-pub-1234567890', inputKey: 'adsense_code' },
+      { label: 'CBU donde Google te paga', placeholder: '0000000000000000000000', inputKey: 'adsense_cbu' },
+    ]
+  });
+
+  // Reportes mensuales
+  addTask(30, { agent: 'Sofia', avatar: '👩‍💼', task: 'Informe mensual #1 — trafico, posicionamiento, estado general', priority: 'alta', section: 'kpis', steps: ['Toca "Ver informe" para que Sofia genere el reporte mensual', 'Revisa trafico, SEO y estado de monetizacion'] });
+  addTask(60, { agent: 'Sofia', avatar: '👩‍💼', task: 'Informe mensual #2 — primeros ingresos y proyeccion', priority: 'alta', section: 'kpis', steps: ['Toca "Ver informe" para el segundo reporte mensual'] });
+  addTask(90, { agent: 'Sofia', avatar: '👩‍💼', task: 'Informe trimestral — evaluar replicar en Nexo Web, Nexo Trade, Melococo', priority: 'alta', section: 'kpis', steps: ['Toca "Ver informe" para el reporte trimestral', 'Sofia va a evaluar si conviene replicar el modelo en tus otros negocios'] });
+
+  // Recargar API
+  addTask(50, { agent: 'Carlos', avatar: '💻', task: 'Verificar credito API Claude y recargar si hace falta', priority: 'media', link: 'https://console.anthropic.com/settings/billing',
+    steps: ['Abri el link de Anthropic Billing', 'Fijate cuanto credito te queda', 'Si queda menos de $1, toca "Add credits" y carga $5 mas', 'Si queda mas de $1, no hagas nada'],
+  });
+
+  // Add dynamic tasks from Sofia's daily status.json
+  if (dynamicStatus?.calendarTasks) {
+    for (const dt of dynamicStatus.calendarTasks) {
+      const taskDate = new Date(dt.date);
+      const diffDays = Math.round((taskDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+      if (diffDays >= 0 && diffDays <= 120) {
+        const key = dt.date;
+        if (!allTasks[key]) allTasks[key] = [];
+        const exists = allTasks[key].some(t => t.task === dt.task);
+        if (!exists) {
+          allTasks[key].push({
+            agent: dt.agent || 'Sofia',
+            avatar: dt.agent === 'Marco' ? '✍️' : dt.agent === 'Tomas' ? '🤝' : dt.agent === 'Luna' ? '🔍' : '👩‍💼',
+            task: dt.task,
+            priority: (dt.priority || 'media') as 'alta' | 'media' | 'baja',
+            steps: ['Tarea generada automaticamente por Sofia basada en el estado actual del proyecto'],
+          });
+        }
+      }
+    }
+  }
+
+  // Calendar grid
+  const { year, month } = currentMonth;
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const startDow = firstDay.getDay(); // 0=Sun
+  const daysInMonth = lastDay.getDate();
+  const monthName = firstDay.toLocaleDateString('es-AR', { month: 'long', year: 'numeric' });
+
+  const prevMonth = () => setCurrentMonth(p => p.month === 0 ? { year: p.year - 1, month: 11 } : { year: p.year, month: p.month - 1 });
+  const nextMonth = () => setCurrentMonth(p => p.month === 11 ? { year: p.year + 1, month: 0 } : { year: p.year, month: p.month + 1 });
+
+  const days: (number | null)[] = [];
+  for (let i = 0; i < startDow; i++) days.push(null);
+  for (let i = 1; i <= daysInMonth; i++) days.push(i);
+
+  const getDateStr = (day: number) => `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+  const tasksForSelected = selectedDate ? (allTasks[selectedDate] || []) : [];
+
+  const priorityColor = { alta: 'bg-red-500/20 text-red-400 border-red-500/30', media: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30', baja: 'bg-blue-500/20 text-blue-400 border-blue-500/30' };
+  const priorityDot = { alta: 'bg-red-500', media: 'bg-yellow-500', baja: 'bg-blue-500' };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-2xl font-extrabold text-white">Calendario</h2>
+        <p className="text-sm text-gray-500">Toca un dia para ver las tareas. Los puntos indican tareas pendientes.</p>
+      </div>
+
+      {/* Calendar grid */}
+      <div className="rounded-2xl border border-gray-800 bg-gray-900/60 p-5">
+        {/* Month nav */}
+        <div className="flex items-center justify-between mb-4">
+          <button onClick={prevMonth} className="rounded-lg border border-gray-700 bg-gray-800 px-3 py-1.5 text-sm text-gray-300 hover:bg-gray-700 transition-colors">←</button>
+          <h3 className="text-lg font-bold text-white capitalize">{monthName}</h3>
+          <button onClick={nextMonth} className="rounded-lg border border-gray-700 bg-gray-800 px-3 py-1.5 text-sm text-gray-300 hover:bg-gray-700 transition-colors">→</button>
+        </div>
+
+        {/* Day headers */}
+        <div className="grid grid-cols-7 gap-1 mb-2">
+          {['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'].map(d => (
+            <div key={d} className="text-center text-[10px] font-semibold text-gray-500 uppercase py-1">{d}</div>
+          ))}
+        </div>
+
+        {/* Day cells */}
+        <div className="grid grid-cols-7 gap-1">
+          {days.map((day, i) => {
+            if (day === null) return <div key={`e${i}`} />;
+            const dateStr = getDateStr(day);
+            const dateObj = new Date(year, month, day);
+            const isPast = dateObj.toDateString() !== today.toDateString() && dateObj < today;
+            const hasTasks = allTasks[dateStr] && allTasks[dateStr].length > 0;
+            const isToday = dateStr === todayStr;
+            const isSelected = dateStr === selectedDate;
+            const taskList = allTasks[dateStr] || [];
+            const highestPriority = taskList.length > 0 ? (taskList.some(t => t.priority === 'alta') ? 'alta' : taskList.some(t => t.priority === 'media') ? 'media' : 'baja') : null;
+
+            return (
+              <button
+                key={day}
+                onClick={() => setSelectedDate(isSelected ? null : dateStr)}
+                className={`relative flex flex-col items-center justify-center rounded-xl py-2.5 transition-all ${
+                  isSelected ? 'bg-blue-600 ring-2 ring-blue-400 scale-105' :
+                  isToday ? 'bg-gray-800 ring-1 ring-blue-500/50' :
+                  isPast ? 'bg-gray-900/20 opacity-40' :
+                  hasTasks ? 'bg-gray-800/60 hover:bg-gray-800 hover:scale-105' :
+                  'bg-gray-900/30 hover:bg-gray-800/40'
+                }`}
+              >
+                <span className={`text-sm font-semibold ${
+                  isSelected ? 'text-white' :
+                  isToday ? 'text-blue-400' :
+                  isPast ? 'text-gray-600' :
+                  'text-gray-300'
+                }`}>
+                  {day}
+                </span>
+                {/* Past days — show check if had tasks (completed) */}
+                {isPast && hasTasks && (
+                  <span className="text-[9px] text-green-500/60 mt-0.5">✓</span>
+                )}
+                {/* Future/today — task indicator dots */}
+                {!isPast && hasTasks && (
+                  <div className="flex gap-0.5 mt-0.5">
+                    {taskList.length <= 3 ? taskList.map((t, j) => (
+                      <span key={j} className={`h-1.5 w-1.5 rounded-full ${isSelected ? 'bg-white' : priorityDot[t.priority]}`} />
+                    )) : (
+                      <>
+                        <span className={`h-1.5 w-1.5 rounded-full ${isSelected ? 'bg-white' : priorityDot[highestPriority || 'baja']}`} />
+                        <span className={`text-[8px] ${isSelected ? 'text-white' : 'text-gray-500'}`}>+{taskList.length}</span>
+                      </>
+                    )}
+                  </div>
+                )}
+                {isToday && !isSelected && <span className="absolute -top-1 -right-1 text-[8px]">📍</span>}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Selected day tasks */}
+      {selectedDate && (
+        <div className="rounded-2xl border border-gray-800 bg-gray-900/60 p-5">
+          <h3 className="mb-4 flex items-center gap-2 text-sm font-bold text-white capitalize">
+            📅 {new Date(selectedDate + 'T12:00:00').toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
+            {tasksForSelected.length > 0 && (
+              <span className="ml-auto rounded-full bg-blue-500/20 border border-blue-500/30 px-2.5 py-0.5 text-[10px] text-blue-400">{tasksForSelected.length} tarea{tasksForSelected.length > 1 ? 's' : ''}</span>
+            )}
+          </h3>
+
+          {tasksForSelected.length === 0 ? (
+            <div className="text-center py-8">
+              <p className="text-2xl mb-2">🏖️</p>
+              <p className="text-sm text-gray-500">Sin tareas este dia. Relajate.</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {tasksForSelected.map((task, i) => {
+                const taskKey = `${selectedDate}_${i}`;
+                const status = completedTasks[taskKey];
+                return (
+                <div key={i} className={`flex items-start gap-3 rounded-xl border p-4 transition-all ${
+                  status === 'verified' ? 'border-green-500/40 bg-green-500/5' :
+                  status === 'failed' ? 'border-red-500/40 bg-red-500/5' :
+                  'border-gray-800 bg-gray-800/30 hover:bg-gray-800/60'
+                }`}>
+                  <span className="mt-0.5 text-xl">{status === 'verified' ? '✅' : status === 'failed' ? '❌' : task.avatar}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className={`text-sm font-semibold ${status === 'verified' ? 'text-green-400 line-through' : 'text-white'}`}>{task.task}</p>
+                    <p className="mt-1 text-[11px] text-gray-500">{task.agent}</p>
+                    {status === 'verified' && <p className="mt-1 text-[10px] text-green-500">✓ Verificado por {task.agent}: {verifyMsg[taskKey] || 'Completado'}</p>}
+                    {status === 'failed' && <p className="mt-1 text-[10px] text-red-400">✗ {task.agent} dice: {verifyMsg[taskKey] || 'No se pudo confirmar'}</p>}
+                    {/* Expandable guide */}
+                    {expandedTask === taskKey && (
+                      <div className="mt-3 space-y-3">
+                        {/* Step by step */}
+                        {task.steps && task.steps.length > 0 && (
+                          <div className="rounded-xl border border-cyan-500/20 bg-cyan-500/5 p-4">
+                            <p className="text-[11px] font-bold text-cyan-400 mb-2">📝 Paso a paso:</p>
+                            <ol className="space-y-1.5">
+                              {task.steps.map((step, si) => (
+                                <li key={si} className="flex gap-2 text-[11px] text-gray-300">
+                                  <span className="flex-shrink-0 flex h-5 w-5 items-center justify-center rounded-full bg-cyan-500/20 text-[9px] font-bold text-cyan-400">{si + 1}</span>
+                                  <span className="pt-0.5">{step}</span>
+                                </li>
+                              ))}
+                            </ol>
+                          </div>
+                        )}
+                        {/* Input fields */}
+                        {task.inputs && task.inputs.length > 0 && (
+                          <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-4 space-y-3">
+                            <p className="text-[11px] font-bold text-amber-400">📋 Pega aca lo que sacaste:</p>
+                            {task.inputs.map((inp) => (
+                              <div key={inp.inputKey}>
+                                <label className="block text-[10px] text-gray-400 mb-1">{inp.label}</label>
+                                <div className="flex gap-2">
+                                  <input
+                                    type="text"
+                                    placeholder={inp.placeholder}
+                                    value={taskInputs[inp.inputKey] || ''}
+                                    onChange={(e) => saveTaskInput(inp.inputKey, e.target.value)}
+                                    className="flex-1 rounded-lg border border-gray-700 bg-gray-900 px-3 py-2 text-xs text-white placeholder-gray-600 focus:border-amber-500 focus:outline-none"
+                                  />
+                                  {taskInputs[inp.inputKey] && (
+                                    <span className="flex items-center text-[9px] text-green-400">✓ Guardado</span>
+                                  )}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                    {/* Report content */}
+                    {reportData[taskKey] && (
+                      <div className="mt-3 rounded-xl border border-purple-500/20 bg-purple-500/5 p-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs">📋</span>
+                          <span className="text-[11px] font-bold text-purple-400">Informe de Sofia — CEO</span>
+                        </div>
+                        <div className="text-xs text-gray-300 leading-relaxed whitespace-pre-wrap">{reportData[taskKey]}</div>
+                      </div>
+                    )}
+                  </div>
+                  <div className="flex flex-col items-end gap-2">
+                    <span className={`rounded-full border px-2.5 py-0.5 text-[10px] font-semibold ${
+                      status === 'verified' ? 'bg-green-500/20 text-green-400 border-green-500/30' :
+                      status === 'failed' ? 'bg-red-500/20 text-red-400 border-red-500/30' :
+                      priorityColor[task.priority]
+                    }`}>
+                      {status === 'verified' ? 'hecho' : status === 'failed' ? 'error' : task.priority}
+                    </span>
+                    <div className="flex flex-col gap-1.5">
+                      {/* Guide toggle */}
+                      {(task.steps || task.inputs) && status !== 'verified' && (
+                        <button onClick={() => setExpandedTask(expandedTask === taskKey ? null : taskKey)}
+                          className={`rounded-lg border px-3 py-1.5 text-[10px] font-semibold transition-colors ${
+                            expandedTask === taskKey
+                              ? 'border-cyan-500/40 bg-cyan-500/20 text-cyan-300'
+                              : 'border-cyan-500/20 bg-cyan-500/5 text-cyan-400 hover:bg-cyan-500/10'
+                          }`}>
+                          {expandedTask === taskKey ? 'Cerrar guia ✕' : 'Como hacer? 📝'}
+                        </button>
+                      )}
+                      {/* Report button for Informe tasks */}
+                      {task.task.includes('Informe') && !reportData[taskKey] && loadingReport !== taskKey && (
+                        <button onClick={() => {
+                          const weekMatch = task.task.match(/#(\d+)/);
+                          const weekNum = weekMatch ? parseInt(weekMatch[1]) : 1;
+                          const type = task.task.includes('trimestral') ? 'trimestral' : task.task.includes('mensual') ? 'mensual' : 'semanal';
+                          generateReport(taskKey, weekNum, type);
+                        }}
+                          className="rounded-lg border border-purple-500/30 bg-purple-500/10 px-3 py-1.5 text-[10px] font-semibold text-purple-400 hover:bg-purple-500/20 transition-colors">
+                          Ver informe 📋
+                        </button>
+                      )}
+                      {loadingReport === taskKey && (
+                        <span className="rounded-lg border border-purple-500/20 bg-purple-500/5 px-3 py-1.5 text-[10px] font-semibold text-purple-300 animate-pulse">
+                          Generando informe...
+                        </span>
+                      )}
+                      {task.link && status !== 'verified' && (
+                        <a href={task.link} target="_blank" rel="noopener noreferrer"
+                          className="rounded-lg border border-blue-500/30 bg-blue-500/10 px-3 py-1.5 text-[10px] font-semibold text-blue-400 hover:bg-blue-500/20 transition-colors">
+                          Abrir →
+                        </a>
+                      )}
+                      {status === 'checking' ? (
+                        <span className="rounded-lg border border-gray-600 bg-gray-800 px-3 py-1.5 text-[10px] font-semibold text-gray-400 animate-pulse">
+                          Verificando...
+                        </span>
+                      ) : status === 'verified' ? (
+                        <button onClick={() => resetTask(taskKey)}
+                          className="rounded-lg border border-gray-600 bg-gray-800 px-3 py-1.5 text-[10px] font-semibold text-gray-500 hover:text-gray-300 transition-colors">
+                          Deshacer
+                        </button>
+                      ) : (
+                        <button onClick={() => verifyTask(taskKey, task)}
+                          className="rounded-lg border border-green-500/30 bg-green-500/10 px-3 py-1.5 text-[10px] font-semibold text-green-400 hover:bg-green-500/20 transition-colors">
+                          Ya la hice ✓
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Resumen rapido */}
+      <div className="grid grid-cols-3 gap-3">
+        <div className="rounded-xl border border-gray-800 bg-gray-900/60 p-4 text-center">
+          <p className="text-2xl font-bold text-red-400">{Object.values(allTasks).flat().filter(t => t.priority === 'alta').length}</p>
+          <p className="text-[10px] text-gray-500 mt-1">Prioridad alta</p>
+        </div>
+        <div className="rounded-xl border border-gray-800 bg-gray-900/60 p-4 text-center">
+          <p className="text-2xl font-bold text-yellow-400">{Object.values(allTasks).flat().filter(t => t.priority === 'media').length}</p>
+          <p className="text-[10px] text-gray-500 mt-1">Prioridad media</p>
+        </div>
+        <div className="rounded-xl border border-gray-800 bg-gray-900/60 p-4 text-center">
+          <p className="text-2xl font-bold text-blue-400">{Object.values(allTasks).flat().filter(t => t.priority === 'baja').length}</p>
+          <p className="text-[10px] text-gray-500 mt-1">Prioridad baja</p>
+        </div>
+      </div>
+
+      <div className="rounded-xl border border-gray-700/50 bg-gray-800/30 p-4">
+        <p className="text-xs text-gray-500">
+          💡 Calendario exclusivo de Nexo Articles. Las tareas se actualizan automaticamente.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /*  SECTION: PAGOS — CBU & PayPal config                               */
 /* ------------------------------------------------------------------ */
 
@@ -2282,15 +3192,21 @@ function KPIsSection() {
 /* ------------------------------------------------------------------ */
 
 function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void }) {
-  // Load from localStorage on mount
   const [googleEmail, setGoogleEmail] = useState('');
   const [googleConnected, setGoogleConnected] = useState(false);
   const [credentials, setCredentials] = useState<Record<string, string>>({});
   const [connected, setConnected] = useState<Record<string, boolean>>({});
   const [expandedSection, setExpandedSection] = useState<string | null>('google');
+  const [loaded, setLoaded] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [agentRequests, setAgentRequests] = useState<any[]>([]);
 
-  // Persist to localStorage
+  // Load from localStorage FIRST
   useEffect(() => {
+    // Load dynamic integration requests from agents
+    fetch('/status.json').then(r => r.ok ? r.json() : null).then(d => {
+      if (d?.integrationRequests) setAgentRequests(d.integrationRequests);
+    }).catch(() => {});
     try {
       const saved = localStorage.getItem('ia-negocio-integrations');
       if (saved) {
@@ -2300,17 +3216,16 @@ function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void })
         if (data.googleEmail) { setGoogleEmail(data.googleEmail); setGoogleConnected(true); }
       }
     } catch { /* ignore */ }
+    setLoaded(true);
   }, []);
 
-  // Save whenever ANY state changes
+  // Save ONLY after initial load is done
   useEffect(() => {
-    const hasData = Object.keys(connected).length > 0 || Object.keys(credentials).length > 0 || googleEmail;
-    if (hasData) {
-      try {
-        localStorage.setItem('ia-negocio-integrations', JSON.stringify({ credentials, connected, googleEmail: googleConnected ? googleEmail : '' }));
-      } catch { /* storage full or unavailable */ }
-    }
-  }, [connected, credentials, googleEmail, googleConnected]);
+    if (!loaded) return;
+    try {
+      localStorage.setItem('ia-negocio-integrations', JSON.stringify({ credentials, connected, googleEmail: googleConnected ? googleEmail : '' }));
+    } catch { /* storage full or unavailable */ }
+  }, [connected, credentials, googleEmail, googleConnected, loaded]);
 
   // Essential integrations for THIS project only
   const essentialServices = [
@@ -2390,6 +3305,24 @@ function IntegracionesSection({ onNotify }: { onNotify: (msg: string) => void })
     <div>
       <h2 className="text-2xl font-extrabold text-white">Conexiones Esenciales</h2>
       <p className="mt-1 text-sm text-gray-400">Solo lo que necesitas para que el negocio funcione — sin basura</p>
+
+      {/* Dynamic agent requests */}
+      {agentRequests.length > 0 && (
+        <div className="mt-4 rounded-xl border border-purple-500/30 bg-purple-500/5 p-4">
+          <h3 className="text-sm font-bold text-purple-300 mb-3">🔔 Los agentes necesitan acceso:</h3>
+          <div className="space-y-2">
+            {agentRequests.map((req: { agent: string; service: string; reason: string; urgent: boolean }, i: number) => (
+              <div key={i} className={`flex items-center justify-between rounded-lg p-3 ${req.urgent ? 'border border-red-500/30 bg-red-500/5' : 'border border-gray-700/30 bg-gray-800/30'}`}>
+                <div>
+                  <p className="text-xs font-bold text-white">{req.agent} necesita: <span className="text-purple-400">{req.service}</span></p>
+                  <p className="text-[10px] text-gray-400 mt-0.5">{req.reason}</p>
+                </div>
+                {req.urgent && <span className="text-[9px] font-bold text-red-400 bg-red-500/10 px-2 py-1 rounded-full">URGENTE</span>}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Priority banner */}
       <div className="mt-4 rounded-xl border border-amber-500/20 bg-amber-500/5 px-5 py-4">
@@ -2817,6 +3750,8 @@ export default function DashboardPage() {
           {activeSection === 'kpis' && <KPIsSection />}
 
           {activeSection === 'pagos' && <PagosSection onNotify={setNotification} />}
+
+          {activeSection === 'calendario' && <CalendarioSection />}
 
           {/* Footer */}
           <footer className="mt-10 border-t border-gray-800 py-6 text-center text-xs text-gray-600">

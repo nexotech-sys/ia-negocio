@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexo Articles
 
-## Getting Started
+Blog SEO en espanol sobre Inteligencia Artificial para negocios, operado por 8 agentes IA autonomos.
 
-First, run the development server:
+**Sitio:** [ia-negocio.vercel.app](https://ia-negocio.vercel.app)
+**Dashboard:** [ia-negocio.vercel.app/dashboard](https://ia-negocio.vercel.app/dashboard)
+
+---
+
+## Que es Nexo Articles
+
+Un blog que genera trafico organico desde Google y se monetiza con AdSense + afiliados. El contenido es generado y optimizado por un equipo de 8 agentes IA que trabajan de forma autonoma.
+
+## Equipo de Agentes IA
+
+| Agente | Rol | Estado |
+|--------|-----|--------|
+| Sofia Navarro | CEO - Direccion estrategica | Activo |
+| Marco Riquelme | Director de Contenido | Activo |
+| Luna Ferreyra | Especialista SEO | Activo |
+| Diego Paredes | Marketing Digital | Standby |
+| Valentina Rossi | Finanzas | Standby |
+| Carlos Mendez | Desarrollador | Activo |
+| Ana Gutierrez | Analytics | Activo |
+| Tomas Alvarez | Ventas y Afiliados | Activo |
+
+## Instalacion
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/nexotech-sys/ia-negocio.git
+cd ia-negocio
+
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Editar .env.local con tus credenciales
+
+# Correr en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variables de Entorno
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Ver `.env.example` para la lista completa. Las esenciales:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Descripcion | Obligatoria |
+|----------|-------------|-------------|
+| `ANTHROPIC_API_KEY` | API key de Claude | Si (para agentes) |
+| `GITHUB_TOKEN` | Token de GitHub | Si (para auto-publish) |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics ID | No |
 
-## Learn More
+## Estructura del Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    api/
+      agent-action/       # Interaccion con agentes IA
+      cron/daily-agents/   # Cron diario automatico
+      verify-integration/  # Verificacion de credenciales
+    blog/[slug]/           # Articulos del blog
+    dashboard/             # Dashboard privado con agentes
+  lib/
+    agents.ts              # Definicion de los 8 agentes
+    articles*.ts           # 150+ articulos SEO
+    auto-articles/         # Articulos generados por cron
+docs/
+  ARQUITECTURA.md          # Arquitectura del sistema
+  AGENTES.md               # Detalle de cada agente
+  TAREAS.md                # Tareas manuales vs automaticas
+  MONETIZACION.md          # Plan de monetizacion
+.github/workflows/
+  daily-agents.yml         # Cron diario via GitHub Actions
+  weekly-health.yml        # Health check semanal
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Automatizacion
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Diaria (9am Argentina)
+- Sofia decide que articulo escribir
+- Marco lo escribe completo
+- Luna optimiza SEO
+- Carlos lo publica en GitHub
+- Tomas sugiere afiliados
+- Sofia actualiza el calendario
 
-## Deploy on Vercel
+### Semanal (lunes)
+- Health check automatico del sitio
+- Verificacion de APIs y URLs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Documentacion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Arquitectura](docs/ARQUITECTURA.md)
+- [Agentes IA](docs/AGENTES.md)
+- [Tareas manuales vs automaticas](docs/TAREAS.md)
+- [Plan de monetizacion](docs/MONETIZACION.md)
+
+## Tech Stack
+
+- Next.js 16 + TypeScript + Tailwind CSS 4
+- Vercel (hosting gratuito)
+- Claude API (agentes IA)
+- GitHub Actions (automatizacion)
+- Google Analytics 4 + Search Console
+
+## Replicar para otro proyecto
+
+Ver el archivo `PROMPT-DASHBOARD-COMPLETO.docx` en la raiz del workspace para instrucciones de como replicar este sistema en otro negocio.
+
+---
+
+Desarrollado por **Nexo Tech** | 2026

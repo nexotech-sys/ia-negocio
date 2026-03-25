@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const maxDuration = 60; // Max timeout for Vercel Hobby plan
+
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || '';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '';
 const REPO_OWNER = 'nexotech-sys';
@@ -15,7 +17,7 @@ async function askClaude(systemPrompt: string, userPrompt: string): Promise<stri
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-20250514',
-      max_tokens: 2000,
+      max_tokens: 1500,
       system: systemPrompt,
       messages: [{ role: 'user', content: userPrompt }],
     }),
@@ -246,6 +248,53 @@ export const autoArticle_${directive.slug.replace(/-/g, '_')}: Article = {
 
     log.push(`Tomas: ${tomasReport}`);
 
+    // ============ STEP 7: Sofia updates status.json with calendar & integration needs ============
+    log.push('Sofia actualizando estado del proyecto...');
+
+    const sofiaStatus = await askClaude(
+      `Sos Sofia Navarro, CEO de Nexo Articles. Analizas el estado del proyecto y decides que tareas nuevas agregar al calendario de Nacho y que integraciones faltan.
+El sitio tiene ~155 articulos. Search Console y Analytics estan conectados. AdSense NO esta conectado. No hay links de afiliados todavia. El cron genera 1 articulo por dia.
+Hoy se publico: "${directive.title}".`,
+      `Responde SOLO en JSON con este formato exacto:
+{
+  "calendarTasks": [
+    {"date": "YYYY-MM-DD", "task": "descripcion corta", "agent": "nombre", "priority": "alta|media|baja"}
+  ],
+  "integrationRequests": [
+    {"agent": "nombre", "service": "nombre servicio", "reason": "por que lo necesita", "urgent": true/false}
+  ],
+  "weeklyNote": "nota corta sobre como va el proyecto"
+}`
+    );
+
+    // Save status.json to GitHub
+    let statusData;
+    try {
+      const jsonMatch = sofiaStatus.match(/\{[\s\S]*\}/);
+      statusData = jsonMatch ? JSON.parse(jsonMatch[0]) : null;
+    } catch {
+      statusData = { calendarTasks: [], integrationRequests: [], weeklyNote: 'Sin novedades' };
+    }
+
+    if (statusData) {
+      const statusJson = JSON.stringify({
+        lastUpdate: today,
+        article: { title: directive.title, slug: directive.slug },
+        ...statusData,
+      }, null, 2);
+
+      try {
+        await commitToGitHub(
+          'public/status.json',
+          statusJson,
+          `[Auto] Sofia actualizo estado del proyecto — ${today}`
+        );
+        log.push('Status actualizado en status.json');
+      } catch {
+        log.push('No se pudo actualizar status.json');
+      }
+    }
+
     // ============ DONE ============
     return NextResponse.json({
       status: 'ok',
@@ -256,7 +305,7 @@ export const autoArticle_${directive.slug.replace(/-/g, '_')}: Article = {
         category: directive.category,
       },
       agents: {
-        sofia: 'Definio estrategia y eligio tema',
+        sofia: 'Definio estrategia, eligio tema y actualizo calendario',
         marco: 'Escribio el articulo completo',
         luna: 'Optimizo meta tags SEO',
         carlos: 'Publico en GitHub (auto-deploy)',
