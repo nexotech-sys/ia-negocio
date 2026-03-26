@@ -1,66 +1,72 @@
 {
   "lastUpdate": "2026-03-26",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo las Empresas Están Revolucionando la Toma de Decisiones en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-decisiones-2026"
+    "title": "IA Cuántica para Negocios: Cómo la Nueva Generación de Algoritmos Revolucionará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-algoritmos-revolucion-empresas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-26",
-      "task": "Revisar métricas GA4 y GSC del artículo IA Cuántica",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Solicitar conexión AdSense para monetización",
+      "date": "2024-12-19",
+      "task": "Configurar AdSense y primeras campañas",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-28",
+      "date": "2024-12-20",
       "task": "Investigar programas de afiliados tech relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Configurar primeros 3 links de afiliados en artículos top",
+      "date": "2024-12-21",
+      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-22",
+      "task": "Optimizar SEO en top 10 artículos más visitados",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Crear newsletter signup con lead magnet",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Configurar pixel de Facebook/Meta",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Análisis de métricas Q4 y planificación 2025",
       "agent": "Nacho",
       "priority": "alta"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Optimizar SEO de artículos con bajo CTR",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Crear strategy para aumentar engagement",
-      "agent": "Nacho",
-      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "Google AdSense",
-      "reason": "Monetizar el tráfico de 155+ artículos existentes",
+      "service": "AdSense",
+      "reason": "Monetización inmediata del tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en contenido tech",
-      "urgent": true
+      "service": "ConvertKit/Mailchimp",
+      "reason": "Capturar leads y crear flujo de email marketing",
+      "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para optimizar conversión",
+      "reason": "Entender comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Con 155 artículos y Analytics funcionando, es momento de monetizar. Prioridad: AdSense esta semana, luego afiliados. El contenido automatizado funciona bien con 1 post/día."
 }
