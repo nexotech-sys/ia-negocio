@@ -1,58 +1,58 @@
 {
-  "lastUpdate": "2026-03-25",
+  "lastUpdate": "2026-03-26",
   "article": {
-    "title": "IA Cuántica para Negocios 2026: La Nueva Revolución que Multiplicará tu ROI por 10",
-    "slug": "ia-cuantica-negocios-2026-revolucion-roi"
+    "title": "IA Cuántica para Negocios: Cómo las Empresas Están Revolucionando la Toma de Decisiones en 2026",
+    "slug": "ia-cuantica-negocios-revolucion-decisiones-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Revisar métricas de engagement del artículo IA Cuántica",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-20",
-      "task": "Configurar primera campaña AdSense",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-21",
-      "task": "Investigar productos tech para links de afiliados",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Implementar estructura de afiliados en próximos 3 artículos",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
       "date": "2024-12-26",
-      "task": "Análisis semanal de palabras clave con mejor CTR",
+      "task": "Revisar métricas GA4 y GSC del artículo IA Cuántica",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Optimizar artículos con menor tiempo de permanencia",
+      "task": "Solicitar conexión AdSense para monetización",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Investigar programas de afiliados tech relevantes",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-30",
+      "task": "Configurar primeros 3 links de afiliados en artículos top",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2025-01-02",
+      "task": "Optimizar SEO de artículos con bajo CTR",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-03",
+      "task": "Crear strategy para aumentar engagement",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "service": "Google AdSense",
+      "reason": "Monetizar el tráfico de 155+ artículos existentes",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos tech",
+      "reason": "Implementar links de afiliados en contenido tech",
       "urgent": true
     },
     {
@@ -62,5 +62,5 @@
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización. Base sólida de contenido establecida, es momento de activar ingresos con AdSense y afiliados."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados antes de fin de año."
 }
