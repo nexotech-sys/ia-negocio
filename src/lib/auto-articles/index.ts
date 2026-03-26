@@ -8,11 +8,13 @@ import { autoArticle_ia_cuantica_negocios_computadoras_cuanticas_empresas_2026 }
 import { autoArticle_ia_cuantica_empresas_2026_computacion_cuantica_negocios } from './ia-cuantica-empresas-2026-computacion-cuantica-negocios';
 import { autoArticle_ia_para_agencias_de_viaje_turismo_2026 } from './ia-para-agencias-de-viaje-turismo-2026';
 import { autoArticle_ia_cuantica_negocios_2026_revolucion_roi } from './ia-cuantica-negocios-2026-revolucion-roi';
+import { autoArticle_ia_cuantica_negocios_revolucion_decisiones_2026 } from './ia-cuantica-negocios-revolucion-decisiones-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_negocios_revolucion_decisiones_2026,
   autoArticle_ia_cuantica_negocios_2026_revolucion_roi,
   autoArticle_ia_para_agencias_de_viaje_turismo_2026,
   autoArticle_ia_cuantica_empresas_2026_computacion_cuantica_negocios,
