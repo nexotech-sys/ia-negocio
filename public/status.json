@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-03-26",
+  "lastUpdate": "2026-03-27",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo la Nueva Generación de Algoritmos Revolucionará tu Empresa en 2026",
-    "slug": "ia-cuantica-negocios-algoritmos-revolucion-empresas-2026"
+    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Atención al Cliente en 2026",
+    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas-atencion-cliente"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Configurar AdSense y primeras campañas",
+      "date": "2025-01-04",
+      "task": "Configurar Google AdSense y crear primeros bloques de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-20",
-      "task": "Investigar programas de afiliados tech relevantes",
+      "date": "2025-01-05",
+      "task": "Investigar y configurar primeros programas de afiliados (Amazon, hosting)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "date": "2025-01-06",
+      "task": "Optimizar artículos top 20 para SEO y velocidad",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-22",
-      "task": "Optimizar SEO en top 10 artículos más visitados",
+      "date": "2025-01-07",
+      "task": "Crear landing page para suscripción newsletter",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Crear newsletter signup con lead magnet",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Configurar pixel de Facebook/Meta",
+      "date": "2025-01-08",
+      "task": "Configurar pixel de Facebook e implementar remarketing",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-26",
-      "task": "Análisis de métricas Q4 y planificación 2025",
+      "date": "2025-01-09",
+      "task": "Auditar estructura de enlaces internos y mejorar",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-10",
+      "task": "Crear templates para CTAs de afiliados",
       "agent": "Nacho",
       "priority": "alta"
     }
@@ -51,22 +51,28 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Monetización inmediata del tráfico existente de 155 artículos",
+      "service": "Google AdSense",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit/Mailchimp",
-      "reason": "Capturar leads y crear flujo de email marketing",
+      "service": "Amazon Associates",
+      "reason": "Implementar enlaces de afiliados en artículos de tecnología",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Mailchimp",
+      "reason": "Capturar leads y hacer email marketing",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Entender comportamiento de usuarios para optimizar conversión",
+      "reason": "Analizar comportamiento de usuarios para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Con 155 artículos y Analytics funcionando, es momento de monetizar. Prioridad: AdSense esta semana, luego afiliados. El contenido automatizado funciona bien con 1 post/día."
+  "weeklyNote": "Proyecto con buena base de contenido (155 artículos) pero necesita urgente monetización. Prioridad en AdSense y afiliados antes que nuevas funcionalidades."
 }
