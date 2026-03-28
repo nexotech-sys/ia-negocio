@@ -13,11 +13,13 @@ import { autoArticle_ia_cuantica_negocios_algoritmos_revolucion_empresas_2026 } 
 import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente } from './ia-conversacional-whatsapp-business-automatizar-ventas-atencion-cliente';
 import { autoArticle_ia_generativa_videos_producto_guia_2026 } from './ia-generativa-videos-producto-guia-2026';
 import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente_2026 } from './ia-conversacional-whatsapp-business-automatizar-ventas-atencion-cliente-2026';
+import { autoArticle_ia_cuantica_empresas_2026_revolucion_negocios } from './ia-cuantica-empresas-2026-revolucion-negocios';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_empresas_2026_revolucion_negocios,
   autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente_2026,
   autoArticle_ia_generativa_videos_producto_guia_2026,
   autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente,
