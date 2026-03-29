@@ -9,8 +9,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-22",
     readTime: "11 min",
     tags: ["startups", "emprendimiento", "inteligencia artificial", "escalar negocio", "inversión"],
-    metaTitle: "IA para Startups: Lanzá y Escalá tu Empresa con Inteligencia Artificial en 2026",
-    metaDescription: "Guía completa para emprendedores: cómo usar IA en cada etapa de una startup, desde la validación de la idea hasta la escala. Herramientas, estrategias y casos reales.",
+    metaTitle: "IA para Startups: Lanzá y Escalá con IA en 2026",
+    metaDescription: "Cómo usar IA en cada etapa de una startup: desde la validación hasta la escala. Herramientas, estrategias y casos reales para emprendedores.",
     content: `
 <h2>Las startups de 2026 tienen una ventaja que las anteriores no tuvieron</h2>
 <p>Lanzar una startup siempre fue difícil. Pero en 2026, emprendedores con poco presupuesto y equipo reducido pueden competir con empresas que tienen cien empleados. ¿El secreto? La inteligencia artificial. Las herramientas de IA actuales te permiten automatizar el trabajo operativo, encontrar clientes más rápido, escribir código sin saber programar y tomar decisiones basadas en datos reales.</p>
@@ -77,8 +77,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-21",
     readTime: "13 min",
     tags: ["crear negocio", "emprendimiento", "inteligencia artificial", "ingresos", "automatización"],
-    metaTitle: "Cómo Crear un Negocio con IA desde Cero en 2026 | Guía Completa",
-    metaDescription: "Guía paso a paso para crear un negocio rentable con IA en 2026. Desde la idea hasta los primeros ingresos, sin inversión millonaria ni conocimientos técnicos previos.",
+    metaTitle: "Cómo Crear un Negocio con IA desde Cero en 2026",
+    metaDescription: "Guía para crear un negocio rentable con IA en 2026: desde la idea hasta los primeros ingresos, sin inversión millonaria ni conocimientos técnicos.",
     content: `
 <h2>¿Es posible crear un negocio real con IA sin experiencia previa?</h2>
 <p>La respuesta corta es sí. En 2026, la barrera para crear un negocio digital bajó a su punto histórico más bajo gracias a la inteligencia artificial. No necesitás saber programar, tener un MBA ni un capital inicial enorme. Necesitás una idea válida, las herramientas correctas y la disposición para ejecutar rápido y aprender en el proceso.</p>
@@ -157,8 +157,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-20",
     readTime: "10 min",
     tags: ["productividad", "organización", "herramientas IA", "gestión del tiempo", "automatización personal"],
-    metaTitle: "IA para Productividad Personal: Hacé el Doble en la Mitad del Tiempo en 2026",
-    metaDescription: "Las mejores herramientas de IA para mejorar tu productividad personal en 2026. Organizá tu tiempo, automatizá tareas repetitivas y enfocate en lo que importa.",
+    metaTitle: "IA para Productividad: Hacé el Doble en la Mitad del Tiempo",
+    metaDescription: "Las mejores herramientas de IA para productividad en 2026. Organizá tu tiempo, automatizá tareas repetitivas y enfocate en lo que importa.",
     content: `
 <h2>El problema real de la productividad en 2026</h2>
 <p>No es falta de tiempo: es falta de foco. La mayoría de los profesionales y emprendedores pasan entre el 40% y el 60% de su jornada laboral en tareas que no generan valor real: responder emails, hacer reportes, buscar información, copiar datos de un lado a otro. La IA no te va a dar más horas en el día, pero sí puede quitarte de encima todo ese trabajo de baja calidad para que te quede energía para lo que realmente mueve la aguja.</p>
@@ -231,8 +231,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-19",
     readTime: "12 min",
     tags: ["APIs de IA", "OpenAI", "Anthropic", "Google AI", "desarrollo", "integración"],
-    metaTitle: "Las Mejores APIs de IA en 2026: Comparativa Completa de Precios y Capacidades",
-    metaDescription: "Comparativa detallada de las mejores APIs de IA en 2026. OpenAI, Anthropic Claude, Google Gemini y más. Precios, capacidades y cuál elegir para tu proyecto.",
+    metaTitle: "Mejores APIs de IA en 2026: Precios y Capacidades",
+    metaDescription: "Comparativa de las mejores APIs de IA en 2026: OpenAI, Anthropic Claude, Google Gemini y más. Precios, capacidades y cuál elegir para tu proyecto.",
     content: `
 <h2>¿Por qué elegir la API de IA correcta puede hacer o romper tu proyecto?</h2>
 <p>En 2026, casi cualquier producto digital tiene inteligencia artificial integrada. Pero no todas las APIs son iguales: difieren en calidad de respuestas, velocidad, precio, límites de contexto y casos de uso específicos. Elegir la API incorrecta puede significar costos innecesarios, respuestas de baja calidad o limitaciones técnicas que te frenen cuando más necesitás escalar.</p>
@@ -309,8 +309,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-20",
     readTime: "11 min",
     tags: ["salud", "medicina", "IA médica", "diagnóstico asistido", "gestión de pacientes"],
-    metaTitle: "IA para Médicos y Salud en 2026: Herramientas y Aplicaciones Prácticas",
-    metaDescription: "Cómo usan la inteligencia artificial los profesionales de la salud en 2026. Diagnóstico asistido, documentación clínica automática, gestión de pacientes y más.",
+    metaTitle: "IA para Médicos y Salud 2026: Aplicaciones Prácticas",
+    metaDescription: "Cómo usan la IA los profesionales de la salud en 2026: diagnóstico asistido, documentación clínica automática y gestión de pacientes.",
     content: `
 <h2>La IA en medicina: del laboratorio a la consulta</h2>
 <p>Durante años, la inteligencia artificial en medicina fue algo reservado a los grandes centros de investigación y hospitales con millones de dólares de inversión. En 2026, eso cambió. Las herramientas de IA accesibles para médicos, enfermeras y profesionales de la salud en general se multiplicaron, y muchas de ellas son gratuitas o de bajo costo.</p>
@@ -382,8 +382,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-18",
     readTime: "10 min",
     tags: ["Notion", "Notion AI", "productividad", "gestión de proyectos", "organización"],
-    metaTitle: "Cómo Usar Notion con IA en 2026: Guía Completa para Negocios y Equipos",
-    metaDescription: "Guía completa de Notion AI en 2026. Cómo organizar tu negocio, gestionar proyectos y automatizar documentación con inteligencia artificial integrada en Notion.",
+    metaTitle: "Cómo Usar Notion con IA en 2026 | Guía para Negocios",
+    metaDescription: "Guía de Notion AI en 2026: cómo organizar tu negocio, gestionar proyectos y automatizar documentación con IA integrada en Notion.",
     content: `
 <h2>Por qué Notion AI cambió las reglas del juego</h2>
 <p>Notion ya era una de las herramientas más populares para organizar negocios y equipos. Pero con la integración de IA nativa, se convirtió en algo más poderoso: un asistente de trabajo que conoce todos tus proyectos, documentos y procesos, y puede ayudarte a trabajar con ellos en segundos.</p>
@@ -458,8 +458,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-17",
     readTime: "10 min",
     tags: ["logística", "envíos", "cadena de suministro", "optimización", "inventario", "IA"],
-    metaTitle: "IA para Logística y Envíos: Optimizá tu Cadena de Suministro en 2026",
-    metaDescription: "Cómo aplicar inteligencia artificial en logística y envíos. Optimización de rutas, predicción de demanda, gestión de inventario y reducción de costos con IA.",
+    metaTitle: "IA para Logística: Optimizá tu Cadena de Suministro 2026",
+    metaDescription: "Cómo aplicar IA en logística y envíos: optimización de rutas, predicción de demanda, gestión de inventario y reducción de costos.",
     content: `
 <h2>La logística, el eslabón más costoso de cualquier negocio físico</h2>
 <p>Si vendés productos físicos, ya sabés que la logística puede ser la diferencia entre ganar o perder dinero. Los costos de envío, los errores en el inventario, los retrasos y las rutas ineficientes acumulan pérdidas que muchos negocios no detectan hasta que ya es tarde. La inteligencia artificial llegó a cambiar eso, y en 2026 ya hay soluciones accesibles para empresas de cualquier tamaño.</p>
@@ -530,8 +530,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-16",
     readTime: "11 min",
     tags: ["IA Latinoamérica", "Argentina", "tendencias IA", "emprendedores", "transformación digital LATAM"],
-    metaTitle: "IA en Latinoamérica 2026: Tendencias y Oportunidades para Emprendedores",
-    metaDescription: "El panorama completo de la inteligencia artificial en Latinoamérica en 2026. Tendencias, oportunidades, desafíos y cómo los emprendedores pueden aprovechar la ola de IA.",
+    metaTitle: "IA en Latinoamérica 2026: Tendencias y Oportunidades",
+    metaDescription: "El panorama de la IA en Latinoamérica en 2026: tendencias, oportunidades y cómo los emprendedores pueden aprovechar la revolución de la IA.",
     content: `
 <h2>Latinoamérica en la carrera de la IA: ¿llegamos tarde o estamos en el momento justo?</h2>
 <p>Si vivís en Argentina, México, Chile, Colombia o cualquier otro país latinoamericano, probablemente escuchaste que la IA está transformando el mundo. Pero ¿qué significa eso para vos concretamente? ¿Qué está pasando en nuestra región? ¿Estamos aprovechando las oportunidades o nos estamos quedando atrás?</p>
@@ -601,8 +601,8 @@ export const batch3Articles: Article[] = [
     date: "2026-03-17",
     readTime: "10 min",
     tags: ["fotografía IA", "video IA", "creadores de contenido", "edición automática", "generación de imágenes"],
-    metaTitle: "IA para Fotografía y Video en 2026: Las Mejores Herramientas para Creadores",
-    metaDescription: "Guía completa de herramientas de IA para fotografía y video en 2026. Edición automática, generación de imágenes, videos con IA y mucho más para creadores de contenido.",
+    metaTitle: "IA para Fotografía y Video 2026: Mejores Herramientas",
+    metaDescription: "Herramientas de IA para fotografía y video en 2026: edición automática, generación de imágenes y videos con IA para creadores de contenido.",
     content: `
 <h2>La revolución visual de la IA: qué cambió en 2026</h2>
 <p>Hace apenas tres años, generar una imagen fotorrealista con IA era algo que hacían investigadores en laboratorios. Hoy, cualquier persona con un celular puede hacerlo en segundos. La IA transformó completamente la creación visual: qué significa ser fotógrafo, cómo se editan videos y cuánto tiempo lleva producir contenido profesional.</p>
@@ -679,7 +679,7 @@ export const batch3Articles: Article[] = [
     date: "2026-03-15",
     readTime: "12 min",
     tags: ["asistente virtual", "chatbot", "IA conversacional", "automatización", "no-code", "GPT"],
-    metaTitle: "Cómo Crear un Asistente Virtual con IA en 2026 | Guía Paso a Paso",
+    metaTitle: "Cómo Crear un Asistente Virtual con IA en 2026",
     metaDescription: "Guía completa para crear tu propio asistente virtual con IA en 2026. Opciones sin código, con código y herramientas no-code para cualquier nivel técnico.",
     content: `
 <h2>Un asistente virtual que trabaja para vos las 24 horas</h2>

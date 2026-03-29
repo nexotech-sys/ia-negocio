@@ -9,8 +9,8 @@ export const batch10Articles: Article[] = [
     date: "2026-03-29",
     readTime: "10 min",
     tags: ["ia para contadores", "contabilidad con ia", "automatización contable", "inteligencia artificial", "estudios contables"],
-    metaTitle: "IA para Contadores: Automatizá tu Estudio Contable con Inteligencia Artificial en 2026",
-    metaDescription: "Guía completa de IA para contadores y estudios contables. Aprendé a automatizar tareas repetitivas, reducir errores y ofrecer servicios de mayor valor con inteligencia artificial.",
+    metaTitle: "IA para Contadores: Automatizá tu Estudio en 2026",
+    metaDescription: "Guía de IA para contadores: automatizá tareas repetitivas, reducí errores y ofrecé servicios de mayor valor con inteligencia artificial.",
     content: `
 <h2>La IA no reemplaza al contador: lo potencia</h2>
 <p>Seamos honestos: hay una pregunta que muchos contadores se hacen en silencio. "¿La inteligencia artificial va a reemplazar mi trabajo?" La respuesta corta es no. Pero sí va a reemplazar a los contadores que no la usen.</p>

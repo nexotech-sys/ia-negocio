@@ -33,7 +33,7 @@ export const articles: Article[] = [
     date: "2026-03-15",
     readTime: "12 min",
     tags: ["inteligencia artificial", "negocios", "emprendedores", "transformación digital"],
-    metaTitle: "Qué es la Inteligencia Artificial y Cómo Transformar tu Negocio en 2026",
+    metaTitle: "Qué es la IA y Cómo Transformar tu Negocio en 2026",
     metaDescription:
       "Guía completa sobre inteligencia artificial para negocios. Aprendé qué es la IA, cómo funciona y cómo aplicarla en tu empresa para crecer en 2026.",
     content: `

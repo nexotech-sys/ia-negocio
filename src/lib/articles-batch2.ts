@@ -9,7 +9,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-01",
     readTime: "10 min",
     tags: ["atención al cliente", "chatbots", "automatización", "soporte", "IA"],
-    metaTitle: "IA para Atención al Cliente: Soporte 24/7 con Inteligencia Artificial",
+    metaTitle: "IA para Atención al Cliente: Soporte 24/7 con IA",
     metaDescription: "Aprendé cómo implementar IA en la atención al cliente de tu negocio. Herramientas, estrategias y casos reales para mejorar el soporte y reducir costos.",
     content: `
 <h2>Por qué la atención al cliente es el talón de Aquiles de los pequeños negocios</h2>
@@ -75,8 +75,8 @@ export const batch2Articles: Article[] = [
     date: "2026-03-02",
     readTime: "9 min",
     tags: ["chatbot", "gratis", "sin código", "automatización", "herramientas"],
-    metaTitle: "Cómo Crear un Chatbot Gratis para tu Negocio Sin Programar en 2026",
-    metaDescription: "Aprendé a crear un chatbot gratis paso a paso sin saber programar. Las mejores herramientas gratuitas para automatizar la atención al cliente de tu negocio.",
+    metaTitle: "Cómo Crear un Chatbot Gratis Sin Programar en 2026",
+    metaDescription: "Aprendé a crear un chatbot gratis sin programar. Las mejores herramientas gratuitas para automatizar la atención al cliente de tu negocio.",
     content: `
 <h2>¿Realmente podés crear un chatbot sin saber programar?</h2>
 <p>La respuesta corta es sí, absolutamente. Hace cinco años, crear un chatbot requería contratar un desarrollador y gastar miles de dólares. Hoy, con las herramientas que existen, cualquier persona puede tener un chatbot funcionando en menos de una hora, completamente gratis. Si podés enviar un email, podés crear un chatbot.</p>
@@ -154,7 +154,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-03",
     readTime: "11 min",
     tags: ["recursos humanos", "RRHH", "reclutamiento", "gestión de talento", "IA"],
-    metaTitle: "IA para Recursos Humanos: Reclutamiento y Gestión de Talento con IA en 2026",
+    metaTitle: "IA para RRHH: Reclutamiento y Gestión de Talento 2026",
     metaDescription: "Descubrí cómo la inteligencia artificial está transformando los RRHH. Herramientas para reclutar mejor, capacitar equipos y retener talento en tu empresa.",
     content: `
 <h2>La revolución silenciosa en Recursos Humanos</h2>
@@ -226,8 +226,8 @@ export const batch2Articles: Article[] = [
     date: "2026-03-04",
     readTime: "10 min",
     tags: ["diseño gráfico", "IA", "Canva", "Midjourney", "creación de contenido", "herramientas"],
-    metaTitle: "Mejores Herramientas IA para Diseño Gráfico 2026: Crea sin ser Diseñador",
-    metaDescription: "Las mejores herramientas de inteligencia artificial para diseño gráfico en 2026. Creá logos, banners y contenido visual profesional sin experiencia en diseño.",
+    metaTitle: "Mejores Herramientas IA para Diseño Gráfico 2026",
+    metaDescription: "Las mejores herramientas de IA para diseño gráfico en 2026. Creá logos, banners y contenido visual profesional sin experiencia en diseño.",
     content: `
 <h2>El diseño gráfico democratizado por la IA</h2>
 <p>Hasta hace poco, si necesitabas un logo profesional, un banner para redes sociales o materiales de marketing atractivos, tenías dos opciones: contratar un diseñador (caro) o usar plantillas genéricas (que no te diferenciaban). La IA cambió el juego completamente. Hoy podés crear contenido visual de nivel profesional sin saber nada de diseño y sin gastar fortunas.</p>
@@ -295,7 +295,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-05",
     readTime: "12 min",
     tags: ["análisis de datos", "business intelligence", "decisiones", "IA", "métricas"],
-    metaTitle: "IA para Análisis de Datos en tu Negocio: Toma Mejores Decisiones en 2026",
+    metaTitle: "IA para Análisis de Datos: Mejores Decisiones 2026",
     metaDescription: "Cómo usar IA para analizar los datos de tu negocio y tomar mejores decisiones. Herramientas accesibles para emprendedores sin experiencia técnica.",
     content: `
 <h2>El problema con los datos en los negocios pequeños</h2>
@@ -447,7 +447,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-07",
     readTime: "11 min",
     tags: ["contabilidad", "finanzas", "IA", "gestión financiera", "PyMEs", "Argentina"],
-    metaTitle: "IA para Contabilidad y Finanzas en tu Negocio: Guía Completa 2026",
+    metaTitle: "IA para Contabilidad y Finanzas: Guía Completa 2026",
     metaDescription: "Cómo usar inteligencia artificial para gestionar las finanzas de tu negocio. Herramientas, automatización contable y mejores decisiones financieras con IA.",
     content: `
 <h2>El dolor de cabeza financiero de los emprendedores</h2>
@@ -611,7 +611,7 @@ export const batch2Articles: Article[] = [
     readTime: "12 min",
     tags: ["abogados", "derecho", "IA", "contratos", "legal tech", "jurisprudencia"],
     metaTitle: "IA para Abogados y Estudios Jurídicos: Guía Completa 2026",
-    metaDescription: "Cómo usar inteligencia artificial en la práctica legal. Herramientas para revisar contratos, investigar jurisprudencia y automatizar tareas en estudios jurídicos.",
+    metaDescription: "Cómo usar IA en la práctica legal: herramientas para revisar contratos, investigar jurisprudencia y automatizar tareas en estudios jurídicos.",
     content: `
 <h2>La transformación digital del derecho</h2>
 <p>El sector legal fue durante décadas uno de los más resistentes a la tecnología. Hoy, la IA está cambiando eso de manera acelerada. Los estudios jurídicos que adoptan herramientas de IA están completando en horas lo que antes llevaba días, y están ofreciendo servicios de mayor calidad a sus clientes. Y no, la IA no va a reemplazar a los abogados, pero los abogados que usen IA van a superar a los que no.</p>
@@ -711,8 +711,8 @@ export const batch2Articles: Article[] = [
     date: "2026-03-10",
     readTime: "9 min",
     tags: ["presentaciones", "PowerPoint", "IA", "diseño", "productividad", "pitch"],
-    metaTitle: "Cómo Hacer Presentaciones Profesionales con IA en 2026: Guía Completa",
-    metaDescription: "Creá presentaciones impresionantes con IA en minutos. Las mejores herramientas para diseño y contenido de presentaciones para emprendedores y profesionales.",
+    metaTitle: "Cómo Hacer Presentaciones con IA en 2026: Guía",
+    metaDescription: "Creá presentaciones con IA en minutos. Las mejores herramientas para diseño y contenido para emprendedores y profesionales.",
     content: `
 <h2>El problema con las presentaciones</h2>
 <p>Crear una buena presentación lleva mucho más tiempo del que debería. Primero pensás la estructura, después el contenido, después el diseño, después los ajustes... fácilmente son 3-4 horas para algo decente. Con IA, podés tener una presentación profesional lista en 15-20 minutos. No es exageración: te lo muestro paso a paso.</p>
@@ -791,7 +791,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-11",
     readTime: "10 min",
     tags: ["restaurantes", "gastronomía", "IA", "operaciones", "marketing gastronómico"],
-    metaTitle: "IA para Restaurantes: Optimizá tu Negocio Gastronómico con Inteligencia Artificial",
+    metaTitle: "IA para Restaurantes: Optimizá tu Negocio en 2026",
     metaDescription: "Cómo usar IA en tu restaurante o negocio gastronómico. Predicción de demanda, optimización de menú y marketing digital para el sector gastronómico.",
     content: `
 <h2>Los desafíos únicos de la gastronomía</h2>
@@ -877,8 +877,8 @@ export const batch2Articles: Article[] = [
     date: "2026-03-12",
     readTime: "10 min",
     tags: ["WhatsApp", "automatización", "chatbot", "ventas", "IA", "Argentina"],
-    metaTitle: "Automatizar WhatsApp con IA: Guía Completa para Ventas y Atención al Cliente",
-    metaDescription: "Cómo automatizar WhatsApp Business con inteligencia artificial. Chatbots, respuestas automáticas y flujos de venta para negocios en Argentina y Latinoamérica.",
+    metaTitle: "Automatizar WhatsApp con IA: Guía para Ventas 2026",
+    metaDescription: "Cómo automatizar WhatsApp Business con IA: chatbots, respuestas automáticas y flujos de venta para negocios en Argentina y Latinoamérica.",
     content: `
 <h2>WhatsApp: el canal de ventas favorito de Latinoamérica</h2>
 <p>En Argentina y el resto de Latinoamérica, WhatsApp no es solo una aplicación de mensajería: es el canal de ventas y atención al cliente más importante para la gran mayoría de los negocios. Si tenés un emprendimiento, probablemente recibís más consultas de clientes por WhatsApp que por cualquier otro canal. Y eso significa que automatizarlo puede tener un impacto enorme en tus ventas y en tu calidad de vida.</p>
@@ -967,7 +967,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-13",
     readTime: "11 min",
     tags: ["inmobiliarias", "real estate", "IA", "propiedades", "ventas inmobiliarias"],
-    metaTitle: "IA para Inmobiliarias: Captá más Propiedades y Cerrá más Ventas en 2026",
+    metaTitle: "IA para Inmobiliarias: Captá Propiedades y Vendé Más",
     metaDescription: "Cómo usar inteligencia artificial en el negocio inmobiliario. Herramientas para captación, atención al cliente y cierre de operaciones con IA.",
     content: `
 <h2>El negocio inmobiliario en la era de la IA</h2>
@@ -1046,7 +1046,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-14",
     readTime: "10 min",
     tags: ["Midjourney", "IA", "imágenes", "diseño", "marketing visual", "branding"],
-    metaTitle: "Cómo Usar Midjourney para Negocios: Crear Imágenes con IA en 2026",
+    metaTitle: "Midjourney para Negocios: Crear Imágenes con IA 2026",
     metaDescription: "Guía práctica para usar Midjourney en tu negocio. Creá imágenes profesionales para marketing, redes sociales y branding con inteligencia artificial.",
     content: `
 <h2>Midjourney: el generador de imágenes que cambió todo</h2>
@@ -1127,7 +1127,7 @@ export const batch2Articles: Article[] = [
     date: "2026-03-21",
     readTime: "12 min",
     tags: ["cursos online", "educación", "IA", "e-learning", "emprendimiento educativo"],
-    metaTitle: "IA para Educación y Cursos Online: Creá y Vendé Cursos con IA en 2026",
+    metaTitle: "IA para Educación: Creá y Vendé Cursos Online 2026",
     metaDescription: "Cómo usar inteligencia artificial para crear, lanzar y vender cursos online. Guía completa para educadores y emprendedores de e-learning en Latinoamérica.",
     content: `
 <h2>El boom de los cursos online en Latinoamérica</h2>

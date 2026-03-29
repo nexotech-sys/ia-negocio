@@ -9,8 +9,8 @@ export const extraArticles: Article[] = [
     date: "2026-03-15",
     readTime: "12 min",
     tags: ["ganar dinero", "inteligencia artificial", "negocios online", "freelancing", "micro-saas", "ingresos pasivos"],
-    metaTitle: "Cómo Ganar Dinero con IA en 2026: 10 Formas Reales y Probadas",
-    metaDescription: "Guía completa con 10 formas reales de generar ingresos con inteligencia artificial en 2026. Freelancing, micro-SaaS, consultoría y más. Con ejemplos y cifras concretas.",
+    metaTitle: "Cómo Ganar Dinero con IA en 2026: 10 Formas Reales",
+    metaDescription: "10 formas reales de generar ingresos con IA en 2026: freelancing, micro-SaaS, consultoría y más. Con ejemplos y cifras concretas.",
     content: `
 <h2>La oportunidad más grande de esta década está frente a tus ojos</h2>
 <p>Si estás leyendo esto, ya tenés una ventaja enorme: sabés que la inteligencia artificial no es una moda pasajera. En 2026, el mercado global de IA supera los 300 mil millones de dólares, y la realidad es que la mayoría de las personas todavía no sabe cómo aprovecharlo para generar ingresos reales.</p>
@@ -94,7 +94,7 @@ export const extraArticles: Article[] = [
     date: "2026-03-10",
     readTime: "15 min",
     tags: ["prompts", "chatgpt", "productividad", "marketing", "copywriting", "ventas"],
-    metaTitle: "50 Mejores Prompts de ChatGPT para Negocios [2026] - Copiá y Usá",
+    metaTitle: "50 Mejores Prompts de ChatGPT para Negocios [2026]",
     metaDescription: "Los 50 prompts más efectivos para ChatGPT en negocios. Organizados por categoría: marketing, ventas, emails, análisis y más. Listos para copiar y usar.",
     content: `
 <h2>Prompts que realmente funcionan (y por qué importa cómo los escribís)</h2>
@@ -265,7 +265,7 @@ export const extraArticles: Article[] = [
     date: "2026-03-08",
     readTime: "11 min",
     tags: ["freelancers", "productividad", "inteligencia artificial", "diseño", "redacción", "desarrollo", "consultoría"],
-    metaTitle: "IA para Freelancers: Multiplicá tu Productividad e Ingresos [2026]",
+    metaTitle: "IA para Freelancers: Multiplicá Productividad e Ingresos",
     metaDescription: "Guía completa para freelancers sobre cómo usar IA para multiplicar productividad e ingresos. Tips para diseñadores, redactores, developers y consultores.",
     content: `
 <h2>El freelancer que no usa IA está perdiendo dinero (y clientes)</h2>
