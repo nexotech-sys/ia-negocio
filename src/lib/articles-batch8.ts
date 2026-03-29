@@ -9,8 +9,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-18",
     readTime: "8 min",
     tags: ["cafetería", "inteligencia artificial", "gastronomía", "automatización", "emprendedores"],
-    metaTitle: "IA para Cafeterías en 2026 | Guía Práctica para Dueños de Café",
-    metaDescription: "Aprendé cómo usar inteligencia artificial en tu cafetería para optimizar pedidos, gestionar stock, mejorar redes sociales y fidelizar clientes. Guía práctica para Argentina.",
+    metaTitle: "IA para Cafeterías en 2026 | Guía para Dueños de Café",
+    metaDescription: "Aprendé cómo usar IA en tu cafetería para optimizar pedidos, gestionar stock, mejorar redes sociales y fidelizar clientes. Guía práctica para Argentina.",
     content: `
 <h2>Tu cafetería en la era de la inteligencia artificial</h2>
 <p>Tener una cafetería en Argentina en 2026 es un desafío enorme: competencia feroz, costos que no paran de subir, clientes cada vez más exigentes. Pero también hay una oportunidad que muchos dueños de café todavía no están aprovechando: la inteligencia artificial. Y no hablamos de robots ni de ciencia ficción. Hablamos de herramientas concretas que podés empezar a usar esta semana.</p>
@@ -52,8 +52,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-18",
     readTime: "9 min",
     tags: ["canva", "diseño", "inteligencia artificial", "redes sociales", "marketing"],
-    metaTitle: "Cómo Usar Canva con IA en 2026 | Guía Completa de Magic Studio",
-    metaDescription: "Guía completa para usar Canva con inteligencia artificial. Aprendé Magic Write, Magic Design, Background Remover, y todas las funciones de IA para crear diseños profesionales.",
+    metaTitle: "Cómo Usar Canva con IA en 2026 | Guía de Magic Studio",
+    metaDescription: "Guía para usar Canva con IA. Aprendé Magic Write, Magic Design, Background Remover y todas las funciones de IA para crear diseños profesionales.",
     content: `
 <h2>Canva ya no es solo un editor de imágenes</h2>
 <p>Si todavía usás Canva solo para hacer flyers y posts de Instagram arrastrando plantillas, estás aprovechando el 20% de lo que la herramienta puede hacer. Desde 2024, Canva integró docenas de funciones de inteligencia artificial que cambian completamente el flujo de trabajo de cualquier emprendedor o creador de contenido. Te cuento todo lo que podés hacer.</p>
@@ -193,8 +193,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-19",
     readTime: "8 min",
     tags: ["pizzería", "gastronomía", "inteligencia artificial", "delivery", "automatización"],
-    metaTitle: "IA para Pizzerías en 2026 | Automatizá tu Pizzería con Inteligencia Artificial",
-    metaDescription: "Aprendé a usar IA en tu pizzería para gestionar pedidos, optimizar delivery, crear marketing automatizado y reducir desperdicios. Guía práctica para Argentina.",
+    metaTitle: "IA para Pizzerías en 2026 | Automatizá tu Pizzería con IA",
+    metaDescription: "Aprendé a usar IA en tu pizzería para gestionar pedidos, optimizar delivery, crear marketing y reducir desperdicios. Guía práctica para Argentina.",
     content: `
 <h2>La pizzería argentina en la era digital</h2>
 <p>La pizza es uno de los negocios gastronómicos más competitivos de Argentina. En Buenos Aires solo hay miles de pizzerías compitiendo por los mismos clientes. En ese contexto, la diferencia entre crecer y cerrar puede estar en qué tan bien usás la tecnología. La inteligencia artificial ya no es exclusiva de las grandes cadenas: hoy cualquier pizzería puede implementarla con presupuesto razonable.</p>
@@ -235,8 +235,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-20",
     readTime: "12 min",
     tags: ["SEO", "posicionamiento web", "inteligencia artificial", "marketing digital", "Google"],
-    metaTitle: "Cómo Hacer SEO con IA en 2026 | Guía Completa de Posicionamiento",
-    metaDescription: "Guía completa de SEO con inteligencia artificial. Aprendé a usar IA para investigación de keywords, creación de contenido, SEO técnico y análisis de competencia.",
+    metaTitle: "Cómo Hacer SEO con IA en 2026 | Guía de Posicionamiento",
+    metaDescription: "Guía de SEO con IA. Aprendé a usar IA para investigación de keywords, creación de contenido, SEO técnico y análisis de competencia.",
     content: `
 <h2>SEO en 2026: la IA cambió las reglas del juego</h2>
 <p>El SEO de 2026 es radicalmente diferente al de hace tres años. Google usa modelos de IA cada vez más sofisticados para evaluar la calidad del contenido, y al mismo tiempo, las herramientas de IA generativa cambiaron completamente cómo se puede crear y optimizar contenido a escala. En esta guía te explico exactamente cómo usar IA para cada etapa de tu estrategia de SEO.</p>
@@ -291,8 +291,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-20",
     readTime: "7 min",
     tags: ["panadería", "gastronomía", "inteligencia artificial", "gestión", "automatización"],
-    metaTitle: "IA para Panaderías en 2026 | Modernizá tu Panadería con Inteligencia Artificial",
-    metaDescription: "Guía práctica de IA para panaderías argentinas. Optimizá producción, reducí desperdicios, automatizá pedidos y mejorá tu marketing con inteligencia artificial.",
+    metaTitle: "IA para Panaderías en 2026 | Modernizá tu Panadería",
+    metaDescription: "Guía de IA para panaderías argentinas. Optimizá producción, reducí desperdicios, automatizá pedidos y mejorá tu marketing con IA.",
     content: `
 <h2>La panadería del siglo XXI</h2>
 <p>Las panaderías argentinas tienen algo que ninguna aplicación puede replicar: el olor a pan recién horneado, la medialunas de manteca que salen a las 7 de la mañana, el trato de toda la vida. Pero también tienen desafíos concretos: inflación que complica el cálculo de precios, desperdicio de producción, dificultad para fidelizar clientes y poca presencia online. La IA puede ayudarte con todo eso sin que pierdas la esencia de tu negocio.</p>
@@ -334,7 +334,7 @@ export const batch8Articles: Article[] = [
     readTime: "10 min",
     tags: ["Instagram", "automatización", "inteligencia artificial", "redes sociales", "marketing digital"],
     metaTitle: "Automatizar Instagram con IA en 2026 | Guía Completa",
-    metaDescription: "Guía completa para automatizar Instagram con IA. Creá contenido, programá publicaciones, respondé mensajes automáticamente y analizá métricas con inteligencia artificial.",
+    metaDescription: "Guía para automatizar Instagram con IA. Creá contenido, programá publicaciones, respondé mensajes automáticamente y analizá métricas con IA.",
     content: `
 <h2>Instagram en 2026: más difícil, pero más rentable si sabés cómo</h2>
 <p>El alcance orgánico en Instagram cayó, la competencia por la atención del usuario es feroz y el algoritmo cambia constantemente. Sin embargo, Instagram sigue siendo una de las plataformas más poderosas para negocios en Argentina, especialmente para rubros como gastronomía, indumentaria, belleza y servicios. La clave para competir sin quemarte está en usar la IA para automatizar lo que se puede automatizar y enfocarte en lo que realmente requiere tu presencia humana.</p>
@@ -380,8 +380,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-21",
     readTime: "7 min",
     tags: ["cerrajería", "servicios", "inteligencia artificial", "marketing local", "gestión"],
-    metaTitle: "IA para Cerrajerías en 2026 | Cómo Crecer con Inteligencia Artificial",
-    metaDescription: "Aprendé a usar IA en tu cerrajería para conseguir más clientes, gestionar mejor el negocio y destacarte en Google Maps. Guía práctica para cerrajeros argentinos.",
+    metaTitle: "IA para Cerrajerías en 2026 | Crecé con IA",
+    metaDescription: "Aprendé a usar IA en tu cerrajería para conseguir más clientes y gestionar mejor el negocio. Guía práctica para cerrajeros argentinos.",
     content: `
 <h2>La cerrajería en la era digital</h2>
 <p>Una cerrajería parece un negocio que tiene poco que ver con la inteligencia artificial. Pero si lo pensás bien, los principales desafíos de una cerrajería son exactamente los que la IA puede resolver mejor: conseguir nuevos clientes en el momento en que los necesitan, gestionar la agenda de trabajos, generar presupuestos rápidos y mantener contacto con clientes anteriores para que vuelvan. Todo eso se puede optimizar con IA.</p>
@@ -426,7 +426,7 @@ export const batch8Articles: Article[] = [
     readTime: "10 min",
     tags: ["marca personal", "personal branding", "inteligencia artificial", "LinkedIn", "emprendedores"],
     metaTitle: "Cómo Crear Marca Personal con IA en 2026 | Guía Completa",
-    metaDescription: "Guía completa para crear y escalar tu marca personal usando inteligencia artificial. Definí tu propuesta de valor, creá contenido y posicionate como referente con IA.",
+    metaDescription: "Guía para crear tu marca personal con IA. Definí tu propuesta de valor, creá contenido y posicionate como referente con inteligencia artificial.",
     content: `
 <h2>Por qué la marca personal es tu activo más valioso en 2026</h2>
 <p>En un mundo donde la automatización avanza y los roles laborales cambian constantemente, tu marca personal es la única cosa que no podés perder. Los que tienen una marca personal fuerte consiguen mejores clientes, cobran más por sus servicios y tienen oportunidades que nunca tienen que buscar activamente porque vienen solas. Y la IA hoy te permite construir esa marca personal más rápido que nunca.</p>
@@ -469,7 +469,7 @@ export const batch8Articles: Article[] = [
     readTime: "7 min",
     tags: ["papelería", "comercio", "inteligencia artificial", "ventas online", "gestión"],
     metaTitle: "IA para Papelerías en 2026 | Modernizá tu Papelería con IA",
-    metaDescription: "Guía práctica de IA para papelerías argentinas. Gestioná stock, ofrecé impresión personalizada, vendé online y automatizá tu marketing con inteligencia artificial.",
+    metaDescription: "Guía de IA para papelerías argentinas. Gestioná stock, ofrecé impresión personalizada, vendé online y automatizá tu marketing con IA.",
     content: `
 <h2>La papelería del futuro: más servicios, menos merma</h2>
 <p>Las papelerías en Argentina enfrentan un doble desafío: por un lado, la digitalización reduce la demanda de ciertos productos tradicionales. Por otro, hay una oportunidad enorme en los servicios de personalización e impresión, la venta de productos de organización y las soluciones para pequeñas empresas. La IA puede ayudarte a navegar este cambio y encontrar las oportunidades que tiene tu negocio específicamente.</p>
@@ -517,7 +517,7 @@ export const batch8Articles: Article[] = [
     date: "2026-03-21",
     readTime: "9 min",
     tags: ["presentaciones", "PowerPoint", "inteligencia artificial", "herramientas", "productividad"],
-    metaTitle: "Mejores Herramientas de IA para Presentaciones en 2026 | Comparativa Completa",
+    metaTitle: "Mejores Herramientas IA para Presentaciones 2026",
     metaDescription: "Comparativa de las mejores herramientas de IA para crear presentaciones: Gamma, Beautiful.ai, Tome, Canva AI y más. Cuál elegir según tu caso de uso.",
     content: `
 <h2>Las presentaciones nunca más van a ser un sufrimiento</h2>
@@ -615,7 +615,7 @@ export const batch8Articles: Article[] = [
     readTime: "11 min",
     tags: ["dropshipping", "e-commerce", "inteligencia artificial", "negocios online", "emprendimiento"],
     metaTitle: "Cómo Hacer Dropshipping con IA en 2026 | Guía Completa",
-    metaDescription: "Guía completa para empezar un negocio de dropshipping con IA. Investigación de productos, creación de tienda, marketing automatizado y escalado con inteligencia artificial.",
+    metaDescription: "Guía para empezar dropshipping con IA. Investigación de productos, creación de tienda, marketing automatizado y escalado con inteligencia artificial.",
     content: `
 <h2>Dropshipping en 2026: más competencia, mejores herramientas</h2>
 <p>El dropshipping sigue siendo uno de los modelos de negocio más accesibles para empezar a vender online sin necesidad de stock propio. Pero la competencia es mayor que nunca. La diferencia entre los que tienen éxito y los que fracasan ya no está solo en encontrar un buen producto: está en ejecutar más rápido, crear contenido de mejor calidad y optimizar las campañas de forma más inteligente. Para todo eso, la IA es tu mayor aliada.</p>
@@ -672,7 +672,7 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "7 min",
     tags: ["rotisería", "gastronomía", "inteligencia artificial", "delivery", "gestión"],
-    metaTitle: "IA para Rotiserías en 2026 | Modernizá tu Rotisería con Inteligencia Artificial",
+    metaTitle: "IA para Rotiserías en 2026 | Modernizá tu Rotisería",
     metaDescription: "Aprendé a usar IA en tu rotisería para optimizar la producción, automatizar pedidos, mejorar el delivery y crear marketing efectivo. Guía para Argentina.",
     content: `
 <h2>La rotisería argentina frente a la tecnología</h2>
@@ -710,7 +710,7 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "10 min",
     tags: ["LinkedIn", "automatización", "inteligencia artificial", "networking", "B2B", "generación de leads"],
-    metaTitle: "Automatizar LinkedIn con IA en 2026 | Guía para Profesionales y Empresas",
+    metaTitle: "Automatizar LinkedIn con IA en 2026 | Guía Completa",
     metaDescription: "Guía completa para automatizar LinkedIn con IA. Creá contenido, conectá estratégicamente y generá leads B2B usando inteligencia artificial.",
     content: `
 <h2>LinkedIn en 2026: la plataforma B2B más poderosa del mundo</h2>
@@ -756,8 +756,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "8 min",
     tags: ["nutricionista", "salud", "inteligencia artificial", "consultorio", "planes alimentarios"],
-    metaTitle: "IA para Nutricionistas en 2026 | Guía para Profesionales de la Nutrición",
-    metaDescription: "Aprendé a usar inteligencia artificial en tu consultorio de nutrición: planes alimentarios, gestión de pacientes, marketing y más. Guía práctica para nutricionistas.",
+    metaTitle: "IA para Nutricionistas en 2026 | Guía para Profesionales",
+    metaDescription: "Aprendé a usar IA en tu consultorio de nutrición: planes alimentarios, gestión de pacientes, marketing y más. Guía para nutricionistas.",
     content: `
 <h2>La nutrición en la era de la inteligencia artificial</h2>
 <p>La nutrición es una profesión donde la personalización es todo: cada paciente tiene necesidades, restricciones, gustos y objetivos diferentes. Esa personalización, que antes requería horas de trabajo manual para cada plan alimentario, es exactamente donde la IA puede ahorrarte tiempo significativo sin comprometer la calidad profesional. Eso sí: la IA es tu asistente, no tu reemplazante. Tu criterio clínico y la relación con el paciente siguen siendo irremplazables.</p>
@@ -809,8 +809,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "10 min",
     tags: ["ebooks", "ingresos pasivos", "inteligencia artificial", "creación de contenido", "emprendimiento"],
-    metaTitle: "Cómo Crear Ebooks con IA en 2026 | Guía Completa para Ingresos Pasivos",
-    metaDescription: "Guía completa para crear y vender ebooks usando inteligencia artificial. Desde la investigación hasta la venta automatizada. Generá ingresos pasivos con IA.",
+    metaTitle: "Cómo Crear Ebooks con IA en 2026 | Ingresos Pasivos",
+    metaDescription: "Guía para crear y vender ebooks con IA. Desde la investigación hasta la venta automatizada. Generá ingresos pasivos con inteligencia artificial.",
     content: `
 <h2>Los ebooks en 2026: una oportunidad real</h2>
 <p>Con la IA generativa, la cantidad de ebooks de baja calidad en el mercado explotó. Eso significa dos cosas: más competencia en la periferia y más oportunidad en el centro para quienes combinan la IA con expertise real. Un ebook creado con IA pero basado en conocimiento genuino, bien estructurado y bien comercializado puede generar ingresos pasivos significativos. Esta guía te dice exactamente cómo hacerlo.</p>
@@ -869,8 +869,8 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "7 min",
     tags: ["carpintería", "oficios", "inteligencia artificial", "presupuestos", "marketing"],
-    metaTitle: "IA para Carpinterías en 2026 | Hacé Crecer tu Taller con Inteligencia Artificial",
-    metaDescription: "Guía práctica de IA para carpinteros y talleres de carpintería. Optimizá presupuestos, diseño asistido, marketing y gestión de clientes con inteligencia artificial.",
+    metaTitle: "IA para Carpinterías en 2026 | Hacé Crecer tu Taller",
+    metaDescription: "Guía de IA para carpinteros y talleres. Optimizá presupuestos, diseño asistido, marketing y gestión de clientes con inteligencia artificial.",
     content: `
 <h2>La carpintería en la era digital</h2>
 <p>La carpintería es un oficio que combina precisión técnica, creatividad y gestión empresarial. Muchos carpinteros son excelentes en lo primero pero le dedican poco tiempo a lo segundo y tercero. La inteligencia artificial puede ayudarte a ser más eficiente en la parte empresarial para que puedas concentrarte en lo que realmente sabés hacer: trabajar la madera.</p>
@@ -912,7 +912,7 @@ export const batch8Articles: Article[] = [
     date: "2026-03-22",
     readTime: "10 min",
     tags: ["atención al cliente", "chatbots", "inteligencia artificial", "soporte", "automatización"],
-    metaTitle: "Mejores Herramientas de IA para Atención al Cliente en 2026 | Comparativa",
+    metaTitle: "Mejores Herramientas IA Atención al Cliente 2026",
     metaDescription: "Comparativa completa de las mejores herramientas de IA para atención al cliente. Intercom, Zendesk, Freshdesk, Tidio y más. Cuál elegir para tu negocio.",
     content: `
 <h2>La atención al cliente con IA: el nuevo estándar</h2>

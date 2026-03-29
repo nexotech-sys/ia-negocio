@@ -107,5 +107,5 @@ export const autoArticle_ia_para_agencias_de_viaje_turismo_2026: Article = {
   readTime: "7 min",
   tags: ["ia para agencias de viaje", "turismo e inteligencia artificial", "automatizar agencia viajes", "chatbot turismo", "ia para turismo argentina"],
   metaTitle: "IA para Agencias de Viaje y Turismo: Guía Completa 2026",
-  metaDescription: "Cómo usar inteligencia artificial en tu agencia de viajes para vender más, atender 24/7 y personalizar experiencias. Herramientas, casos reales y costos para Argentina.",
+  metaDescription: "Cómo usar IA en tu agencia de viajes para vender más, atender 24/7 y personalizar experiencias. Herramientas, casos reales y costos para Argentina.",
 };

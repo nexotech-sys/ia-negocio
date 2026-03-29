@@ -10,7 +10,7 @@ export const batch6Articles: Article[] = [
     readTime: "9 min",
     tags: ["agro", "agricultura", "inteligencia artificial", "campo", "tecnología agropecuaria", "precision farming"],
     metaTitle: "IA para el Agro Argentino en 2026 | Guía Completa",
-    metaDescription: "Aprendé cómo la inteligencia artificial está transformando la agricultura argentina. Drones, sensores, predicción climática y más para el productor agropecuario.",
+    metaDescription: "Cómo la IA está transformando la agricultura argentina: drones, sensores, predicción climática y más para el productor agropecuario.",
     content: `
 <h2>El campo argentino y la revolución de la IA</h2>
 <p>Argentina es uno de los grandes productores agropecuarios del mundo, y la inteligencia artificial está cambiando radicalmente la forma en que se trabaja la tierra. Si tenés un campo, una empresa agroindustrial o trabajás en el sector, necesitás entender cómo estas tecnologías pueden ayudarte a producir más con menos.</p>
@@ -186,7 +186,7 @@ export const batch6Articles: Article[] = [
     readTime: "9 min",
     tags: ["contadores", "contabilidad", "inteligencia artificial", "AFIP", "automatización", "estudios contables"],
     metaTitle: "IA para Contadores Argentinos en 2026 | Guía Completa",
-    metaDescription: "Cómo la inteligencia artificial está transformando la contabilidad en Argentina. Automatización, AFIP, liquidaciones y más para contadores y estudios contables.",
+    metaDescription: "Cómo la IA está transformando la contabilidad en Argentina: automatización, AFIP, liquidaciones y más para contadores y estudios contables.",
     content: `
 <h2>La IA y el contador argentino: ¿amenaza u oportunidad?</h2>
 <p>Esta es la pregunta que muchos contadores argentinos se hacen hoy. La respuesta honesta es que depende de qué hacés con la tecnología. Los contadores que adopten la IA como herramienta van a poder hacer más, cobrar más y trabajar mejor. Los que la ignoren van a quedarse atrás.</p>
@@ -313,7 +313,7 @@ export const batch6Articles: Article[] = [
     date: "2026-03-17",
     readTime: "10 min",
     tags: ["escritura", "inteligencia artificial", "herramientas", "contenido", "ChatGPT", "Claude", "Jasper", "copywriting"],
-    metaTitle: "Mejores Herramientas de IA para Escritura en 2026 | Comparativa",
+    metaTitle: "Mejores Herramientas IA para Escritura en 2026",
     metaDescription: "Comparamos ChatGPT, Claude, Jasper y más herramientas de IA para escritura en 2026. Precios, funciones y cuál conviene para cada tipo de contenido.",
     content: `
 <h2>La escritura con IA en 2026: más potente que nunca</h2>
@@ -443,7 +443,7 @@ export const batch6Articles: Article[] = [
     date: "2026-03-14",
     readTime: "8 min",
     tags: ["ópticas", "salud visual", "inteligencia artificial", "retail óptico", "gestión", "experiencia cliente"],
-    metaTitle: "IA para Ópticas en 2026 | Guía para el Negocio Óptico Argentino",
+    metaTitle: "IA para Ópticas en 2026 | Guía para Ópticas Argentinas",
     metaDescription: "Cómo la IA está transformando las ópticas en Argentina. Prueba virtual de monturas, gestión de stock, recordatorios de control visual y más.",
     content: `
 <h2>El negocio óptico argentino en la era digital</h2>
@@ -483,8 +483,8 @@ export const batch6Articles: Article[] = [
     date: "2026-03-13",
     readTime: "9 min",
     tags: ["cobranzas", "automatización", "inteligencia artificial", "flujo de caja", "morosidad", "pagos", "finanzas"],
-    metaTitle: "Automatizar Cobranzas con IA en 2026 | Guía para Empresas Argentinas",
-    metaDescription: "Automatizá tus cobranzas con IA y mejorá el flujo de caja de tu empresa. Recordatorios inteligentes, predicción de morosidad y gestión de pagos en Argentina.",
+    metaTitle: "Automatizar Cobranzas con IA 2026 | Empresas Argentinas",
+    metaDescription: "Automatizá tus cobranzas con IA y mejorá el flujo de caja. Recordatorios inteligentes, predicción de morosidad y gestión de pagos en Argentina.",
     content: `
 <h2>El problema de las cobranzas en Argentina y cómo la IA lo resuelve</h2>
 <p>Si tenés una empresa en Argentina, sabés que cobrar a tiempo es uno de los mayores desafíos del día a día. Los clientes que se atrasan, las facturas vencidas, el tiempo que tu equipo pierde persiguiendo pagos... todo esto impacta directamente en tu flujo de caja y en tu capacidad de crecer. La inteligencia artificial puede transformar radicalmente este proceso.</p>
@@ -527,8 +527,8 @@ export const batch6Articles: Article[] = [
     date: "2026-03-12",
     readTime: "8 min",
     tags: ["estaciones de servicio", "combustible", "inteligencia artificial", "retail energético", "fidelización", "automatización"],
-    metaTitle: "IA para Estaciones de Servicio en 2026 | Guía para Estacioneros Argentinos",
-    metaDescription: "Cómo la IA puede mejorar la rentabilidad de tu estación de servicio en Argentina. Precios, fidelización, tienda y gestión operativa con inteligencia artificial.",
+    metaTitle: "IA para Estaciones de Servicio 2026 | Guía Completa",
+    metaDescription: "Cómo la IA puede mejorar tu estación de servicio en Argentina: precios, fidelización, tienda y gestión operativa con inteligencia artificial.",
     content: `
 <h2>La estación de servicio del futuro ya está acá</h2>
 <p>Las estaciones de servicio en Argentina están en un punto de transformación. La competencia es alta, los márgenes del combustible son ajustados y el negocio tiene que diferenciarse cada vez más por los servicios adicionales. La inteligencia artificial ofrece herramientas concretas para mejorar la rentabilidad en cada uno de estos frentes.</p>
@@ -567,7 +567,7 @@ export const batch6Articles: Article[] = [
     date: "2026-03-11",
     readTime: "11 min",
     tags: ["no-code", "low-code", "aplicaciones", "inteligencia artificial", "emprendedores", "Bubble", "Glide", "desarrollo sin código"],
-    metaTitle: "Cómo Crear Apps sin Código con IA en 2026 | Guía para No Programadores",
+    metaTitle: "Cómo Crear Apps sin Código con IA 2026 | Guía",
     metaDescription: "Creá tu propia app sin saber programar usando IA y herramientas no-code. Bubble, Glide, Adalo y más. Guía completa para emprendedores argentinos en 2026.",
     content: `
 <h2>En 2026 cualquier persona puede crear una app</h2>
@@ -664,7 +664,7 @@ export const batch6Articles: Article[] = [
     date: "2026-03-09",
     readTime: "10 min",
     tags: ["música", "inteligencia artificial", "producción musical", "composición", "masterización", "Suno", "Udio", "herramientas"],
-    metaTitle: "Mejores Herramientas de IA para Música en 2026 | Comparativa Completa",
+    metaTitle: "Mejores Herramientas IA para Música en 2026",
     metaDescription: "Comparamos Suno, Udio, AIVA, Splice y más herramientas de IA para crear música en 2026. Precios, funciones y cuál usar según tu nivel y necesidades.",
     content: `
 <h2>La música en la era de la IA: ¿oportunidad o amenaza?</h2>
@@ -712,8 +712,8 @@ export const batch6Articles: Article[] = [
     date: "2026-03-08",
     readTime: "8 min",
     tags: ["talleres mecánicos", "automotriz", "inteligencia artificial", "diagnóstico", "repuestos", "gestión", "mecánica"],
-    metaTitle: "IA para Talleres Mecánicos en 2026 | Guía para Mecánicos Argentinos",
-    metaDescription: "Cómo la IA puede mejorar tu taller mecánico en Argentina. Diagnóstico de fallas, gestión de turnos, stock de repuestos y atención al cliente con inteligencia artificial.",
+    metaTitle: "IA para Talleres Mecánicos en 2026 | Guía Completa",
+    metaDescription: "Cómo la IA puede mejorar tu taller mecánico: diagnóstico de fallas, gestión de turnos, stock de repuestos y atención al cliente.",
     content: `
 <h2>El taller mecánico del siglo XXI</h2>
 <p>Si tenés un taller mecánico en Argentina, sabés que el negocio es más competitivo que nunca. Los clientes están más informados, los autos son más complejos y el margen de error es cada vez menor. La inteligencia artificial puede ser tu aliada para trabajar más inteligente, diagnosticar más rápido y gestionar mejor tu negocio.</p>
@@ -796,7 +796,7 @@ export const batch6Articles: Article[] = [
     date: "2026-03-06",
     readTime: "7 min",
     tags: ["kioscos", "minimarkets", "inteligencia artificial", "pequeños comercios", "stock", "ventas", "negocio de barrio"],
-    metaTitle: "IA para Kioscos y Minimarkets en 2026 | Guía para Pequeños Comercios",
+    metaTitle: "IA para Kioscos y Minimarkets 2026 | Guía Completa",
     metaDescription: "Cómo usar la IA en tu kiosco o minimarket argentino. Gestión de stock, fidelización, pedidos automatizados y más para pequeños comercios en 2026.",
     content: `
 <h2>La IA llega al negocio de barrio</h2>
@@ -841,8 +841,8 @@ export const batch6Articles: Article[] = [
     date: "2026-03-05",
     readTime: "9 min",
     tags: ["atención telefónica", "IVR", "voicebot", "inteligencia artificial", "call center", "automatización", "atención al cliente"],
-    metaTitle: "Automatizar Atención Telefónica con IA en 2026 | Guía Completa",
-    metaDescription: "Implementá IVR inteligente y voicebots en tu empresa para automatizar la atención telefónica. Reducí costos y mejorá la experiencia del cliente con IA en 2026.",
+    metaTitle: "Automatizar Atención Telefónica con IA 2026",
+    metaDescription: "Implementá IVR inteligente y voicebots para automatizar la atención telefónica. Reducí costos y mejorá la experiencia del cliente con IA.",
     content: `
 <h2>La atención telefónica en la era de la IA</h2>
 <p>Si tu empresa recibe muchas llamadas de clientes, sabés lo costoso y desafiante que es mantener un buen nivel de atención telefónica. Personal capacitado, horarios extendidos, picos de demanda... La inteligencia artificial está transformando la atención telefónica con soluciones que van mucho más allá del IVR tradicional de "marque 1 para ventas, marque 2 para soporte".</p>

@@ -13,5 +13,5 @@ export const autoArticle_ia_cuantica_negocios_computadoras_cuanticas_empresas_20
   readTime: "8 min",
   tags: ["computación cuántica","IA cuántica","transformación digital","tecnología empresarial","innovación 2026"],
   metaTitle: "IA Cuántica 2026: Cómo Revolucionará tu Empresa | Guía",
-  metaDescription: "Descubre cómo la IA cuántica transformará los negocios en 2026. Guía completa con ejemplos reales y estrategias para implementar esta tecnología revolucionaria.",
+  metaDescription: "Descubre cómo la IA cuántica transformará los negocios en 2026. Ejemplos reales y estrategias para implementar esta tecnología revolucionaria.",
 };

@@ -9,7 +9,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-18",
     readTime: "8 min",
     tags: ["delivery", "inteligencia artificial", "logística", "optimización", "emprendimiento"],
-    metaTitle: "IA para Delivery: Optimizá tu Servicio de Entrega con IA en 2026",
+    metaTitle: "IA para Delivery: Optimizá tu Servicio con IA en 2026",
     metaDescription: "Aprendé a usar inteligencia artificial en tu negocio de delivery. Rutas óptimas, predicción de demanda, chatbots y automatización para aumentar ganancias.",
     content: `
 <h2>El delivery en Argentina está cambiando: la IA llegó para quedarse</h2>
@@ -49,7 +49,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-18",
     readTime: "9 min",
     tags: ["redes sociales", "inteligencia artificial", "marketing", "seguidores", "contenido", "instagram"],
-    metaTitle: "Cómo Ganar Seguidores con IA en 2026 | Estrategias que Funcionan",
+    metaTitle: "Cómo Ganar Seguidores con IA en 2026 | Estrategias",
     metaDescription: "Estrategias probadas para ganar seguidores usando IA en Instagram, TikTok y YouTube. Creación de contenido, análisis de audiencia y automatización.",
     content: `
 <h2>La verdad sobre ganar seguidores en 2026</h2>
@@ -175,7 +175,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-19",
     readTime: "7 min",
     tags: ["ferreterías", "inteligencia artificial", "gestión de stock", "negocios", "automatización"],
-    metaTitle: "IA para Ferreterías en 2026 | Modernizá tu Negocio con Inteligencia Artificial",
+    metaTitle: "IA para Ferreterías en 2026 | Modernizá tu Negocio",
     metaDescription: "Guía práctica para ferreterías que quieren usar IA. Gestión de inventario, chatbots, análisis de ventas y automatización de pedidos a proveedores.",
     content: `
 <h2>La ferretería del siglo XXI: más inteligente, más rentable</h2>
@@ -215,7 +215,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-20",
     readTime: "9 min",
     tags: ["análisis financiero", "inteligencia artificial", "finanzas", "flujo de caja", "emprendimiento"],
-    metaTitle: "Cómo Hacer Análisis Financiero con IA en 2026 | Guía para Emprendedores",
+    metaTitle: "Análisis Financiero con IA en 2026 | Guía para Emprendedores",
     metaDescription: "Usá IA para analizar las finanzas de tu negocio. Proyecciones de flujo de caja, detección de tendencias, control de gastos y decisiones basadas en datos.",
     content: `
 <h2>Las finanzas de tu negocio, sin misterios</h2>
@@ -260,7 +260,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-20",
     readTime: "7 min",
     tags: ["guarderías", "jardín maternal", "inteligencia artificial", "educación", "gestión"],
-    metaTitle: "IA para Guarderías y Jardines Maternales en 2026 | Guía Práctica",
+    metaTitle: "IA para Guarderías y Jardines Maternales 2026",
     metaDescription: "Optimizá la gestión de tu guardería o jardín maternal con IA. Automatización de inscripciones, comunicación con familias, seguimiento de niños y más.",
     content: `
 <h2>Gestionar una guardería en 2026: más complejo y más digital que nunca</h2>
@@ -301,8 +301,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-20",
     readTime: "8 min",
     tags: ["social listening", "inteligencia artificial", "marketing", "monitoreo de marca", "redes sociales"],
-    metaTitle: "Automatizar Social Listening con IA en 2026 | Monitoreo de Marca Inteligente",
-    metaDescription: "Automatizá el monitoreo de tu marca con IA. Aprendé a usar herramientas de social listening para detectar menciones, analizar sentimientos y responder a tiempo.",
+    metaTitle: "Automatizar Social Listening con IA 2026 | Guía",
+    metaDescription: "Automatizá el monitoreo de tu marca con IA. Usá social listening para detectar menciones, analizar sentimientos y responder a tiempo.",
     content: `
 <h2>Tu marca se menciona en este momento: ¿sabés qué están diciendo?</h2>
 <p>En este momento, mientras leés este artículo, hay gente hablando de tu marca o de tus competidores en Twitter, Instagram, Facebook, Reddit, foros, blogs y cientos de otros lugares online. La pregunta es: ¿lo sabés? ¿Y si hay una crisis de reputación emergiendo, cuánto tiempo tarda en llegarte la noticia?</p>
@@ -345,7 +345,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-20",
     readTime: "7 min",
     tags: ["mudanzas", "inteligencia artificial", "logística", "presupuestos", "negocios"],
-    metaTitle: "IA para Empresas de Mudanzas en 2026 | Optimizá tu Negocio con Inteligencia Artificial",
+    metaTitle: "IA para Empresas de Mudanzas en 2026 | Guía Completa",
     metaDescription: "Aprendé a usar IA en tu empresa de mudanzas. Presupuestos automáticos, optimización de rutas, gestión de clientes y más para crecer y ser más eficiente.",
     content: `
 <h2>El negocio de las mudanzas en la era digital</h2>
@@ -387,7 +387,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-21",
     readTime: "10 min",
     tags: ["chatbots", "ventas", "inteligencia artificial", "automatización", "whatsapp"],
-    metaTitle: "Cómo Crear Chatbots de Ventas con IA en 2026 | Guía Paso a Paso",
+    metaTitle: "Cómo Crear Chatbots de Ventas con IA en 2026",
     metaDescription: "Creá chatbots de ventas que convierten usando IA. Desde el diseño de conversaciones hasta la integración de pagos y automatización de seguimientos.",
     content: `
 <h2>Por qué los chatbots de ventas son el vendedor que nunca duerme</h2>
@@ -437,8 +437,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-21",
     readTime: "7 min",
     tags: ["librerías", "inteligencia artificial", "recomendaciones", "stock", "cultura"],
-    metaTitle: "IA para Librerías en 2026 | Modernizá tu Librería con Inteligencia Artificial",
-    metaDescription: "Aprendé cómo la IA puede transformar tu librería. Recomendaciones personalizadas, gestión de stock, contenido para redes y construcción de comunidad lectora.",
+    metaTitle: "IA para Librerías en 2026 | Modernizá tu Librería",
+    metaDescription: "Cómo la IA puede transformar tu librería: recomendaciones personalizadas, gestión de stock, contenido para redes y comunidad lectora.",
     content: `
 <h2>Las librerías y la IA: una combinación que tiene mucho sentido</h2>
 <p>Las librerías independientes tienen algo que las grandes cadenas y los gigantes del ecommerce no pueden replicar fácilmente: una personalidad, una curaduría y una comunidad. La IA puede potenciar exactamente esos elementos que te hacen único.</p>
@@ -478,8 +478,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-21",
     readTime: "10 min",
     tags: ["herramientas ia", "código", "programación", "desarrolladores", "github copilot", "cursor"],
-    metaTitle: "Mejores Herramientas IA para Código 2026 | Guía para Desarrolladores",
-    metaDescription: "Las mejores herramientas de IA para programar en 2026. Comparativa de GitHub Copilot, Cursor, Codeium, Tabnine y más. Elegí la mejor para tu flujo de trabajo.",
+    metaTitle: "Mejores Herramientas IA para Código 2026 | Guía",
+    metaDescription: "Las mejores herramientas de IA para programar en 2026. Comparativa de GitHub Copilot, Cursor, Codeium, Tabnine y más para tu flujo de trabajo.",
     content: `
 <h2>Programar con IA en 2026: ya no es el futuro, es el presente</h2>
 <p>Si todavía programás sin asistencia de IA, estás trabajando con una desventaja significativa frente a tus colegas que sí la usan. No es exageración: los desarrolladores que integran herramientas de IA en su flujo de trabajo reportan aumentos de productividad de entre el 30% y el 55%, dependiendo del tipo de tarea.</p>
@@ -527,7 +527,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-21",
     readTime: "6 min",
     tags: ["lavanderías", "inteligencia artificial", "automatización", "negocios", "gestión"],
-    metaTitle: "IA para Lavanderías en 2026 | Automatizá tu Negocio con Inteligencia Artificial",
+    metaTitle: "IA para Lavanderías en 2026 | Automatizá tu Negocio",
     metaDescription: "Guía práctica para lavanderías que quieren usar IA. Gestión de turnos, comunicaciones automáticas, fidelización de clientes y optimización de recursos.",
     content: `
 <h2>La lavandería del siglo XXI: más automatizada y más rentable</h2>
@@ -605,8 +605,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "7 min",
     tags: ["joyerías", "inteligencia artificial", "diseño", "personalización", "lujo", "ecommerce"],
-    metaTitle: "IA para Joyerías en 2026 | Personalización y Tecnología para tu Negocio",
-    metaDescription: "Aprendé a usar IA en tu joyería. Diseño personalizado, prueba virtual de joyas, gestión de stock y marketing digital para aumentar ventas y fidelizar clientes.",
+    metaTitle: "IA para Joyerías en 2026 | Personalización y Tecnología",
+    metaDescription: "Aprendé a usar IA en tu joyería: diseño personalizado, prueba virtual, gestión de stock y marketing para aumentar ventas y fidelizar clientes.",
     content: `
 <h2>La joyería en la era de la personalización digital</h2>
 <p>El cliente de joyería en 2026 llega al local (o al sitio web) con imágenes guardadas en su celular, referencias de Pinterest y expectativas de personalización que antes eran impensadas. La IA está transformando la forma en que se diseñan, venden y comercializan las joyas, y las joyerías que lo entiendan tienen una oportunidad enorme.</p>
@@ -644,7 +644,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "8 min",
     tags: ["presupuestos", "automatización", "inteligencia artificial", "ventas", "crm"],
-    metaTitle: "Automatizar Presupuestos con IA en 2026 | Cerrá Ventas Más Rápido",
+    metaTitle: "Automatizar Presupuestos con IA 2026 | Cerrá Ventas",
     metaDescription: "Automatizá la generación de presupuestos con IA. Reducí el tiempo de respuesta, mejorá la conversión y cerrá más ventas con menos esfuerzo manual.",
     content: `
 <h2>El presupuesto: el cuello de botella en el ciclo de ventas</h2>
@@ -685,7 +685,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "7 min",
     tags: ["catering", "banquetería", "inteligencia artificial", "gastronomía", "gestión de eventos"],
-    metaTitle: "IA para Catering y Banquetería en 2026 | Guía Práctica para tu Negocio",
+    metaTitle: "IA para Catering y Banquetería en 2026 | Guía",
     metaDescription: "Optimizá tu servicio de catering con IA. Planificación de menús, gestión de pedidos, optimización de compras y automatización para eventos exitosos.",
     content: `
 <h2>El negocio del catering: alta exigencia, logística compleja</h2>
@@ -725,8 +725,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "10 min",
     tags: ["tienda online", "ecommerce", "inteligencia artificial", "emprendimiento", "tiendanube"],
-    metaTitle: "Cómo Crear una Tienda Online con IA en 2026 | Guía para Emprendedores",
-    metaDescription: "Creá tu tienda online con IA paso a paso. Desde elegir la plataforma hasta diseñar, escribir contenido y empezar a vender. Guía completa para el mercado argentino.",
+    metaTitle: "Cómo Crear una Tienda Online con IA en 2026",
+    metaDescription: "Creá tu tienda online con IA paso a paso: desde la plataforma hasta el diseño, contenido y primeras ventas. Guía para el mercado argentino.",
     content: `
 <h2>Tu tienda online en 2026: más fácil que nunca gracias a la IA</h2>
 <p>Si tenés un producto y todavía no lo vendés online, estás dejando una parte enorme del mercado sin atender. Y si pensás que crear una tienda online es caro, complicado o requiere contratar a alguien, la IA cambió todo eso. Hoy podés tener una tienda funcionando en menos de una semana, sin saber de programación y con una inversión mínima.</p>
@@ -770,7 +770,7 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "7 min",
     tags: ["estética", "belleza", "inteligencia artificial", "centros de estética", "automatización"],
-    metaTitle: "IA para Centros de Estética en 2026 | Guía Práctica de Digitalización",
+    metaTitle: "IA para Centros de Estética en 2026 | Guía Práctica",
     metaDescription: "Aprendé a usar IA en tu centro de estética. Gestión de turnos, recomendaciones personalizadas, contenido para redes y fidelización de clientes.",
     content: `
 <h2>El centro de estética digital: más eficiente y más personalizado</h2>
@@ -810,8 +810,8 @@ export const batch7Articles: Article[] = [
     date: "2026-03-22",
     readTime: "11 min",
     tags: ["productividad", "herramientas ia", "2026", "automatización", "trabajo remoto"],
-    metaTitle: "Mejores Herramientas IA para Productividad 2026 | Lista Definitiva",
-    metaDescription: "Las mejores herramientas de IA para ser más productivo en 2026. Comparativa completa de asistentes, automatización, escritura, análisis y gestión de tareas.",
+    metaTitle: "Mejores Herramientas IA para Productividad 2026",
+    metaDescription: "Las mejores herramientas de IA para ser más productivo en 2026: asistentes, automatización, escritura, análisis y gestión de tareas.",
     content: `
 <h2>2026: el año de la productividad aumentada por IA</h2>
 <p>Si en 2024 la IA era una curiosidad y en 2025 se convirtió en una ventaja competitiva, en 2026 ya es una necesidad básica para quien quiere trabajar de forma eficiente. Las personas que integran bien las herramientas de IA en su rutina laboral pueden hacer en dos horas lo que antes les llevaba ocho. No es exageración: es la realidad de los que ya lo están haciendo.</p>

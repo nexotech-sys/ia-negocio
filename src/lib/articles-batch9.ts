@@ -90,8 +90,8 @@ export const batch9Articles: Article[] = [
     date: "2026-03-23",
     readTime: "9 min",
     tags: ["tiktok", "videos cortos", "reels", "inteligencia artificial", "marketing digital", "contenido"],
-    metaTitle: "IA para TikTok y Videos Cortos: Creá Contenido Viral con IA en 2026",
-    metaDescription: "Guía completa para usar IA en TikTok, Reels e Instagram. Herramientas para crear videos, guiones, subtítulos y edición automática que generan más vistas y ventas.",
+    metaTitle: "IA para TikTok y Videos Cortos: Contenido Viral 2026",
+    metaDescription: "Guía para usar IA en TikTok, Reels e Instagram. Herramientas para crear videos, guiones, subtítulos y edición automática que generan más vistas.",
     content: `
 <h2>TikTok en 2026: el canal con mayor alcance orgánico del mercado</h2>
 <p>Mientras el alcance orgánico en Instagram y Facebook lleva años cayendo, TikTok sigue siendo la plataforma donde un video de un pequeño negocio puede llegar a millones de personas sin invertir un peso en publicidad. Y la inteligencia artificial está cambiando radicalmente cómo se produce contenido para este formato.</p>
@@ -162,7 +162,7 @@ export const batch9Articles: Article[] = [
     readTime: "10 min",
     tags: ["vibe coding", "programación con ia", "no-code", "desarrollo", "inteligencia artificial", "herramientas"],
     metaTitle: "Vibe Coding: Crear Apps con IA sin Programar | Guía 2026",
-    metaDescription: "Todo sobre vibe coding: cómo crear aplicaciones y sitios web usando solo lenguaje natural con IA. Las mejores herramientas y casos de uso para emprendedores en 2026.",
+    metaDescription: "Todo sobre vibe coding: cómo crear apps usando lenguaje natural con IA. Las mejores herramientas y casos de uso para emprendedores en 2026.",
     content: `
 <h2>¿Qué es el vibe coding y por qué todos están hablando de esto?</h2>
 <p>En febrero de 2025, Andrej Karpathy —uno de los fundadores de OpenAI— usó por primera vez el término <strong>"vibe coding"</strong>: la práctica de crear software describiendo en lenguaje natural lo que querés que haga, dejando que la IA genere el código. No necesitás entender el código. Simplemente describís lo que querés, revisás el resultado y ajustás hasta que funcione.</p>
@@ -309,8 +309,8 @@ export const batch9Articles: Article[] = [
     date: "2026-03-23",
     readTime: "8 min",
     tags: ["perplexity ai", "investigación empresarial", "herramientas ia", "búsqueda con ia", "inteligencia artificial"],
-    metaTitle: "Perplexity AI para Negocios: Investigación con IA en 2026 | IA Negocio",
-    metaDescription: "Cómo usar Perplexity AI para investigar mercados, competidores y tendencias. El buscador con IA que da respuestas con fuentes verificadas para emprendedores en 2026.",
+    metaTitle: "Perplexity AI para Negocios: Investigación con IA 2026",
+    metaDescription: "Cómo usar Perplexity AI para investigar mercados y tendencias. El buscador con IA que da respuestas con fuentes verificadas para emprendedores en 2026.",
     content: `
 <h2>El problema con Google para investigar tu negocio</h2>
 <p>Cuando necesitás investigar algo para tu negocio —las tarifas de tu competencia, las tendencias del mercado, las novedades regulatorias de tu industria— el proceso habitual es tedioso: buscás en Google, abrís diez pestañas, leés partes de cada artículo, intentás sintetizar la información y al final perdés una hora para llegar a una conclusión que podría haberse generado en dos minutos.</p>

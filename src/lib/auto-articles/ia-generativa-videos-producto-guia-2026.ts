@@ -12,6 +12,6 @@ export const autoArticle_ia_generativa_videos_producto_guia_2026: Article = {
   date: "2026-03-27",
   readTime: "8 min",
   tags: ["videos con ia","marketing visual","contenido generativo","videos de producto","ia para ecommerce"],
-  metaTitle: "IA para Videos de Producto 2026: Guía Completa + Herramientas",
+  metaTitle: "IA para Videos de Producto 2026: Guía + Herramientas",
   metaDescription: "Descubre cómo usar IA generativa para crear videos de producto profesionales en 2026. Guía paso a paso, mejores herramientas y casos prácticos.",
 };

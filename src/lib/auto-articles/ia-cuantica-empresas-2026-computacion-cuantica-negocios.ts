@@ -13,5 +13,5 @@ export const autoArticle_ia_cuantica_empresas_2026_computacion_cuantica_negocios
   readTime: "8 min",
   tags: ["computación cuántica","IA cuántica","tecnología empresarial","innovación 2026","negocios latinos"],
   metaTitle: "IA Cuántica 2026: Revolución en Empresas Latinas",
-  metaDescription: "Descubre cómo la IA cuántica transformará los negocios latinos en 2026. Guía completa con casos prácticos y estrategias para implementar esta tecnología.",
+  metaDescription: "Descubre cómo la IA cuántica transformará los negocios latinos en 2026. Casos prácticos y estrategias para implementar esta tecnología.",
 };

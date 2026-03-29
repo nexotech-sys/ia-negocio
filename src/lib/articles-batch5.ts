@@ -64,8 +64,8 @@ export const batch5Articles: Article[] = [
     date: "2026-03-02",
     readTime: "8 min",
     tags: ["estudios de mercado", "investigación de mercado", "inteligencia artificial", "emprendedores", "marketing"],
-    metaTitle: "Cómo Hacer Estudios de Mercado con IA en 2026 | Guía Práctica",
-    metaDescription: "Guía completa para hacer estudios de mercado con IA. Aprendé a analizar la competencia, entender a tus clientes y encontrar oportunidades usando herramientas de inteligencia artificial.",
+    metaTitle: "Cómo Hacer Estudios de Mercado con IA 2026 | Guía",
+    metaDescription: "Guía para hacer estudios de mercado con IA. Aprendé a analizar competencia, entender clientes y encontrar oportunidades con inteligencia artificial.",
     content: `
 <h2>El problema con los estudios de mercado tradicionales</h2>
 <p>Si alguna vez intentaste hacer un estudio de mercado profesional, sabés lo costoso y lento que puede ser. Una consultora especializada puede cobrarte entre 50.000 y 500.000 pesos solo por un informe básico. Y para cuando tenés los resultados, el mercado ya cambió.</p>
@@ -158,7 +158,7 @@ export const batch5Articles: Article[] = [
     readTime: "7 min",
     tags: ["apps", "celular", "inteligencia artificial", "productividad", "iPhone", "Android"],
     metaTitle: "Mejores Apps de IA para Celular en 2026 | iPhone y Android",
-    metaDescription: "Las mejores aplicaciones de IA para tu celular en 2026. Asistentes, editores de fotos, transcripción y más apps de inteligencia artificial para iPhone y Android.",
+    metaDescription: "Las mejores apps de IA para tu celular en 2026. Asistentes, editores de fotos, transcripción y más para iPhone y Android.",
     content: `
 <h2>La IA en tu bolsillo: el salto de 2026</h2>
 <p>Tu celular en 2026 es literalmente una computadora más poderosa que las supercomputadoras de hace diez años. Y con las apps de IA correctas, se convierte en un asistente personal, editor de contenido, traductor simultáneo y consultor de negocios, todo en uno. Acá te cuento cuáles son las mejores apps que deberías tener instaladas.</p>
@@ -199,7 +199,7 @@ export const batch5Articles: Article[] = [
     date: "2026-03-05",
     readTime: "8 min",
     tags: ["seguros", "insurtech", "inteligencia artificial", "siniestros", "automatización"],
-    metaTitle: "IA para el Sector de Seguros en 2026 | Guía para Aseguradoras",
+    metaTitle: "IA para el Sector de Seguros 2026 | Guía Completa",
     metaDescription: "Cómo usar inteligencia artificial en seguros. Suscripción automatizada, detección de fraudes, gestión de siniestros y personalización de pólizas con IA.",
     content: `
 <h2>La insurtech: cuando los seguros encuentran a la IA</h2>
@@ -242,7 +242,7 @@ export const batch5Articles: Article[] = [
     readTime: "10 min",
     tags: ["escribir libro", "inteligencia artificial", "escritura creativa", "publicación", "autor"],
     metaTitle: "Cómo Escribir un Libro con IA en 2026 | Guía Completa",
-    metaDescription: "Aprendé a escribir tu libro usando IA. Desde la idea hasta la publicación: cómo crear el outline, escribir capítulos, editar y publicar con inteligencia artificial.",
+    metaDescription: "Aprendé a escribir tu libro con IA. Desde la idea hasta la publicación: outline, capítulos, edición y publicación con inteligencia artificial.",
     content: `
 <h2>¿Podés escribir un libro con IA? La respuesta honesta</h2>
 <p>La respuesta corta es sí, pero con matices importantes. La IA no va a escribir un libro genial por vos si vos no tenés nada que decir. Pero si tenés ideas, experiencias o conocimientos valiosos, la IA puede ayudarte a transformarlos en un libro real en mucho menos tiempo del que imaginarías. En esta guía te cuento exactamente cómo hacerlo.</p>
@@ -292,8 +292,8 @@ export const batch5Articles: Article[] = [
     date: "2026-03-07",
     readTime: "8 min",
     tags: ["transporte", "logística", "inteligencia artificial", "optimización de rutas", "flota"],
-    metaTitle: "IA para Empresas de Transporte en 2026 | Optimización y Logística",
-    metaDescription: "Cómo usar IA en empresas de transporte. Optimización de rutas, mantenimiento predictivo, gestión de flota y reducción de costos con inteligencia artificial.",
+    metaTitle: "IA para Empresas de Transporte 2026 | Optimización",
+    metaDescription: "Cómo usar IA en transporte: optimización de rutas, mantenimiento predictivo, gestión de flota y reducción de costos.",
     content: `
 <h2>El transporte inteligente ya está acá</h2>
 <p>Si tenés una empresa de transporte, ya sea de cargas, de pasajeros o de última milla, la inteligencia artificial puede hacer una diferencia enorme en tus costos operativos y en la calidad del servicio. Las empresas de transporte que no estén adoptando IA en los próximos dos años van a tener una desventaja competitiva muy seria frente a las que sí lo hagan.</p>
@@ -334,7 +334,7 @@ export const batch5Articles: Article[] = [
     readTime: "8 min",
     tags: ["postventa", "servicio al cliente", "automatización", "inteligencia artificial", "CRM"],
     metaTitle: "Automatizar Servicio Postventa con IA | Guía Práctica 2026",
-    metaDescription: "Cómo automatizar el servicio postventa con IA. Gestión de garantías, seguimiento de reclamos, chatbots de soporte y herramientas para mejorar la satisfacción del cliente.",
+    metaDescription: "Cómo automatizar el postventa con IA: gestión de garantías, seguimiento de reclamos, chatbots de soporte y herramientas para mejorar la satisfacción.",
     content: `
 <h2>El servicio postventa: el gran diferenciador</h2>
 <p>En un mercado donde los productos se parecen cada vez más, el servicio postventa se convierte en el gran diferenciador. Un cliente que tuvo un problema y lo resolviste rápido y bien es más fiel que uno que nunca tuvo problemas. Pero escalar un buen servicio postventa sin disparar los costos es el desafío. Ahí es donde la IA hace su magia.</p>
@@ -378,7 +378,7 @@ export const batch5Articles: Article[] = [
     readTime: "9 min",
     tags: ["educación", "colegios", "inteligencia artificial", "tecnología educativa", "docentes"],
     metaTitle: "IA para Colegios en Argentina 2026 | Herramientas Educativas",
-    metaDescription: "Cómo usar IA en colegios argentinos. Herramientas para docentes, personalización del aprendizaje, evaluación automática y reducción de carga administrativa.",
+    metaDescription: "Cómo usar IA en colegios argentinos: herramientas para docentes, personalización del aprendizaje y reducción de carga administrativa.",
     content: `
 <h2>La IA llega a las aulas argentinas</h2>
 <p>La inteligencia artificial está llegando a los colegios argentinos, y la pregunta ya no es si va a transformar la educación, sino cómo aprovecharla de la mejor manera posible. En esta guía exploramos las aplicaciones más prácticas para docentes, directivos y administradores escolares, siempre pensando en el contexto argentino.</p>
@@ -475,8 +475,8 @@ export const batch5Articles: Article[] = [
     date: "2026-03-11",
     readTime: "7 min",
     tags: ["peluquería", "salón de belleza", "inteligencia artificial", "turnos", "fidelización"],
-    metaTitle: "IA para Peluquerías y Salones de Belleza 2026 | Guía Práctica",
-    metaDescription: "Cómo usar IA en tu peluquería o salón de belleza. Gestión de turnos automática, recomendaciones de estilo, marketing y fidelización de clientes con inteligencia artificial.",
+    metaTitle: "IA para Peluquerías y Salones de Belleza 2026",
+    metaDescription: "Cómo usar IA en tu peluquería: gestión de turnos automática, recomendaciones de estilo, marketing y fidelización de clientes.",
     content: `
 <h2>La peluquería del futuro: más personal, menos caótica</h2>
 <p>Si tenés una peluquería o salón de belleza, sabés lo que es el caos de los turnos, los clientes que no avisan que no vienen, el teléfono que no para y la dificultad de hacer marketing con tan poco tiempo. La IA tiene soluciones concretas para todos estos problemas, y lo mejor es que son accesibles incluso para negocios pequeños.</p>
@@ -579,7 +579,7 @@ export const batch5Articles: Article[] = [
     date: "2026-03-13",
     readTime: "8 min",
     tags: ["cooperativas", "economía social", "inteligencia artificial", "Argentina", "gestión"],
-    metaTitle: "IA para Cooperativas Argentinas 2026 | Economía Social e Innovación",
+    metaTitle: "IA para Cooperativas Argentinas 2026 | Guía",
     metaDescription: "Cómo usar IA en cooperativas argentinas. Gestión interna, toma de decisiones colectiva, marketing y eficiencia operativa para la economía social.",
     content: `
 <h2>Las cooperativas y la IA: una combinación posible y necesaria</h2>
@@ -623,7 +623,7 @@ export const batch5Articles: Article[] = [
     date: "2026-03-14",
     readTime: "9 min",
     tags: ["reportes", "automatización", "inteligencia artificial", "dashboard", "Excel", "Power BI"],
-    metaTitle: "Automatizar Reportes con IA en 2026 | Excel a Dashboard Inteligente",
+    metaTitle: "Automatizar Reportes con IA 2026 | Dashboard Inteligente",
     metaDescription: "Cómo automatizar reportes con IA. Desde Excel manual hasta dashboards inteligentes: herramientas, técnicas y paso a paso para automatizar tus reportes.",
     content: `
 <h2>El problema de los reportes manuales</h2>
@@ -719,7 +719,7 @@ export const batch5Articles: Article[] = [
     date: "2026-03-16",
     readTime: "7 min",
     tags: ["traducción", "inteligencia artificial", "DeepL", "Google Translate", "idiomas"],
-    metaTitle: "Mejores Herramientas de IA para Traducción 2026 | Comparativa",
+    metaTitle: "Mejores Herramientas IA para Traducción 2026",
     metaDescription: "Comparativa de las mejores herramientas de IA para traducción. DeepL vs Google Translate vs ChatGPT: cuál es mejor para cada caso de uso.",
     content: `
 <h2>La revolución de la traducción automática</h2>
@@ -856,7 +856,7 @@ export const batch5Articles: Article[] = [
     date: "2026-03-19",
     readTime: "9 min",
     tags: ["construcción", "constructoras", "inteligencia artificial", "obra", "gestión de proyectos"],
-    metaTitle: "IA para Constructoras en Argentina 2026 | Eficiencia en Obras",
+    metaTitle: "IA para Constructoras en Argentina 2026 | Guía",
     metaDescription: "Cómo usar IA en empresas constructoras. Planificación de obras, seguridad laboral, control de calidad y gestión de proyectos con inteligencia artificial.",
     content: `
 <h2>La construcción inteligente: desafíos y oportunidades</h2>
@@ -903,7 +903,7 @@ export const batch5Articles: Article[] = [
     readTime: "9 min",
     tags: ["reclutamiento", "recursos humanos", "inteligencia artificial", "selección de personal", "HR"],
     metaTitle: "Automatizar Reclutamiento con IA en 2026 | Guía de RRHH",
-    metaDescription: "Cómo usar IA para automatizar el reclutamiento. Screening de CVs, evaluaciones, entrevistas y herramientas de inteligencia artificial para selección de personal.",
+    metaDescription: "Cómo usar IA para automatizar el reclutamiento: screening de CVs, evaluaciones, entrevistas y selección de personal con IA.",
     content: `
 <h2>El reclutamiento tradicional tiene un problema de escala</h2>
 <p>Si alguna vez publicaste una posición laboral y recibiste 300 CVs para leer en una semana, sabés exactamente de qué hablo. El proceso de reclutamiento tradicional consume tiempo enorme del equipo de RRHH y aun así no garantiza encontrar al mejor candidato, simplemente porque es humanamente imposible evaluar bien tantos candidatos en poco tiempo. La IA resuelve este problema de raíz.</p>
