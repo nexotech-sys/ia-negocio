@@ -1,66 +1,78 @@
 {
   "lastUpdate": "2026-03-29",
   "article": {
-    "title": "IA para Análisis de Sentimientos en Redes Sociales: Cómo Monitorear tu Marca en Tiempo Real",
-    "slug": "ia-analisis-sentimientos-redes-sociales-monitoreo-marca"
+    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará la Inteligencia Artificial Empresarial en 2026",
+    "slug": "ia-cuantica-negocios-computacion-cuantica-empresarial-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense en el sitio",
+      "date": "2024-12-29",
+      "task": "Configurar enlaces afiliados Amazon en artículos tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Investigar programas de afiliados relevantes",
+      "date": "2024-12-30",
+      "task": "Crear templates de monetización para diferentes nichos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-31",
+      "task": "Implementar AdSense en layout principal",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Implementar primeros 5 enlaces de afiliados",
+      "date": "2025-01-02",
+      "task": "Optimizar artículos existentes para SEO local",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Optimizar artículos existentes para SEO",
+      "date": "2025-01-03",
+      "task": "Configurar newsletter signup para captura leads",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2025-01-06",
+      "task": "Analizar métricas Q4 y ajustar estrategia contenido",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-26",
-      "task": "Configurar newsletter semanal",
+      "date": "2025-01-08",
+      "task": "Implementar schema markup en artículos principales",
       "agent": "Nacho",
       "priority": "baja"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Crear páginas de categorías principales",
-      "agent": "Nacho",
-      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente con anuncios",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por comisiones en productos tech",
+      "reason": "Generar ingresos por afiliación en contenido tech/negocios",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "Capturar leads y enviar newsletter semanal",
+      "service": "Mailchimp",
+      "reason": "Capturar leads de lectores para nurturing",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Entender comportamiento usuarios para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Con 155 artículos y generación diaria automatizada, es momento de monetizar. Prioridad: AdSense y afiliados para aprovechar el tráfico actual."
+  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento estable. Prioridad: activar monetización inmediata con AdSense y afiliados antes de fin de año para capitalizar tráfico existente."
 }
