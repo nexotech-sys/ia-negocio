@@ -20,6 +20,7 @@ import { batch7Articles } from './articles-batch7';
 import { batch8Articles } from './articles-batch8';
 import { batch9Articles } from './articles-batch9';
 import { batch10Articles } from './articles-batch10';
+import { batch11Articles } from './articles-batch11';
 import { autoArticles } from './auto-articles';
 
 export const articles: Article[] = [
@@ -909,7 +910,7 @@ export const articles: Article[] = [
   },
 ];
 
-const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles, ...batch5Articles, ...batch6Articles, ...batch7Articles, ...batch8Articles, ...batch9Articles, ...batch10Articles, ...autoArticles];
+const allArticlesData = [...articles, ...extraArticles, ...batch2Articles, ...batch3Articles, ...batch5Articles, ...batch6Articles, ...batch7Articles, ...batch8Articles, ...batch9Articles, ...batch10Articles, ...batch11Articles, ...autoArticles];
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return allArticlesData.find((article) => article.slug === slug);
