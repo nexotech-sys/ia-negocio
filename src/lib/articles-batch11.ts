@@ -9,8 +9,8 @@ export const batch11Articles: Article[] = [
     date: "2026-03-29",
     readTime: "9 min",
     tags: ["ia para agencias de viajes", "turismo inteligente", "automatización viajes", "inteligencia artificial turismo", "agencia de viajes digital"],
-    metaTitle: "IA para Agencias de Viajes: Automatizá Cotizaciones y Vendé Más en 2026",
-    metaDescription: "Guía completa de inteligencia artificial para agencias de viajes. Herramientas reales para automatizar cotizaciones, personalizar paquetes y vender más sin aumentar el equipo.",
+    metaTitle: "IA para Agencias de Viajes: Automatizá y Vendé Más 2026",
+    metaDescription: "Guía de IA para agencias de viajes: herramientas para automatizar cotizaciones, personalizar paquetes y vender más sin aumentar el equipo.",
     content: `
 <h2>El turismo cambió. Las agencias que no se adaptan, desaparecen</h2>
 <p>Seamos directos: el turista de 2026 investiga en Google, compara en Booking, pide recomendaciones en Instagram y solo llama a una agencia si siente que va a obtener algo que no puede conseguir solo. Ese "algo" solía ser acceso a precios exclusivos. Hoy, es experiencia, personalización y confianza.</p>
