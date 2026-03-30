@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-03-29",
+  "lastUpdate": "2026-03-30",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará la Inteligencia Artificial Empresarial en 2026",
-    "slug": "ia-cuantica-negocios-computacion-cuantica-empresarial-2026"
+    "title": "IA Cuántica para Negocios: Cómo IBM y Google Están Revolucionando la Toma de Decisiones Empresariales en 2026",
+    "slug": "ia-cuantica-negocios-toma-decisiones-empresariales-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-29",
-      "task": "Configurar enlaces afiliados Amazon en artículos tech",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Crear templates de monetización para diferentes nichos",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-31",
-      "task": "Implementar AdSense en layout principal",
+      "date": "2025-01-01",
+      "task": "Implementar sistema de afiliados Amazon Associates",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2025-01-02",
-      "task": "Optimizar artículos existentes para SEO local",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Configurar newsletter signup para captura leads",
+      "task": "Configurar AdSense y optimizar layouts para ads",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-06",
-      "task": "Analizar métricas Q4 y ajustar estrategia contenido",
+      "date": "2025-01-03",
+      "task": "Crear landing pages para captura de emails",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-08",
-      "task": "Implementar schema markup en artículos principales",
+      "date": "2025-01-04",
+      "task": "Optimizar títulos y meta descriptions para SEO",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-05",
+      "task": "Implementar schema markup para artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-06",
+      "task": "Configurar newsletter automation con MailChimp",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
+      "date": "2025-01-07",
+      "task": "Crear páginas de categorías y tags optimizadas",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -51,28 +51,22 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "service": "AdSense",
+      "reason": "Monetización directa del tráfico existente con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en contenido tech/negocios",
+      "reason": "Links de afiliados para productos mencionados en artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Capturar leads de lectores para nurturing",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Entender comportamiento usuarios para optimizar conversiones",
+      "service": "MailChimp",
+      "reason": "Capturar leads y crear lista de suscriptores",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento estable. Prioridad: activar monetización inmediata con AdSense y afiliados antes de fin de año para capitalizar tráfico existente."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad absoluta: monetización inmediata con AdSense y afiliados. Analytics conectado permite optimización basada en datos."
 }
