@@ -12,6 +12,6 @@ export const autoArticle_ia_cuantica_empresas_revolucion_negocios_2026: Article 
   date: "2026-03-22",
   readTime: "7 min",
   tags: ["computacion cuantica","IBM quantum","Google quantum AI","transformacion digital","tecnologia empresarial"],
-  metaTitle: "IA Cuántica 2026: IBM y Google Revolucionan Empresas",
+  metaTitle: "IA Cuántica para Empresas: Comparativa IBM vs Google",
   metaDescription: "Descubre cómo IBM y Google están transformando los negocios con IA cuántica en 2026. Ventajas competitivas y aplicaciones empresariales reales.",
 };

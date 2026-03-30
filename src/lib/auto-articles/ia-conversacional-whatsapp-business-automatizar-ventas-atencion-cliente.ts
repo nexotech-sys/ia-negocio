@@ -12,6 +12,6 @@ export const autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_
   date: "2026-03-27",
   readTime: "8 min",
   tags: ["whatsapp business","chatbots ia","automatización ventas","atención al cliente","marketing conversacional"],
-  metaTitle: "IA WhatsApp Business: Automatiza Ventas y Atención 2026",
+  metaTitle: "Chatbots IA en WhatsApp Business: Ventas 24/7 2026",
   metaDescription: "Descubre cómo la IA conversacional en WhatsApp Business automatiza ventas y atención al cliente. Guía completa para implementar chatbots en 2026.",
 };
