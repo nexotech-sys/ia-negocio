@@ -1,78 +1,78 @@
 {
-  "lastUpdate": "2026-03-30",
+  "lastUpdate": "2026-03-31",
   "article": {
-    "title": "IA Multimodal para Empresas: Cómo Integrar Texto, Imagen y Audio en Tu Estrategia Digital 2026",
-    "slug": "ia-multimodal-empresas-integracion-texto-imagen-audio-2026"
+    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución Computacional de 2026",
+    "slug": "ia-cuantica-negocios-preparar-empresa-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-20",
+      "task": "Implementar AdSense en las 10 páginas más visitadas",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-21",
-      "task": "Configurar AdSense y optimizar primeros anuncios",
+      "task": "Configurar enlaces de afiliados Amazon en artículos de tecnología",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Investigar programas de afiliados tech relevantes",
+      "task": "Optimizar velocidad de carga del sitio",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Implementar primeros 3 links de afiliados en artículos top",
+      "task": "Crear newsletter semanal automática",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Análisis de métricas Search Console - identificar oportunidades",
+      "task": "Implementar schema markup para artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Crear landing pages para keywords de alta conversión",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Optimización SEO de artículos con mayor potencial",
+      "task": "Configurar sistema de comentarios",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-28",
-      "task": "Configurar email marketing para captura de leads",
+      "date": "2024-12-27",
+      "task": "Crear página de recursos y herramientas",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "AdSense",
-      "reason": "monetización inmediata del tráfico existente de 155 artículos",
+      "reason": "Generar ingresos por publicidad con 155+ artículos de calidad",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación en contenido tech",
+      "reason": "Monetizar contenido tech con enlaces de afiliados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y nutrir audiencia para mayor monetización",
+      "reason": "Capturar leads y enviar contenido automatizado",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "analizar comportamiento de usuarios para optimizar conversiones",
+      "reason": "Analizar comportamiento de usuarios para optimización",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata vía AdSense y afiliados. Analytics funcionando bien, necesitamos capitalizar el tráfico existente."
+  "weeklyNote": "Proyecto sólido con buen ritmo de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El volumen de 155+ artículos ya justifica ingresos pasivos."
 }
