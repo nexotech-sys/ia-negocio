@@ -1,49 +1,43 @@
 {
   "lastUpdate": "2026-03-31",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución Computacional de 2026",
-    "slug": "ia-cuantica-negocios-preparar-empresa-2026"
+    "title": "IA Generativa para Crear Videos de Productos: Guía Completa para E-commerce 2026",
+    "slug": "ia-generativa-videos-productos-ecommerce-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Implementar AdSense en las 10 páginas más visitadas",
+      "task": "Configurar Google AdSense y revisar políticas",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Configurar enlaces de afiliados Amazon en artículos de tecnología",
+      "task": "Investigar programas de afiliados para herramientas IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Optimizar velocidad de carga del sitio",
+      "task": "Implementar primeros 5 links de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter semanal automática",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Implementar schema markup para artículos",
+      "task": "Optimizar artículos con mejor tráfico según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Configurar sistema de comentarios",
+      "task": "Crear estrategia de interlinking interno",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Crear página de recursos y herramientas",
+      "task": "Revisar y mejorar meta descriptions de artículos antiguos",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -51,28 +45,22 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Generar ingresos por publicidad con 155+ artículos de calidad",
+      "service": "Google AdSense",
+      "reason": "monetización directa del contenido existente",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Monetizar contenido tech con enlaces de afiliados",
+      "reason": "links de afiliados para herramientas y libros de IA",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y enviar contenido automatizado",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para optimización",
+      "reason": "capturar emails de lectores para newsletter",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen ritmo de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El volumen de 155+ artículos ya justifica ingresos pasivos."
+  "weeklyNote": "Proyecto sólido con buen ritmo de publicación. Prioridad: activar monetización antes de fin de año aprovechando el tráfico navideño."
 }
