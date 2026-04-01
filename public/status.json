@@ -1,72 +1,66 @@
 {
   "lastUpdate": "2026-04-01",
   "article": {
-    "title": "IA Cuántica para Negocios: La Revolución que Transformará tu Empresa en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-empresas-2026"
+    "title": "IA Generativa para Recursos Humanos: Cómo Automatizar Reclutamiento y Evaluación de Talento en 2026",
+    "slug": "ia-generativa-recursos-humanos-reclutamiento-automatizado-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar anuncios",
+      "task": "Configurar Google AdSense y solicitar aprobación",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y configurar primeros links de afiliados",
+      "task": "Implementar enlaces de afiliados en artículos de tecnología",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos más antiguos",
+      "task": "Optimizar títulos SEO de últimos 20 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Crear newsletter semanal para suscriptores",
+      "task": "Crear landing page para newsletter",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Configurar enlaces internos automáticos",
+      "task": "Configurar schema markup en artículos principales",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Analizar métricas de diciembre y planificar enero",
+      "task": "Implementar botones de compartir en redes sociales",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Generar ingresos por publicidad con 155 artículos",
+      "reason": "Necesario para monetizar el tráfico existente del sitio",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Comenzar monetización con links de afiliados",
+      "reason": "Para implementar links de afiliados en artículos de productos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Crear sistema de newsletter para engagement",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Semrush",
-      "reason": "Mejorar estrategia SEO y research de keywords",
+      "reason": "Para capturar suscriptores y crear lista de email marketing",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad en monetización: AdSense y afiliados. Analytics funcionando bien, necesitamos aprovechar el tráfico existente."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad inmediata: monetización con AdSense y afiliados antes de fin de año para aprovechar tráfico navideño."
 }
