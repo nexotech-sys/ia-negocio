@@ -1,43 +1,49 @@
 {
-  "lastUpdate": "2026-04-01",
+  "lastUpdate": "2026-04-02",
   "article": {
-    "title": "IA Generativa para Recursos Humanos: Cómo Automatizar Reclutamiento y Evaluación de Talento en 2026",
-    "slug": "ia-generativa-recursos-humanos-reclutamiento-automatizado-2026"
+    "title": "Agentes de IA Autónomos para Negocios: La Revolución de los Trabajadores Digitales en 2026",
+    "slug": "agentes-ia-autonomos-negocios-trabajadores-digitales-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar Google AdSense y solicitar aprobación",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Implementar enlaces de afiliados en artículos de tecnología",
+      "task": "Implementar primeros 5 links de afiliados en artículos populares",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar títulos SEO de últimos 20 artículos",
+      "date": "2024-12-22",
+      "task": "Optimizar artículos con bajo CTR según Search Console",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear landing page para newsletter",
+      "date": "2024-12-23",
+      "task": "Crear newsletter semanal para suscriptores",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Configurar schema markup en artículos principales",
+      "task": "Analizar métricas de diciembre y planificar enero",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Expandir links de afiliados a 15 productos estratégicos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-27",
-      "task": "Implementar botones de compartir en redes sociales",
+      "date": "2024-12-28",
+      "task": "Implementar schema markup en artículos principales",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -46,21 +52,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para monetizar el tráfico existente del sitio",
+      "reason": "Monetización principal del sitio con 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Para implementar links de afiliados en artículos de productos",
+      "reason": "Generar ingresos por afiliación en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Para capturar suscriptores y crear lista de email marketing",
+      "reason": "Gestionar newsletter y automatizar email marketing",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analizar comportamiento de usuarios para optimizar UX",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad inmediata: monetización con AdSense y afiliados antes de fin de año para aprovechar tráfico navideño."
+  "weeklyNote": "El proyecto está maduro para monetización. Con 155 artículos y tráfico establecido, es momento crítico de implementar AdSense y afiliados antes de fin de año."
 }
