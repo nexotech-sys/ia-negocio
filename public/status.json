@@ -1,51 +1,51 @@
 {
-  "lastUpdate": "2026-04-02",
+  "lastUpdate": "2026-04-03",
   "article": {
-    "title": "IA Generativa para Crear Videos de Producto: Guía Completa 2026",
-    "slug": "ia-generativa-crear-videos-producto-guia-2026"
+    "title": "Cómo Crear un Asistente de IA Personalizado para tu Empresa sin Programar en 2026",
+    "slug": "crear-asistente-ia-personalizado-empresa-sin-programar"
   },
   "calendarTasks": [
     {
       "date": "2024-12-21",
-      "task": "Configurar AdSense y optimizar placement de anuncios",
+      "task": "Configurar AdSense y generar primeros ads",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Investigar y configurar primeros links de afiliados (Amazon, tech)",
+      "task": "Investigar programas de afiliados tech relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos top 10 con más tráfico",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Crear estrategia de internal linking entre artículos",
+      "task": "Implementar 3-5 links de afiliados en artículos existentes",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y ajustar estrategia de contenido",
+      "task": "Optimizar artículos con bajo CTR según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Configurar newsletter básica para captura de leads",
+      "task": "Crear newsletter signup para capturar emails",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Analizar keywords con mejor performance en Search Console",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-28",
-      "task": "Optimizar velocidad de carga y Core Web Vitals",
+      "date": "2024-12-30",
+      "task": "Establecer estructura de categorías para mejor navegación",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
@@ -58,15 +58,15 @@
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech mencionados en artículos",
+      "reason": "Links de afiliados para productos tech mencionados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Captura de leads y newsletter para audiencia recurrente",
+      "reason": "Email marketing para retener audiencia y promocionar contenido",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año"
+  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico para implementar AdSense y afiliados antes de fin de año."
 }
