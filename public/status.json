@@ -1,72 +1,78 @@
 {
   "lastUpdate": "2026-04-03",
   "article": {
-    "title": "Cómo Crear un Asistente de IA Personalizado para tu Empresa sin Programar en 2026",
-    "slug": "crear-asistente-ia-personalizado-empresa-sin-programar"
+    "title": "Agentes de IA Autónomos para Empresas: Cómo Implementar Trabajadores Digitales que Nunca Duermen",
+    "slug": "agentes-ia-autonomos-empresas-trabajadores-digitales"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-20",
+      "task": "Configurar Google AdSense y crear anuncios",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-21",
-      "task": "Configurar AdSense y generar primeros ads",
+      "task": "Implementar links de afiliados en 10 artículos tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Investigar programas de afiliados tech relevantes",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Implementar 3-5 links de afiliados en artículos existentes",
+      "task": "Optimizar SEO de artículos con bajo CTR",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2024-12-23",
+      "task": "Crear newsletter semanal con mejores artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Analizar métricas y planificar contenido enero",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
       "date": "2024-12-26",
-      "task": "Optimizar artículos con bajo CTR según Analytics",
+      "task": "Configurar remarketing en Google Ads",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Crear newsletter signup para capturar emails",
+      "task": "Implementar schema markup en artículos",
       "agent": "Nacho",
       "priority": "media"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Analizar keywords con mejor performance en Search Console",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Establecer estructura de categorías para mejor navegación",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización principal del sitio con 155 artículos",
+      "reason": "Monetizar el tráfico de 155 artículos existentes",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech mencionados",
+      "reason": "Crear ingresos por afiliados en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Email marketing para retener audiencia y promocionar contenido",
+      "reason": "Capturar leads y enviar newsletter semanal",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Google Ads",
+      "reason": "Hacer remarketing a visitantes existentes",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico para implementar AdSense y afiliados antes de fin de año."
+  "weeklyNote": "El proyecto está en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico de activar AdSense y afiliados para generar ingresos."
 }
