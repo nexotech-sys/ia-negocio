@@ -28,11 +28,13 @@ import { autoArticle_ia_generativa_recursos_humanos_reclutamiento_automatizado_2
 import { autoArticle_agentes_ia_autonomos_negocios_trabajadores_digitales_2026 } from './agentes-ia-autonomos-negocios-trabajadores-digitales-2026';
 import { autoArticle_ia_generativa_crear_videos_producto_guia_2026 } from './ia-generativa-crear-videos-producto-guia-2026';
 import { autoArticle_crear_asistente_ia_personalizado_empresa_sin_programar } from './crear-asistente-ia-personalizado-empresa-sin-programar';
+import { autoArticle_agentes_ia_autonomos_empresas_trabajadores_digitales } from './agentes-ia-autonomos-empresas-trabajadores-digitales';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_agentes_ia_autonomos_empresas_trabajadores_digitales,
   autoArticle_crear_asistente_ia_personalizado_empresa_sin_programar,
   autoArticle_ia_generativa_crear_videos_producto_guia_2026,
   autoArticle_agentes_ia_autonomos_negocios_trabajadores_digitales_2026,
