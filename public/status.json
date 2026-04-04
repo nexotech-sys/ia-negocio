@@ -1,72 +1,72 @@
 {
   "lastUpdate": "2026-04-04",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución de 2026",
-    "slug": "ia-cuantica-negocios-empresas-2026"
+    "title": "Agentes de IA Autónomos para Empresas: Cómo Implementar Trabajadores Digitales que Nunca Duermen",
+    "slug": "agentes-ia-autonomos-empresas-trabajadores-digitales"
   },
   "calendarTasks": [
     {
-      "date": "2025-01-02",
-      "task": "Configurar AdSense y optimizar posiciones de anuncios",
+      "date": "2024-12-19",
+      "task": "Implementar AdSense en artículos existentes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-03",
-      "task": "Investigar y crear lista de programas de afiliados relevantes",
+      "date": "2024-12-20",
+      "task": "Configurar enlaces de afiliados en artículos de IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-06",
-      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "date": "2024-12-21",
+      "task": "Optimizar títulos SEO de últimos 30 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-07",
-      "task": "Crear página de recursos/herramientas con enlaces afiliados",
+      "date": "2024-12-22",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-08",
-      "task": "Optimizar SEO en top 20 artículos según Analytics",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-09",
-      "task": "Configurar email marketing para captura de leads",
+      "date": "2024-12-23",
+      "task": "Configurar interlinking automático entre artículos",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-10",
-      "task": "Analizar métricas de monetización primera semana",
+      "date": "2024-12-24",
+      "task": "Análisis de rendimiento mensual con Analytics",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización principal del sitio con 155 artículos",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "programa de afiliados para productos tech y libros",
+      "reason": "Agregar links de afiliados a productos tecnológicos mencionados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar emails de lectores interesados en IA",
+      "reason": "Crear lista de suscriptores para newsletter",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analizar comportamiento de usuarios en artículos",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto va sólido con contenido consistente y métricas conectadas. Prioridad: activar monetización inmediata con AdSense y afiliados antes de perder más tráfico sin monetizar."
+  "weeklyNote": "Buen progreso con 155 artículos y cron funcionando. Prioridad: monetización inmediata con AdSense y afiliados. Analytics activo permite optimizar contenido."
 }
