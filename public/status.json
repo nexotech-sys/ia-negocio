@@ -1,78 +1,72 @@
 {
-  "lastUpdate": "2026-04-03",
+  "lastUpdate": "2026-04-04",
   "article": {
-    "title": "Agentes de IA Autónomos para Empresas: Cómo Implementar Trabajadores Digitales que Nunca Duermen",
-    "slug": "agentes-ia-autonomos-empresas-trabajadores-digitales"
+    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución de 2026",
+    "slug": "ia-cuantica-negocios-empresas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar Google AdSense y crear anuncios",
+      "date": "2025-01-02",
+      "task": "Configurar AdSense y optimizar posiciones de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Implementar links de afiliados en 10 artículos tech",
+      "date": "2025-01-03",
+      "task": "Investigar y crear lista de programas de afiliados relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Optimizar SEO de artículos con bajo CTR",
+      "date": "2025-01-06",
+      "task": "Implementar primeros 5 links de afiliados en artículos populares",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "date": "2025-01-07",
+      "task": "Crear página de recursos/herramientas con enlaces afiliados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Analizar métricas y planificar contenido enero",
+      "date": "2025-01-08",
+      "task": "Optimizar SEO en top 20 artículos según Analytics",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-09",
+      "task": "Configurar email marketing para captura de leads",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-26",
-      "task": "Configurar remarketing en Google Ads",
+      "date": "2025-01-10",
+      "task": "Analizar métricas de monetización primera semana",
       "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Implementar schema markup en artículos",
-      "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico de 155 artículos existentes",
+      "reason": "monetización principal del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Crear ingresos por afiliados en artículos de tecnología",
+      "reason": "programa de afiliados para productos tech y libros",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y enviar newsletter semanal",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Google Ads",
-      "reason": "Hacer remarketing a visitantes existentes",
+      "reason": "capturar emails de lectores interesados en IA",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto está en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico de activar AdSense y afiliados para generar ingresos."
+  "weeklyNote": "El proyecto va sólido con contenido consistente y métricas conectadas. Prioridad: activar monetización inmediata con AdSense y afiliados antes de perder más tráfico sin monetizar."
 }
