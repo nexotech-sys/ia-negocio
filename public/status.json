@@ -1,43 +1,49 @@
 {
   "lastUpdate": "2026-04-05",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo IBM y Google Están Revolucionando la Optimización Empresarial en 2026",
-    "slug": "ia-cuantica-negocios-optimizacion-empresarial-2026"
+    "title": "Neuromarketing con IA: Cómo Leer la Mente de tus Clientes para Vender Más en 2026",
+    "slug": "neuromarketing-ia-leer-mente-clientes-vender-mas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-12",
-      "task": "Configurar AdSense y crear primeras unidades publicitarias",
+      "date": "2024-12-19",
+      "task": "Configurar AdSense y revisar políticas",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-13",
-      "task": "Investigar y registrarse en 3 programas de afiliados relevantes (Amazon, tech)",
+      "date": "2024-12-20",
+      "task": "Investigar programas de afiliación relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-14",
-      "task": "Implementar primeros links de afiliados en 10 artículos con mejor tráfico",
+      "date": "2024-12-21",
+      "task": "Implementar primeros 5 links de afiliados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-15",
-      "task": "Optimizar artículos top 20 para SEO y añadir CTAs",
+      "date": "2024-12-22",
+      "task": "Optimizar artículos top 10 para SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-16",
-      "task": "Crear newsletter signup y configurar email marketing",
+      "date": "2024-12-23",
+      "task": "Crear estrategia de monetización Q1 2025",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Analizar métricas de diciembre",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-17",
-      "task": "Análisis de rendimiento semanal y ajustes de monetización",
+      "date": "2024-12-27",
+      "task": "Configurar email marketing básico",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -46,21 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización directa del tráfico existente",
+      "reason": "monetización publicitaria del sitio",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "enlaces de afiliados para productos tech mencionados",
+      "reason": "links de afiliación para productos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y crear lista de email marketing",
+      "reason": "captura y nurturing de leads",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen contenido base (155 artículos) y métricas conectadas. Prioridad: activar monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto sólido con 155 artículos y buen setup técnico. Prioridad: activar monetización con AdSense y afiliados antes de fin de año para capitalizar tráfico existente."
 }
