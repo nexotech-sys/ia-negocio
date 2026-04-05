@@ -32,11 +32,13 @@ import { autoArticle_agentes_ia_autonomos_empresas_trabajadores_digitales } from
 import { autoArticle_ia_cuantica_negocios_empresas_2026 } from './ia-cuantica-negocios-empresas-2026';
 import { autoArticle_agentes_ia_autonomos_empresas_trabajadores_digitales } from './agentes-ia-autonomos-empresas-trabajadores-digitales';
 import { autoArticle_ia_cuantica_negocios_optimizacion_empresarial_2026 } from './ia-cuantica-negocios-optimizacion-empresarial-2026';
+import { autoArticle_neuromarketing_ia_leer_mente_clientes_vender_mas_2026 } from './neuromarketing-ia-leer-mente-clientes-vender-mas-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_neuromarketing_ia_leer_mente_clientes_vender_mas_2026,
   autoArticle_ia_cuantica_negocios_optimizacion_empresarial_2026,
   autoArticle_agentes_ia_autonomos_empresas_trabajadores_digitales,
   autoArticle_ia_cuantica_negocios_empresas_2026,
