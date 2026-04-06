@@ -1,49 +1,43 @@
 {
-  "lastUpdate": "2026-04-05",
+  "lastUpdate": "2026-04-06",
   "article": {
-    "title": "Neuromarketing con IA: Cómo Leer la Mente de tus Clientes para Vender Más en 2026",
-    "slug": "neuromarketing-ia-leer-mente-clientes-vender-mas-2026"
+    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-computacion-cuantica-empresas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Configurar AdSense y revisar políticas",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-20",
-      "task": "Investigar programas de afiliación relevantes",
+      "task": "Configurar AdSense y optimizar colocación de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Implementar primeros 5 links de afiliados",
+      "task": "Investigar y configurar primeros links de afiliados relevantes",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Optimizar artículos top 10 para SEO",
+      "task": "Análisis de keywords de alto valor para próximos artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear estrategia de monetización Q1 2025",
+      "task": "Optimizar artículos existentes para mejor CTR en AdSense",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre",
+      "task": "Configurar enlaces internos automáticos entre artículos relacionados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Configurar email marketing básico",
+      "task": "Implementar schema markup para mejorar SEO",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +46,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización publicitaria del sitio",
+      "reason": "necesario para monetización inmediata del tráfico existente",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "links de afiliación para productos tech",
+      "reason": "comenzar monetización por afiliados en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "captura y nurturing de leads",
+      "service": "Ahrefs o SEMrush",
+      "reason": "análisis profundo de keywords y competencia para optimizar contenido",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y buen setup técnico. Prioridad: activar monetización con AdSense y afiliados antes de fin de año para capitalizar tráfico existente."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata via AdSense y afiliados. El cron funciona bien, necesitamos enfocar esfuerzos en revenue streams."
 }
