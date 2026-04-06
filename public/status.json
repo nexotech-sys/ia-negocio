@@ -1,66 +1,66 @@
 {
   "lastUpdate": "2026-04-06",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
-    "slug": "ia-cuantica-negocios-computacion-cuantica-empresas-2026"
+    "title": "IA Generativa para Crear Productos Digitales: Guía Completa 2026",
+    "slug": "ia-generativa-crear-productos-digitales-guia-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar colocación de anuncios",
+      "task": "Configurar AdSense y optimizar artículos top para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y configurar primeros links de afiliados relevantes",
+      "task": "Crear 3 artículos con enlaces de afiliados (herramientas IA)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Análisis de keywords de alto valor para próximos artículos",
+      "task": "Analizar GSC: identificar keywords con oportunidad de mejora",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar artículos existentes para mejor CTR en AdSense",
+      "task": "Optimizar meta titles y descriptions de top 20 artículos",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Crear newsletter semanal con mejores artículos",
+      "agent": "Nacho",
+      "priority": "baja"
     },
     {
       "date": "2024-12-26",
       "task": "Configurar enlaces internos automáticos entre artículos relacionados",
       "agent": "Nacho",
       "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Implementar schema markup para mejorar SEO",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "necesario para monetización inmediata del tráfico existente",
+      "reason": "Monetizar el tráfico de 155+ artículos existentes",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "comenzar monetización por afiliados en artículos de tecnología",
+      "reason": "Generar ingresos por afiliados en artículos de herramientas",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Ahrefs o SEMrush",
-      "reason": "análisis profundo de keywords y competencia para optimizar contenido",
+      "service": "Mailchimp",
+      "reason": "Capturar emails y crear newsletter para retención",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata via AdSense y afiliados. El cron funciona bien, necesitamos enfocar esfuerzos en revenue streams."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados. El cron diario funciona bien, ahora necesitamos convertir tráfico en ingresos."
 }
