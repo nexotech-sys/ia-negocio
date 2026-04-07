@@ -36,11 +36,13 @@ import { autoArticle_neuromarketing_ia_leer_mente_clientes_vender_mas_2026 } fro
 import { autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026 } from './ia-cuantica-negocios-computacion-cuantica-empresas-2026';
 import { autoArticle_ia_generativa_crear_productos_digitales_guia_2026 } from './ia-generativa-crear-productos-digitales-guia-2026';
 import { autoArticle_ia_generativa_arquitectos_diseno_espacios_midjourney_dalle } from './ia-generativa-arquitectos-diseno-espacios-midjourney-dalle';
+import { autoArticle_ia_conversacional_atencion_cliente_chatbots_ventas } from './ia-conversacional-atencion-cliente-chatbots-ventas';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_conversacional_atencion_cliente_chatbots_ventas,
   autoArticle_ia_generativa_arquitectos_diseno_espacios_midjourney_dalle,
   autoArticle_ia_generativa_crear_productos_digitales_guia_2026,
   autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026,
