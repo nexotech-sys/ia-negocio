@@ -1,66 +1,66 @@
 {
-  "lastUpdate": "2026-04-06",
+  "lastUpdate": "2026-04-07",
   "article": {
-    "title": "IA Generativa para Crear Productos Digitales: Guía Completa 2026",
-    "slug": "ia-generativa-crear-productos-digitales-guia-2026"
+    "title": "IA Generativa para Arquitectos: Cómo Revolucionar el Diseño de Espacios con Midjourney, DALL-E y Stable Diffusion",
+    "slug": "ia-generativa-arquitectos-diseno-espacios-midjourney-dalle"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar artículos top para monetización",
+      "date": "2024-12-29",
+      "task": "Configurar AdSense y crear primeros espacios publicitarios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Crear 3 artículos con enlaces de afiliados (herramientas IA)",
+      "date": "2024-12-30",
+      "task": "Investigar programas de afiliados relevantes para arquitectura/diseño",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Analizar GSC: identificar keywords con oportunidad de mejora",
+      "date": "2024-12-31",
+      "task": "Implementar primeros 3 links de afiliados en artículos existentes",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar meta titles y descriptions de top 20 artículos",
+      "date": "2025-01-02",
+      "task": "Crear página de recursos y herramientas recomendadas",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "date": "2025-01-03",
+      "task": "Optimizar SEO de los 10 artículos con mejor tráfico",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-04",
+      "task": "Configurar newsletter y popup de suscripción",
       "agent": "Nacho",
       "priority": "baja"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Configurar enlaces internos automáticos entre artículos relacionados",
-      "agent": "Nacho",
-      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico de 155+ artículos existentes",
+      "reason": "Monetizar el tráfico existente de ~155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliados en artículos de herramientas",
+      "reason": "Enlaces de afiliados para libros y herramientas de arquitectura",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar emails y crear newsletter para retención",
+      "reason": "Capturar leads y crear lista de email marketing",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados. El cron diario funciona bien, ahora necesitamos convertir tráfico en ingresos."
+  "weeklyNote": "Proyecto sólido con buen contenido (155 artículos) y analytics conectados. Prioridad: monetización inmediata con AdSense y afiliados antes de optimizar engagement."
 }
