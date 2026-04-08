@@ -1,72 +1,66 @@
 {
   "lastUpdate": "2026-04-08",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo IBM y Google Están Revolucionando la Industria en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-industria-2026"
+    "title": "IA Cuántica para Negocios: La Revolución que Transformará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-revolucion-empresarial-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar posiciones de anuncios",
+      "date": "2024-12-30",
+      "task": "Configurar AdSense y optimizar layout para anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Implementar enlaces de afiliados en artículos de tecnología",
+      "date": "2024-12-31",
+      "task": "Investigar y configurar primeros links de afiliados para productos tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Crear landing page para suscriptores del newsletter",
+      "date": "2025-01-02",
+      "task": "Implementar schema markup para artículos y mejorar SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos con bajo CTR en Search Console",
+      "date": "2025-01-03",
+      "task": "Crear newsletter signup y configurar email marketing",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Configurar schema markup para artículos",
+      "date": "2025-01-06",
+      "task": "Analizar métricas de diciembre y optimizar contenido más popular",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-26",
-      "task": "Implementar sistema de comentarios y engagement",
+      "date": "2025-01-08",
+      "task": "Configurar sitemap XML y optimizar robots.txt",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "reason": "Monetizar el tráfico existente con 155 artículos publicados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos tech",
+      "reason": "Implementar links de afiliados en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar suscriptores y hacer email marketing",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para optimizar conversiones",
+      "reason": "Crear lista de suscriptores para retener audiencia",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buena base de contenido. Prioridad en monetización inmediata via AdSense y afiliados. El artículo sobre IA Cuántica está bien posicionado temáticamente."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados, luego enfoque en retención de usuarios"
 }
