@@ -40,11 +40,13 @@ import { autoArticle_ia_conversacional_atencion_cliente_chatbots_ventas } from '
 import { autoArticle_ia_cuantica_negocios_revolucion_industria_2026 } from './ia-cuantica-negocios-revolucion-industria-2026';
 import { autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026 } from './ia-cuantica-negocios-revolucion-empresarial-2026';
 import { autoArticle_ia_cuantica_negocios_latinoamerica_2026 } from './ia-cuantica-negocios-latinoamerica-2026';
+import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente } from './ia-conversacional-whatsapp-business-automatizar-ventas-atencion-cliente';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_atencion_cliente,
   autoArticle_ia_cuantica_negocios_latinoamerica_2026,
   autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026,
   autoArticle_ia_cuantica_negocios_revolucion_industria_2026,
