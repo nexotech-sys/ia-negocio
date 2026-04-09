@@ -1,43 +1,49 @@
 {
-  "lastUpdate": "2026-04-08",
+  "lastUpdate": "2026-04-09",
   "article": {
-    "title": "IA Cuántica para Negocios: La Revolución que Transformará tu Empresa en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-empresarial-2026"
+    "title": "IA Cuántica para Negocios: Cómo las Empresas Latinoamericanas Pueden Prepararse para la Revolución 2026",
+    "slug": "ia-cuantica-negocios-latinoamerica-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-29",
+      "task": "Configurar Google AdSense y solicitar aprobación",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-30",
-      "task": "Configurar AdSense y optimizar layout para anuncios",
+      "task": "Investigar y seleccionar programas de afiliados relevantes para IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-31",
-      "task": "Investigar y configurar primeros links de afiliados para productos tech",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Implementar schema markup para artículos y mejorar SEO",
+      "task": "Crear estrategia de monetización Q1 2025",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2025-01-02",
+      "task": "Implementar primeros 5 links de afiliados en artículos existentes",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2025-01-03",
-      "task": "Crear newsletter signup y configurar email marketing",
+      "task": "Analizar métricas de tráfico y engagement de diciembre",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2025-01-06",
-      "task": "Analizar métricas de diciembre y optimizar contenido más popular",
+      "task": "Optimizar artículos top 10 para mejor SEO",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
     },
     {
       "date": "2025-01-08",
-      "task": "Configurar sitemap XML y optimizar robots.txt",
+      "task": "Crear newsletter semanal para suscriptores",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -46,21 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente con 155 artículos publicados",
+      "reason": "Monetizar el tráfico existente del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos de tecnología",
+      "reason": "Generar ingresos por afiliación con productos tech/IA",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Crear lista de suscriptores para retener audiencia",
+      "reason": "Construir lista de email para engagement y retención",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados, luego enfoque en retención de usuarios"
+  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento consistente. Prioridad: monetización inmediata con AdSense y afiliados antes de Q1 2025."
 }
