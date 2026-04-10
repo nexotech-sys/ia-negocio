@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-04-10",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución de 2026",
-    "slug": "ia-cuantica-negocios-2026-como-preparar-empresa"
+    "title": "IA Generativa para Crear Contenido de TikTok: 7 Herramientas que Están Revolucionando el Marketing en 2026",
+    "slug": "ia-generativa-contenido-tiktok-marketing-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Configurar AdSense para monetización",
+      "date": "2024-12-28",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-20",
-      "task": "Investigar programas de afiliados tech relevantes",
+      "date": "2024-12-29",
+      "task": "Investigar programas de afiliados relevantes para herramientas IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "date": "2024-12-30",
+      "task": "Crear página de políticas de privacidad y términos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO en top 10 artículos más visitados",
+      "date": "2024-12-31",
+      "task": "Optimizar títulos y meta descripciones de 10 artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear newsletter semanal con resumen de artículos",
+      "date": "2025-01-02",
+      "task": "Implementar enlaces de afiliados en 5 artículos principales",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     },
     {
-      "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y ajustar estrategia",
+      "date": "2025-01-03",
+      "task": "Configurar newsletter signup en sidebar",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-27",
-      "task": "Configurar integraciones con redes sociales",
+      "date": "2025-01-04",
+      "task": "Analizar métricas de Search Console y ajustar estrategia SEO",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,27 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico del sitio con 155+ artículos",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos tech",
+      "reason": "Generar ingresos por afiliación con herramientas IA recomendadas",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y enviar newsletters",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Buffer",
-      "reason": "Automatizar promoción en redes sociales",
+      "reason": "Capturar leads y crear lista de email marketing",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: monetización con AdSense y afiliados. Analytics funcionando bien, falta capitalizar el tráfico existente."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics configurados. Prioridad: monetización inmediata con AdSense y afiliados. El contenido sobre IA tiene gran potencial comercial."
 }
