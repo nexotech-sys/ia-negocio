@@ -1,49 +1,43 @@
 {
-  "lastUpdate": "2026-04-10",
+  "lastUpdate": "2026-04-11",
   "article": {
-    "title": "IA Generativa para Crear Contenido de TikTok: 7 Herramientas que Están Revolucionando el Marketing en 2026",
-    "slug": "ia-generativa-contenido-tiktok-marketing-2026"
+    "title": "IA Cuántica para Negocios: La Revolución que Llegó en 2026",
+    "slug": "ia-cuantica-negocios-2026-guia-completa"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-28",
-      "task": "Configurar Google AdSense para monetización",
+      "date": "2024-12-20",
+      "task": "Configurar AdSense y preparar espacios publicitarios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-29",
-      "task": "Investigar programas de afiliados relevantes para herramientas IA",
+      "date": "2024-12-21",
+      "task": "Investigar y configurar primeros links de afiliados tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Crear página de políticas de privacidad y términos",
+      "date": "2024-12-23",
+      "task": "Optimizar títulos y meta descriptions de últimos 20 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-31",
-      "task": "Optimizar títulos y meta descripciones de 10 artículos top",
+      "date": "2024-12-24",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-02",
-      "task": "Implementar enlaces de afiliados en 5 artículos principales",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Configurar newsletter signup en sidebar",
+      "date": "2024-12-26",
+      "task": "Análisis de keywords de competidores y gaps de contenido",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-04",
-      "task": "Analizar métricas de Search Console y ajustar estrategia SEO",
+      "date": "2024-12-27",
+      "task": "Configurar enlaces internos automáticos entre artículos relacionados",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +46,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "reason": "Monetizar el tráfico existente de 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación con herramientas IA recomendadas",
+      "reason": "Generar ingresos por afiliación en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y crear lista de email marketing",
+      "reason": "Capturar emails y crear audiencia para newsletter",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analizar comportamiento de usuarios y optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics configurados. Prioridad: monetización inmediata con AdSense y afiliados. El contenido sobre IA tiene gran potencial comercial."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, ahora hay que capitalizar el tráfico."
 }
