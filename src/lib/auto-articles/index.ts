@@ -44,11 +44,13 @@ import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_aten
 import { autoArticle_ia_cuantica_negocios_2026_como_preparar_empresa } from './ia-cuantica-negocios-2026-como-preparar-empresa';
 import { autoArticle_ia_generativa_contenido_tiktok_marketing_2026 } from './ia-generativa-contenido-tiktok-marketing-2026';
 import { autoArticle_ia_cuantica_negocios_2026_guia_completa } from './ia-cuantica-negocios-2026-guia-completa';
+import { autoArticle_ia_cuantica_negocios_2026_computadoras_cuanticas_empresas } from './ia-cuantica-negocios-2026-computadoras-cuanticas-empresas';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_negocios_2026_computadoras_cuanticas_empresas,
   autoArticle_ia_cuantica_negocios_2026_guia_completa,
   autoArticle_ia_generativa_contenido_tiktok_marketing_2026,
   autoArticle_ia_cuantica_negocios_2026_como_preparar_empresa,
