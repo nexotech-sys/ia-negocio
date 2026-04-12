@@ -1,49 +1,43 @@
 {
-  "lastUpdate": "2026-04-11",
+  "lastUpdate": "2026-04-12",
   "article": {
-    "title": "IA Cuántica para Negocios 2026: Cómo las Computadoras Cuánticas Revolucionarán tu Empresa",
-    "slug": "ia-cuantica-negocios-2026-computadoras-cuanticas-empresas"
+    "title": "IA Conversacional para Atención al Cliente 2026: Implementación Completa con ROI Garantizado",
+    "slug": "ia-conversacional-atencion-cliente-2026-implementacion-roi"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense para monetización",
+      "date": "2024-12-29",
+      "task": "Configurar AdSense y optimizar placements",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Investigar programas de afiliados relevantes para tech/IA",
+      "date": "2024-12-30",
+      "task": "Investigar programas de afiliados relevantes para IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Implementar primeros 5 links de afiliados en artículos top",
+      "date": "2024-12-31",
+      "task": "Implementar primeros 3 enlaces de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos con más tráfico según GSC",
+      "date": "2025-01-02",
+      "task": "Crear estrategia de enlaces internos para mejorar SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear newsletter semanal con mejores artículos",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y planificar enero",
+      "date": "2025-01-03",
+      "task": "Optimizar meta descriptions de los 20 artículos más visitados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-27",
-      "task": "Configurar remarketing audiences en Analytics",
+      "date": "2025-01-04",
+      "task": "Configurar email marketing básico para captar suscriptores",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,27 +46,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización urgente con 155 artículos publicados",
+      "reason": "monetización directa del contenido generado",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "links de afiliados para libros y productos tech mencionados",
+      "reason": "enlaces de afiliados para libros y herramientas de IA",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "capturar emails y enviar newsletter semanal",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "analizar comportamiento de usuarios para optimizar conversiones",
+      "service": "ConvertKit",
+      "reason": "capturar leads y nutrir audiencia con newsletter",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El tráfico está creciendo según tendencias de IA."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: activar monetización con AdSense y afiliados. El cron funciona bien, ahora necesitamos generar ingresos."
 }
