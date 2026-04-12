@@ -1,66 +1,78 @@
 {
   "lastUpdate": "2026-04-12",
   "article": {
-    "title": "IA Conversacional para Atención al Cliente 2026: Implementación Completa con ROI Garantizado",
-    "slug": "ia-conversacional-atencion-cliente-2026-implementacion-roi"
+    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Atención al Cliente en 2026",
+    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-29",
-      "task": "Configurar AdSense y optimizar placements",
+      "date": "2024-12-22",
+      "task": "Configurar Google AdSense y optimizar ubicaciones de anuncios",
       "agent": "Nacho",
       "priority": "alta"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Investigar y configurar programa de afiliados de Amazon Associates",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Implementar enlaces de afiliados en artículos de tecnología existentes",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Analizar métricas de Search Console y optimizar títulos con bajo CTR",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Configurar newsletter signup y lead magnets en artículos populares",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Implementar schema markup para artículos y mejorar SEO técnico",
+      "agent": "Nacho",
+      "priority": "baja"
     },
     {
       "date": "2024-12-30",
-      "task": "Investigar programas de afiliados relevantes para IA",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-31",
-      "task": "Implementar primeros 3 enlaces de afiliados en artículos top",
+      "task": "Revisar y actualizar artículos con mejor tráfico del último mes",
       "agent": "Nacho",
       "priority": "media"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Crear estrategia de enlaces internos para mejorar SEO",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Optimizar meta descriptions de los 20 artículos más visitados",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-04",
-      "task": "Configurar email marketing básico para captar suscriptores",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización directa del contenido generado",
+      "reason": "monetización principal del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "enlaces de afiliados para libros y herramientas de IA",
+      "reason": "generar ingresos por afiliación en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "capturar leads y nutrir audiencia con newsletter",
+      "service": "Mailchimp",
+      "reason": "capturar leads y hacer email marketing con contenido relevante",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "entender comportamiento de usuarios y optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: activar monetización con AdSense y afiliados. El cron funciona bien, ahora necesitamos generar ingresos."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics configurados. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año"
 }
