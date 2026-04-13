@@ -1,78 +1,78 @@
 {
-  "lastUpdate": "2026-04-12",
+  "lastUpdate": "2026-04-13",
   "article": {
-    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Atención al Cliente en 2026",
-    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas"
+    "title": "IA Generativa para Crear Videos Corporativos: 15 Herramientas que Revolucionarán tu Marketing en 2026",
+    "slug": "ia-generativa-videos-corporativos-herramientas-marketing-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-22",
-      "task": "Configurar Google AdSense y optimizar ubicaciones de anuncios",
+      "date": "2024-12-29",
+      "task": "Configurar AdSense y implementar primeros anuncios",
       "agent": "Nacho",
       "priority": "alta"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Investigar y configurar programa de afiliados de Amazon Associates",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Implementar enlaces de afiliados en artículos de tecnología existentes",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Analizar métricas de Search Console y optimizar títulos con bajo CTR",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Configurar newsletter signup y lead magnets en artículos populares",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Implementar schema markup para artículos y mejorar SEO técnico",
-      "agent": "Nacho",
-      "priority": "baja"
     },
     {
       "date": "2024-12-30",
-      "task": "Revisar y actualizar artículos con mejor tráfico del último mes",
+      "task": "Investigar y configurar primeros links de afiliados (Amazon, herramientas IA)",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-31",
+      "task": "Optimizar artículo publicado hoy para SEO y añadir CTAs",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2025-01-02",
+      "task": "Crear landing page para captura de emails con lead magnet",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2025-01-03",
+      "task": "Configurar newsletter automatizada para nuevos suscriptores",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-06",
+      "task": "Análisis de rendimiento diciembre y ajuste estrategia contenido",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-07",
+      "task": "Implementar schema markup en artículos principales",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización principal del sitio con 155 artículos",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación en artículos de tecnología",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y hacer email marketing con contenido relevante",
-      "urgent": false
+      "reason": "Capturar leads y crear lista de email marketing",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "Generar ingresos por afiliación en artículos de herramientas",
+      "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "entender comportamiento de usuarios y optimizar conversión",
+      "reason": "Analizar comportamiento usuarios para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics configurados. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año"
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados, luego captura de leads."
 }
