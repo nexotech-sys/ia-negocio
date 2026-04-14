@@ -1,49 +1,43 @@
 {
   "lastUpdate": "2026-04-14",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo las Empresas Latinoamericanas Pueden Prepararse para la Revolución de 2026",
-    "slug": "ia-cuantica-negocios-latinoamerica-2026"
+    "title": "IA Cuántica para Negocios: Cómo Preparar tu Empresa para la Revolución de 2026",
+    "slug": "ia-cuantica-negocios-2026-guia-completa"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar placement de anuncios",
+      "date": "2024-12-28",
+      "task": "Configurar AdSense y crear primera campaña publicitaria",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Investigar y aplicar a 3 programas de afiliados relevantes",
+      "date": "2024-12-29",
+      "task": "Investigar y registrarse en 3 programas de afiliados tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Crear landing page para captura de emails",
+      "date": "2024-12-30",
+      "task": "Implementar primeros links de afiliados en artículos populares",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO de los 10 artículos más visitados",
+      "date": "2025-01-02",
+      "task": "Optimizar SEO de los 10 artículos más visitados según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Configurar newsletter semanal automatizada",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Análisis de métricas y ajuste de estrategia de contenido",
+      "date": "2025-01-03",
+      "task": "Crear newsletter semanal y configurar automatización",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-27",
-      "task": "Crear contenido para redes sociales del último mes",
+      "date": "2025-01-06",
+      "task": "Analizar métricas y ajustar estrategia de contenido",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +46,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización principal del sitio con 155+ artículos",
+      "reason": "Monetización directa del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Gestión de newsletter y captura de leads",
+      "reason": "Captura de leads y newsletter automatizada",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Programa de afiliados para monetización adicional",
+      "reason": "Programa de afiliados para productos tech",
       "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Análisis de comportamiento de usuarios",
+      "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido y métricas conectadas. Prioridad: monetización inmediata via AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados."
 }
