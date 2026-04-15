@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-04-15",
   "article": {
-    "title": "IA Generativa para Manufactura: Cómo Optimizar Producción y Reducir Costos 40% en 2026",
-    "slug": "ia-generativa-manufactura-optimizar-produccion-2026"
+    "title": "IA Generativa vs IA Predictiva: Guía Completa para Elegir la Mejor para tu Negocio en 2026",
+    "slug": "ia-generativa-vs-ia-predictiva-guia-completa-negocios-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-20",
+      "task": "Configurar Google AdSense y crear unidades de anuncios",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-21",
-      "task": "Configurar AdSense y optimizar primeros anuncios",
+      "task": "Implementar enlaces de afiliados en artículos existentes sobre herramientas IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Investigar programas de afiliados relevantes para tech/IA",
+      "task": "Crear newsletter signup widget para captar emails",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Implementar 5 links de afiliados en artículos top",
+      "task": "Optimizar títulos y meta descripciones de top 20 artículos en GSC",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Revisar métricas de Search Console y optimizar CTR",
+      "task": "Configurar enlaces internos automáticos entre artículos relacionados",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     },
     {
       "date": "2024-12-26",
-      "task": "Crear newsletter signup para capturar emails",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Optimizar velocidad de carga del sitio",
+      "task": "Implementar schema markup para artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-28",
-      "task": "Analizar competencia y ajustar estrategia de contenido",
+      "date": "2024-12-27",
+      "task": "Crear landing page para servicios de consultoría IA",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para monetizar el sitio con 155+ artículos",
+      "reason": "monetizar el tráfico existente con ~155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Para crear lista de email marketing y newsletter",
+      "service": "Mailchimp/ConvertKit",
+      "reason": "captar leads y crear lista de email marketing",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Principal programa de afiliados para productos tech",
+      "reason": "generar ingresos por afiliación con herramientas IA",
       "urgent": true
     }
   ],
-  "weeklyNote": "El proyecto va bien con contenido consistente. Es momento crítico para monetización: AdSense urgente y afiliados para aprovechar tráfico existente antes de fin de año."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. Analytics funcionando bien, necesitamos aprovechar el tráfico existente."
 }
