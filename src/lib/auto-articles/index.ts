@@ -54,11 +54,13 @@ import { autoArticle_ia_generativa_manufactura_optimizar_produccion_2026 } from 
 import { autoArticle_ia_generativa_vs_ia_predictiva_guia_completa_negocios_2026 } from './ia-generativa-vs-ia-predictiva-guia-completa-negocios-2026';
 import { autoArticle_ia_cuantica_negocios_latinoamerica_2026 } from './ia-cuantica-negocios-latinoamerica-2026';
 import { autoArticle_ia_generativa_crear_videos_marketing_guia_2026 } from './ia-generativa-crear-videos-marketing-guia-2026';
+import { autoArticle_ia_generativa_crear_cursos_online_guia_2026 } from './ia-generativa-crear-cursos-online-guia-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_generativa_crear_cursos_online_guia_2026,
   autoArticle_ia_generativa_crear_videos_marketing_guia_2026,
   autoArticle_ia_cuantica_negocios_latinoamerica_2026,
   autoArticle_ia_generativa_vs_ia_predictiva_guia_completa_negocios_2026,
