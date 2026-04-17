@@ -1,78 +1,66 @@
 {
-  "lastUpdate": "2026-04-16",
+  "lastUpdate": "2026-04-17",
   "article": {
-    "title": "IA Generativa para Crear Videos de Marketing: Guía Completa 2026",
-    "slug": "ia-generativa-crear-videos-marketing-guia-2026"
+    "title": "IA Generativa para Crear Cursos Online: Guía Completa 2026",
+    "slug": "ia-generativa-crear-cursos-online-guia-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-28",
-      "task": "Configurar enlaces de afiliados Amazon para artículos tech",
+      "date": "2024-12-18",
+      "task": "Configurar Google AdSense en el sitio",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-29",
-      "task": "Optimizar títulos SEO de últimos 10 artículos publicados",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Crear landing page para captura de emails",
+      "date": "2024-12-19",
+      "task": "Investigar programas de afiliados educativos y tecnológicos",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-02",
-      "task": "Implementar schema markup en artículos principales",
+      "date": "2024-12-20",
+      "task": "Implementar primeros 5 links de afiliados en artículos populares",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-03",
-      "task": "Configurar enlaces internos automáticos entre artículos relacionados",
+      "date": "2024-12-21",
+      "task": "Optimizar artículos con bajo CTR según Search Console",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-06",
-      "task": "Crear páginas pillar para temas principales (IA, Marketing, Tech)",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2025-01-08",
-      "task": "Optimizar velocidad de carga y Core Web Vitals",
+      "date": "2024-12-23",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Análisis de keywords trending para próximos artículos",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico actual con anuncios display",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Capturar y nutrir leads con newsletter semanal",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos tech",
+      "reason": "Implementar links de afiliados para productos tecnológicos y educativos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para mejorar UX",
+      "service": "ConvertKit",
+      "reason": "Capturar emails de lectores para newsletter y nurturing",
       "urgent": false
     }
   ],
-  "weeklyNote": "Con 155 artículos y crecimiento diario, es momento crítico de monetizar. Prioridad: AdSense, afiliados y captura de emails antes de Q1 2025."
+  "weeklyNote": "El proyecto va sólido con 155 artículos y Analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados para capitalizar el contenido existente."
 }
