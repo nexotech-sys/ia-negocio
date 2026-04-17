@@ -1,66 +1,66 @@
 {
   "lastUpdate": "2026-04-17",
   "article": {
-    "title": "IA Generativa para Crear Cursos Online: Guía Completa 2026",
-    "slug": "ia-generativa-crear-cursos-online-guia-2026"
+    "title": "IA para Recursos Humanos: Cómo Automatizar Reclutamiento y Retención de Talento en 2026",
+    "slug": "ia-recursos-humanos-reclutamiento-retencion-talento-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-18",
-      "task": "Configurar Google AdSense en el sitio",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-19",
-      "task": "Investigar programas de afiliados educativos y tecnológicos",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-20",
-      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Optimizar artículos con bajo CTR según Search Console",
+      "task": "Investigar programas de afiliados tech relevantes",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-22",
+      "task": "Implementar enlaces de afiliados en 10 artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "task": "Optimizar artículos con bajo CTR según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Análisis de keywords trending para próximos artículos",
+      "date": "2024-12-26",
+      "task": "Crear newsletter semanal con resumen de artículos",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Análisis de palabras clave oportunidad según Search Console",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "reason": "monetizar el tráfico existente del sitio",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados para productos tecnológicos y educativos",
+      "reason": "implementar enlaces de afiliados en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "Capturar emails de lectores para newsletter y nurturing",
+      "service": "Mailchimp",
+      "reason": "capturar leads y enviar newsletters",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto va sólido con 155 artículos y Analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados para capitalizar el contenido existente."
+  "weeklyNote": "El proyecto va bien con 155 artículos y Analytics/Search Console funcionando. Prioridad: activar monetización con AdSense y afiliados antes de fin de año para aprovechar el tráfico existente."
 }
