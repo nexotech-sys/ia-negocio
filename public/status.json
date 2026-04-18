@@ -1,66 +1,72 @@
 {
   "lastUpdate": "2026-04-18",
   "article": {
-    "title": "Cómo Crear un Agente de IA Personalizado para tu Negocio en 2026: Guía Completa sin Código",
-    "slug": "como-crear-agente-ia-personalizado-negocio-sin-codigo-2026"
+    "title": "IA Generativa para Creación de Productos Físicos: Cómo Revolucionar tu Manufactura en 2026",
+    "slug": "ia-generativa-productos-fisicos-manufactura-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-24",
-      "task": "Configurar AdSense y implementar ads en articulos",
+      "date": "2024-12-14",
+      "task": "Configurar AdSense y crear primeras unidades publicitarias",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-26",
-      "task": "Investigar programas de afiliados para herramientas de IA",
+      "date": "2024-12-15",
+      "task": "Investigar programas de afiliados relevantes (Amazon, tech products)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-27",
-      "task": "Crear landing page para captura de emails",
+      "date": "2024-12-16",
+      "task": "Optimizar los 10 artículos más visitados según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-30",
-      "task": "Optimizar SEO de los 10 artículos más visitados",
+      "date": "2024-12-17",
+      "task": "Crear landing page para newsletter signup",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-02",
-      "task": "Implementar enlaces de afiliados en artículos relevantes",
+      "date": "2024-12-18",
+      "task": "Implementar primeros links de afiliados en artículos de productos",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-06",
-      "task": "Crear newsletter semanal automatizada",
+      "date": "2024-12-19",
+      "task": "Análisis de keywords con bajo CTR en Search Console",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2024-12-20",
+      "task": "Configurar tracking de conversiones para afiliados",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "Google AdSense",
-      "reason": "monetizar el tráfico existente con publicidad contextual",
+      "service": "AdSense",
+      "reason": "monetización inmediata del tráfico existente con 155 artículos",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "programa de afiliados principal para productos tech mencionados en artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "gestionar suscriptores y enviar newsletter automatizada",
+      "reason": "capturar emails de lectores para newsletter y nurturing",
       "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación con productos tech",
-      "urgent": true
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen contenido y tráfico. Prioridad: monetización inmediata con AdSense y afiliados. El volumen de 155 artículos permite implementar estrategias de ingresos ya."
+  "weeklyNote": "Proyecto en fase de monetización - con 155 artículos y tráfico establecido, es momento crítico de implementar AdSense y afiliados antes de fin de año"
 }
