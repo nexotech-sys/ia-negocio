@@ -1,43 +1,43 @@
 {
-  "lastUpdate": "2026-04-17",
+  "lastUpdate": "2026-04-18",
   "article": {
-    "title": "IA para Recursos Humanos: Cómo Automatizar Reclutamiento y Retención de Talento en 2026",
-    "slug": "ia-recursos-humanos-reclutamiento-retencion-talento-2026"
+    "title": "Cómo Crear un Agente de IA Personalizado para tu Negocio en 2026: Guía Completa sin Código",
+    "slug": "como-crear-agente-ia-personalizado-negocio-sin-codigo-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar Google AdSense para monetización",
+      "date": "2024-12-24",
+      "task": "Configurar AdSense y implementar ads en articulos",
       "agent": "Nacho",
       "priority": "alta"
-    },
-    {
-      "date": "2024-12-21",
-      "task": "Investigar programas de afiliados tech relevantes",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-22",
-      "task": "Implementar enlaces de afiliados en 10 artículos top",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Optimizar artículos con bajo CTR según Analytics",
-      "agent": "Nacho",
-      "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Crear newsletter semanal con resumen de artículos",
+      "task": "Investigar programas de afiliados para herramientas de IA",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     },
     {
       "date": "2024-12-27",
-      "task": "Análisis de palabras clave oportunidad según Search Console",
+      "task": "Crear landing page para captura de emails",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-30",
+      "task": "Optimizar SEO de los 10 artículos más visitados",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-02",
+      "task": "Implementar enlaces de afiliados en artículos relevantes",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2025-01-06",
+      "task": "Crear newsletter semanal automatizada",
       "agent": "Nacho",
       "priority": "media"
     }
@@ -46,21 +46,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetizar el tráfico existente del sitio",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "implementar enlaces de afiliados en artículos tech",
+      "reason": "monetizar el tráfico existente con publicidad contextual",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y enviar newsletters",
+      "reason": "gestionar suscriptores y enviar newsletter automatizada",
       "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "generar ingresos por afiliación con productos tech",
+      "urgent": true
     }
   ],
-  "weeklyNote": "El proyecto va bien con 155 artículos y Analytics/Search Console funcionando. Prioridad: activar monetización con AdSense y afiliados antes de fin de año para aprovechar el tráfico existente."
+  "weeklyNote": "Proyecto sólido con buen contenido y tráfico. Prioridad: monetización inmediata con AdSense y afiliados. El volumen de 155 artículos permite implementar estrategias de ingresos ya."
 }
