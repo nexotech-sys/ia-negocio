@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-04-18",
+  "lastUpdate": "2026-04-19",
   "article": {
-    "title": "IA Generativa para Creación de Productos Físicos: Cómo Revolucionar tu Manufactura en 2026",
-    "slug": "ia-generativa-productos-fisicos-manufactura-2026"
+    "title": "IA Generativa para Crear Videos de Marketing: 15 Herramientas que Revolucionarán tu Contenido en 2026",
+    "slug": "ia-generativa-videos-marketing-herramientas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-14",
-      "task": "Configurar AdSense y crear primeras unidades publicitarias",
+      "date": "2024-12-22",
+      "task": "Implementar AdSense en header y sidebar",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-15",
-      "task": "Investigar programas de afiliados relevantes (Amazon, tech products)",
+      "date": "2024-12-23",
+      "task": "Configurar enlaces de afiliados en artículos de herramientas",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-16",
-      "task": "Optimizar los 10 artículos más visitados según Analytics",
+      "date": "2024-12-24",
+      "task": "Optimizar meta descriptions para SEO en artículos antiguos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-17",
-      "task": "Crear landing page para newsletter signup",
+      "date": "2024-12-26",
+      "task": "Crear sistema de newsletter subscription",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-18",
-      "task": "Implementar primeros links de afiliados en artículos de productos",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-19",
-      "task": "Análisis de keywords con bajo CTR en Search Console",
+      "date": "2024-12-27",
+      "task": "Implementar schema markup en artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-20",
-      "task": "Configurar tracking de conversiones para afiliados",
+      "date": "2024-12-28",
+      "task": "Configurar sitemap XML automático",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
+      "date": "2024-12-30",
+      "task": "Añadir botones de compartir en redes sociales",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -51,22 +51,28 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "monetización inmediata del tráfico existente con 155 artículos",
+      "service": "Google AdSense",
+      "reason": "monetizar el sitio con anuncios display",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "programa de afiliados principal para productos tech mencionados en artículos",
+      "reason": "generar ingresos por afiliados en reviews de herramientas",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar emails de lectores para newsletter y nurturing",
+      "reason": "gestionar suscriptores y enviar newsletters",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "analizar comportamiento de usuarios y optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización - con 155 artículos y tráfico establecido, es momento crítico de implementar AdSense y afiliados antes de fin de año"
+  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento constante. Prioridad inmediata: monetización vía AdSense y afiliados. Analytics funcionando bien, necesitamos capitalizar el tráfico existente."
 }
