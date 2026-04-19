@@ -58,11 +58,13 @@ import { autoArticle_ia_generativa_crear_cursos_online_guia_2026 } from './ia-ge
 import { autoArticle_ia_recursos_humanos_reclutamiento_retencion_talento_2026 } from './ia-recursos-humanos-reclutamiento-retencion-talento-2026';
 import { autoArticle_como_crear_agente_ia_personalizado_negocio_sin_codigo_2026 } from './como-crear-agente-ia-personalizado-negocio-sin-codigo-2026';
 import { autoArticle_ia_generativa_productos_fisicos_manufactura_2026 } from './ia-generativa-productos-fisicos-manufactura-2026';
+import { autoArticle_ia_generativa_videos_marketing_herramientas_2026 } from './ia-generativa-videos-marketing-herramientas-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_generativa_videos_marketing_herramientas_2026,
   autoArticle_ia_generativa_productos_fisicos_manufactura_2026,
   autoArticle_como_crear_agente_ia_personalizado_negocio_sin_codigo_2026,
   autoArticle_ia_recursos_humanos_reclutamiento_retencion_talento_2026,
