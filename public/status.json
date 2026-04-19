@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-04-19",
   "article": {
-    "title": "IA Generativa para Crear Videos de Marketing: 15 Herramientas que Revolucionarán tu Contenido en 2026",
-    "slug": "ia-generativa-videos-marketing-herramientas-2026"
+    "title": "IA Cuántica para Negocios 2026: Cómo IBM y Google Están Revolucionando la Toma de Decisiones Empresariales",
+    "slug": "ia-cuantica-negocios-2026-ibm-google-decisiones-empresariales"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-22",
-      "task": "Implementar AdSense en header y sidebar",
+      "date": "2024-12-19",
+      "task": "Configurar AdSense y optimizar ubicación de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Configurar enlaces de afiliados en artículos de herramientas",
+      "date": "2024-12-20",
+      "task": "Investigar y configurar primeros links de afiliados (Amazon, tech products)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-24",
-      "task": "Optimizar meta descriptions para SEO en artículos antiguos",
+      "date": "2024-12-21",
+      "task": "Optimizar SEO de artículos antiguos (meta descriptions, títulos)",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2024-12-22",
+      "task": "Configurar newsletter signup en sidebar y footer",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Crear páginas legales (Privacy Policy, Terms)",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
       "date": "2024-12-26",
-      "task": "Crear sistema de newsletter subscription",
+      "task": "Implementar schema markup para mejor SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Implementar schema markup en artículos",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-28",
       "task": "Configurar sitemap XML automático",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Añadir botones de compartir en redes sociales",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,27 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetizar el sitio con anuncios display",
+      "reason": "Monetizar el tráfico existente de ~155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliados en reviews de herramientas",
+      "reason": "Comenzar monetización por afiliados en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "gestionar suscriptores y enviar newsletters",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "analizar comportamiento de usuarios y optimizar conversión",
+      "reason": "Capturar emails de visitantes para marketing directo",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento constante. Prioridad inmediata: monetización vía AdSense y afiliados. Analytics funcionando bien, necesitamos capitalizar el tráfico existente."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido y analytics funcionando. Prioridad: monetización inmediata via AdSense y afiliados antes de fin de año."
 }
