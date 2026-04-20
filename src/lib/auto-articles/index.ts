@@ -60,11 +60,13 @@ import { autoArticle_como_crear_agente_ia_personalizado_negocio_sin_codigo_2026 
 import { autoArticle_ia_generativa_productos_fisicos_manufactura_2026 } from './ia-generativa-productos-fisicos-manufactura-2026';
 import { autoArticle_ia_generativa_videos_marketing_herramientas_2026 } from './ia-generativa-videos-marketing-herramientas-2026';
 import { autoArticle_ia_cuantica_negocios_2026_ibm_google_decisiones_empresariales } from './ia-cuantica-negocios-2026-ibm-google-decisiones-empresariales';
+import { autoArticle_ia_conversacional_atencion_cliente_chatbots_inteligentes_2026 } from './ia-conversacional-atencion-cliente-chatbots-inteligentes-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_conversacional_atencion_cliente_chatbots_inteligentes_2026,
   autoArticle_ia_cuantica_negocios_2026_ibm_google_decisiones_empresariales,
   autoArticle_ia_generativa_videos_marketing_herramientas_2026,
   autoArticle_ia_generativa_productos_fisicos_manufactura_2026,
