@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-04-20",
   "article": {
-    "title": "IA Conversacional para Atención al Cliente 24/7: Guía Completa para Implementar Chatbots Inteligentes en 2026",
-    "slug": "ia-conversacional-atencion-cliente-chatbots-inteligentes-2026"
+    "title": "IA Cuántica para Negocios: Cómo IBM Quantum Network Está Revolucionando las Decisiones Empresariales en 2026",
+    "slug": "ia-cuantica-negocios-ibm-quantum-network-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-28",
-      "task": "Configurar AdSense y optimizar placement de anuncios",
+      "date": "2024-12-20",
+      "task": "Configurar Google AdSense y optimizar ads placement",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-29",
-      "task": "Investigar y configurar primeros links de afiliados (Amazon, tech)",
+      "date": "2024-12-21",
+      "task": "Investigar y agregar 5 links de afiliados tech relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Optimizar títulos y meta descriptions de artículos existentes",
+      "date": "2024-12-22",
+      "task": "Optimizar SEO de 10 artículos más antiguos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-02",
-      "task": "Crear newsletter signup y configurar email marketing",
+      "date": "2024-12-23",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-03",
-      "task": "Implementar schema markup en artículos principales",
+      "date": "2024-12-26",
+      "task": "Configurar social media auto-posting",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-06",
-      "task": "Análisis competencia y keywords de alto volumen",
+      "date": "2024-12-27",
+      "task": "Implementar schema markup en artículos",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-07",
-      "task": "Configurar internal linking automático entre artículos",
+      "date": "2024-12-28",
+      "task": "Crear página de recursos y links útiles",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +52,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetizar el tráfico existente con 155+ artículos",
+      "reason": "Necesario para monetizar el tráfico existente de 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación en artículos de tecnología",
+      "reason": "Para implementar links de afiliados en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y crear lista de emails para marketing",
+      "reason": "Para capturar emails y crear newsletter",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Buffer",
+      "reason": "Automatizar distribución en redes sociales",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen contenido base (155 artículos) y métricas conectadas. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "El proyecto va sólido con 155 artículos y generación automática diaria. Prioridad: monetización inmediata con AdSense y afiliados, luego expansión de audiencia."
 }
