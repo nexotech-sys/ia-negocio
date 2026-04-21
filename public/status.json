@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-04-20",
+  "lastUpdate": "2026-04-21",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo IBM Quantum Network Está Revolucionando las Decisiones Empresariales en 2026",
-    "slug": "ia-cuantica-negocios-ibm-quantum-network-2026"
+    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-computacion-cuantica-empresas-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar Google AdSense y optimizar ads placement",
+      "task": "Configurar Google AdSense y optimizar placement de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y agregar 5 links de afiliados tech relevantes",
+      "task": "Investigar y agregar 3 links de afiliados relevantes para artículos de IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Optimizar SEO de 10 artículos más antiguos",
+      "task": "Crear newsletter signup y primera campaña de email marketing",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "task": "Optimizar SEO de los 10 artículos con mejor tráfico",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2024-12-24",
+      "task": "Configurar schema markup para artículos",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
       "date": "2024-12-26",
-      "task": "Configurar social media auto-posting",
+      "task": "Crear landing page para captura de leads",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Implementar schema markup en artículos",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Crear página de recursos y links útiles",
+      "task": "Implementar sistema de comentarios y engagement",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,27 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para monetizar el tráfico existente de 155+ artículos",
+      "reason": "Monetización urgente del tráfico existente de 155 artículos",
       "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "ConvertKit",
+      "reason": "Email marketing para nurturing de audiencia y retención",
+      "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Para implementar links de afiliados en artículos tech",
+      "reason": "Links de afiliados para productos tech mencionados en artículos",
       "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Para capturar emails y crear newsletter",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Buffer",
-      "reason": "Automatizar distribución en redes sociales",
-      "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto va sólido con 155 artículos y generación automática diaria. Prioridad: monetización inmediata con AdSense y afiliados, luego expansión de audiencia."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
