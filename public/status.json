@@ -1,66 +1,66 @@
 {
-  "lastUpdate": "2026-04-21",
+  "lastUpdate": "2026-04-22",
   "article": {
-    "title": "Cómo Crear Agentes de IA Personalizados para Tu Negocio en 2026: Guía Completa",
-    "slug": "como-crear-agentes-ia-personalizados-negocio-2026"
+    "title": "IA Predictiva para Inventarios: Cómo Reducir Costos de Almacén en un 40% en 2026",
+    "slug": "ia-predictiva-inventarios-reducir-costos-almacen-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar placement de anuncios",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-21",
-      "task": "Implementar enlaces de afiliados en artículos de herramientas IA",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Crear newsletter semanal para engagement",
+      "task": "Investigar programas de afiliados relevantes (Amazon, tech)",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos con bajo rendimiento",
+      "task": "Implementar primeros 5 enlaces de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Configurar automatización para promoción en redes",
+      "task": "Optimizar SEO de 10 artículos con mejor tráfico",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Análizar métricas de diciembre y planificar enero",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico de ~155 artículos para generar ingresos",
+      "reason": "Necesario para comenzar monetización del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Crear enlaces de afiliados para herramientas y libros mencionados",
+      "reason": "Principal fuente de ingresos por afiliados para contenido tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y crear newsletter para retener audiencia",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Buffer",
-      "reason": "Automatizar promoción de artículos en redes sociales",
+      "reason": "Para capturar emails y crear newsletter que retenga audiencia",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen contenido automatizado. Prioridad: monetización inmediata con AdSense y afiliados. El volumen de 155 artículos es perfecto para comenzar a generar ingresos."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: activar monetización (AdSense + afiliados) antes de fin de año para aprovechar el tráfico acumulado."
 }
