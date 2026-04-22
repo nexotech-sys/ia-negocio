@@ -1,66 +1,78 @@
 {
   "lastUpdate": "2026-04-22",
   "article": {
-    "title": "IA Predictiva para Inventarios: Cómo Reducir Costos de Almacén en un 40% en 2026",
-    "slug": "ia-predictiva-inventarios-reducir-costos-almacen-2026"
+    "title": "IA Generativa vs IA Predictiva: Guía Completa para Elegir la Correcta en tu Negocio 2026",
+    "slug": "ia-generativa-vs-ia-predictiva-diferencias-negocios-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-21",
-      "task": "Configurar Google AdSense para monetización",
+      "date": "2024-12-15",
+      "task": "Configurar Google AdSense y crear bloques de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Investigar programas de afiliados relevantes (Amazon, tech)",
+      "date": "2024-12-16",
+      "task": "Investigar y configurar primeros 5 links de afiliados (Amazon, hosting)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Implementar primeros 5 enlaces de afiliados en artículos top",
+      "date": "2024-12-17",
+      "task": "Crear newsletter semanal y sistema de suscripción",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Optimizar SEO de 10 artículos con mejor tráfico",
+      "date": "2024-12-18",
+      "task": "Optimizar artículos top 10 para SEO y conversión",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-26",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "date": "2024-12-19",
+      "task": "Configurar schema markup para artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-20",
+      "task": "Crear páginas de categorías principales",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-27",
-      "task": "Análizar métricas de diciembre y planificar enero",
+      "date": "2024-12-21",
+      "task": "Implementar botones de compartir social",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para comenzar monetización del sitio con 155 artículos",
+      "reason": "Monetización principal del sitio con 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Principal fuente de ingresos por afiliados para contenido tech",
+      "reason": "Links de afiliados para productos tech mencionados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Para capturar emails y crear newsletter que retenga audiencia",
+      "reason": "Newsletter y email marketing para retención",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analytics de comportamiento para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: activar monetización (AdSense + afiliados) antes de fin de año para aprovechar el tráfico acumulado."
+  "weeklyNote": "Proyecto sólido con buena base de contenido. Prioridad inmediata: monetización via AdSense y afiliados. El cron funciona bien, ahora necesitamos convertir tráfico en ingresos."
 }
