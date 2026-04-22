@@ -64,11 +64,13 @@ import { autoArticle_ia_conversacional_atencion_cliente_chatbots_inteligentes_20
 import { autoArticle_ia_cuantica_negocios_ibm_quantum_network_2026 } from './ia-cuantica-negocios-ibm-quantum-network-2026';
 import { autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026 } from './ia-cuantica-negocios-computacion-cuantica-empresas-2026';
 import { autoArticle_como_crear_agentes_ia_personalizados_negocio_2026 } from './como-crear-agentes-ia-personalizados-negocio-2026';
+import { autoArticle_ia_predictiva_inventarios_reducir_costos_almacen_2026 } from './ia-predictiva-inventarios-reducir-costos-almacen-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_predictiva_inventarios_reducir_costos_almacen_2026,
   autoArticle_como_crear_agentes_ia_personalizados_negocio_2026,
   autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026,
   autoArticle_ia_cuantica_negocios_ibm_quantum_network_2026,
