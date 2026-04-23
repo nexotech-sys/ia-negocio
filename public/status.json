@@ -1,78 +1,72 @@
 {
-  "lastUpdate": "2026-04-22",
+  "lastUpdate": "2026-04-23",
   "article": {
-    "title": "IA Generativa vs IA Predictiva: Guía Completa para Elegir la Correcta en tu Negocio 2026",
-    "slug": "ia-generativa-vs-ia-predictiva-diferencias-negocios-2026"
+    "title": "Agentes de IA Autónomos para Empresas: Cómo Crear Tu Equipo Digital de Trabajo en 2026",
+    "slug": "agentes-ia-autonomos-empresas-equipo-digital-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-15",
-      "task": "Configurar Google AdSense y crear bloques de anuncios",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-16",
-      "task": "Investigar y configurar primeros 5 links de afiliados (Amazon, hosting)",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-17",
-      "task": "Crear newsletter semanal y sistema de suscripción",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-18",
-      "task": "Optimizar artículos top 10 para SEO y conversión",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-19",
-      "task": "Configurar schema markup para artículos",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-20",
-      "task": "Crear páginas de categorías principales",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
       "date": "2024-12-21",
-      "task": "Implementar botones de compartir social",
+      "task": "Configurar AdSense en 10 artículos top",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-22",
+      "task": "Investigar programa afiliados Amazon y tech",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Optimizar SEO de artículos más antiguos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Crear newsletter signup para captación",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Implementar links afiliados en 5 artículos",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Revisar métricas de diciembre en Analytics",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Planificar calendario de contenido enero",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización principal del sitio con 155+ artículos",
+      "reason": "monetización inmediata del tráfico existente con 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech mencionados",
+      "reason": "programa de afiliados para productos tech mencionados en artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Newsletter y email marketing para retención",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analytics de comportamiento para optimizar conversión",
+      "service": "ConvertKit",
+      "reason": "email marketing para retener audiencia y aumentar engagement",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buena base de contenido. Prioridad inmediata: monetización via AdSense y afiliados. El cron funciona bien, ahora necesitamos convertir tráfico en ingresos."
+  "weeklyNote": "Proyecto sólido con buena base de contenido. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año para aprovechar tráfico navideño."
 }
