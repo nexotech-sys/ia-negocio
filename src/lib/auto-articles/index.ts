@@ -68,11 +68,13 @@ import { autoArticle_ia_predictiva_inventarios_reducir_costos_almacen_2026 } fro
 import { autoArticle_ia_generativa_vs_ia_predictiva_diferencias_negocios_2026 } from './ia-generativa-vs-ia-predictiva-diferencias-negocios-2026';
 import { autoArticle_agentes_ia_autonomos_empresas_equipo_digital_2026 } from './agentes-ia-autonomos-empresas-equipo-digital-2026';
 import { autoArticle_ia_cuantica_negocios_2026_computacion_cuantica_empresas } from './ia-cuantica-negocios-2026-computacion-cuantica-empresas';
+import { autoArticle_ia_generativa_videos_corporativos_guia_2026 } from './ia-generativa-videos-corporativos-guia-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_generativa_videos_corporativos_guia_2026,
   autoArticle_ia_cuantica_negocios_2026_computacion_cuantica_empresas,
   autoArticle_agentes_ia_autonomos_empresas_equipo_digital_2026,
   autoArticle_ia_generativa_vs_ia_predictiva_diferencias_negocios_2026,
