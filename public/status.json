@@ -1,66 +1,78 @@
 {
   "lastUpdate": "2026-04-24",
   "article": {
-    "title": "IA Generativa para Crear Videos Corporativos: Guía Completa 2026",
-    "slug": "ia-generativa-videos-corporativos-guia-2026"
+    "title": "IA Cuántica para Empresas: Cómo la Computación Cuántica Revolucionará tu Negocio en 2026",
+    "slug": "ia-cuantica-empresas-computacion-cuantica-negocios-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-28",
-      "task": "Configurar Google AdSense para monetización",
+      "date": "2024-12-20",
+      "task": "Configurar enlaces de afiliados en Amazon y tech products",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-29",
-      "task": "Investigar y seleccionar 5 programas de afiliados relevantes",
+      "date": "2024-12-21",
+      "task": "Implementar AdSense en todas las páginas del sitio",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Integrar primer lote de links de afiliados en artículos existentes",
+      "date": "2024-12-22",
+      "task": "Optimizar artículos existentes con meta descriptions",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-02",
-      "task": "Optimizar 10 artículos antiguos para mejor SEO",
+      "date": "2024-12-23",
+      "task": "Crear newsletter signup para captura de leads",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-03",
-      "task": "Crear landing page para newsletter subscription",
+      "date": "2024-12-26",
+      "task": "Revisar performance en Search Console y ajustar keywords",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Implementar schema markup en artículos principales",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-06",
-      "task": "Implementar esquemas JSON-LD en artículos principales",
+      "date": "2024-12-28",
+      "task": "Configurar social media sharing buttons",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para comenzar monetización con anuncios display",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Principal fuente de ingresos por afiliación para productos tecnológicos",
+      "reason": "Generar ingresos por afiliación en artículos de tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Gestión de newsletter para retener audiencia y aumentar engagement",
+      "reason": "Construir lista de email para marketing directo",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "Analizar comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto avanza bien con buen volumen de contenido (155 artículos) y métricas conectadas. Prioridad inmediata: activar monetización con AdSense y afiliados para comenzar a generar ingresos."
+  "weeklyNote": "El proyecto va bien con 155 artículos y crecimiento orgánico. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
