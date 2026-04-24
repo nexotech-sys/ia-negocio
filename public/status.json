@@ -1,66 +1,66 @@
 {
-  "lastUpdate": "2026-04-23",
+  "lastUpdate": "2026-04-24",
   "article": {
-    "title": "IA Cuántica para Negocios 2026: Cómo las Empresas Están Revolucionando sus Operaciones con Computación Cuántica",
-    "slug": "ia-cuantica-negocios-2026-computacion-cuantica-empresas"
+    "title": "IA Generativa para Crear Videos Corporativos: Guía Completa 2026",
+    "slug": "ia-generativa-videos-corporativos-guia-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Configurar AdSense y optimizar ads placement",
+      "date": "2024-12-28",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-20",
-      "task": "Investigar y configurar 3 programas de afiliados relevantes",
+      "date": "2024-12-29",
+      "task": "Investigar y seleccionar 5 programas de afiliados relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Crear sistema de internal linking automático",
+      "date": "2024-12-30",
+      "task": "Integrar primer lote de links de afiliados en artículos existentes",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-22",
-      "task": "Optimizar meta descriptions y títulos SEO de artículos existentes",
+      "date": "2025-01-02",
+      "task": "Optimizar 10 artículos antiguos para mejor SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Implementar newsletter signup y lead magnets",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Analizar performance de artículos y optimizar los top 10",
+      "date": "2025-01-03",
+      "task": "Crear landing page para newsletter subscription",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2025-01-06",
+      "task": "Implementar esquemas JSON-LD en artículos principales",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente con ~155 artículos",
+      "reason": "Necesario para comenzar monetización con anuncios display",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Comenzar monetización por afiliados en nicho tech",
+      "reason": "Principal fuente de ingresos por afiliación para productos tecnológicos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "Capturar leads y crear funnel de email marketing",
+      "service": "Mailchimp",
+      "reason": "Gestión de newsletter para retener audiencia y aumentar engagement",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buena base de contenido y analíticas. Prioridad: monetización inmediata via AdSense y afiliados antes de fin de año."
+  "weeklyNote": "El proyecto avanza bien con buen volumen de contenido (155 artículos) y métricas conectadas. Prioridad inmediata: activar monetización con AdSense y afiliados para comenzar a generar ingresos."
 }
