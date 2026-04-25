@@ -1,78 +1,78 @@
 {
-  "lastUpdate": "2026-04-24",
+  "lastUpdate": "2026-04-25",
   "article": {
-    "title": "IA Cuántica para Empresas: Cómo la Computación Cuántica Revolucionará tu Negocio en 2026",
-    "slug": "ia-cuantica-empresas-computacion-cuantica-negocios-2026"
+    "title": "IA Generativa para Crear Cursos Online: 7 Herramientas que Revolucionan la Educación Digital en 2026",
+    "slug": "ia-generativa-crear-cursos-online-herramientas-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar enlaces de afiliados en Amazon y tech products",
+      "task": "Configurar AdSense y optimizar anuncios en artículos top",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Implementar AdSense en todas las páginas del sitio",
+      "task": "Implementar 3 programas de afiliados relevantes (Amazon, Coursera, Udemy)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Optimizar artículos existentes con meta descriptions",
+      "task": "Revisar y optimizar artículos con bajo CTR según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter signup para captura de leads",
+      "task": "Crear estrategia de enlaces internos entre artículos relacionados",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Optimizar meta descripciones de top 20 artículos más visitados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Revisar performance en Search Console y ajustar keywords",
+      "task": "Implementar schema markup en artículos de educación y tecnología",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     },
     {
       "date": "2024-12-27",
-      "task": "Implementar schema markup en artículos principales",
+      "task": "Crear newsletter semanal automatizada para suscriptores",
       "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Configurar social media sharing buttons",
-      "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "Google AdSense",
+      "service": "AdSense",
       "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos de tech",
+      "reason": "Generar ingresos por afiliación en artículos de herramientas y cursos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Construir lista de email para marketing directo",
+      "reason": "Automatizar email marketing y retener audiencia",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para optimizar conversión",
+      "reason": "Analizar comportamiento de usuarios para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto va bien con 155 artículos y crecimiento orgánico. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: monetización via AdSense y afiliados. El cron funciona bien, ahora necesitamos maximizar ingresos del tráfico existente."
 }
