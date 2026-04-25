@@ -1,78 +1,78 @@
 {
   "lastUpdate": "2026-04-25",
   "article": {
-    "title": "IA Generativa para Crear Cursos Online: 7 Herramientas que Revolucionan la Educación Digital en 2026",
-    "slug": "ia-generativa-crear-cursos-online-herramientas-2026"
+    "title": "IA Conversacional B2B: Cómo Automatizar el 80% de tus Reuniones Comerciales en 2026",
+    "slug": "ia-conversacional-b2b-automatizar-reuniones-comerciales-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar anuncios en artículos top",
+      "task": "Configurar Google AdSense en sitio web",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Implementar 3 programas de afiliados relevantes (Amazon, Coursera, Udemy)",
+      "task": "Investigar programas de afiliados para herramientas IA B2B",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Revisar y optimizar artículos con bajo CTR según Analytics",
+      "task": "Crear 5 artículos con links de afiliados integrados",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear estrategia de enlaces internos entre artículos relacionados",
+      "task": "Optimizar títulos de artículos existentes para SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Optimizar meta descripciones de top 20 artículos más visitados",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Implementar schema markup en artículos de educación y tecnología",
+      "task": "Configurar email marketing para captura de leads",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-27",
-      "task": "Crear newsletter semanal automatizada para suscriptores",
+      "date": "2024-12-26",
+      "task": "Analizar métricas de rendimiento de artículos top 10",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Implementar schema markup en artículos principales",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "service": "Google AdSense",
+      "reason": "Monetización urgente con 155 artículos publicados",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos de herramientas y cursos",
+      "reason": "Links de afiliados para herramientas y libros IA",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Automatizar email marketing y retener audiencia",
+      "reason": "Captura de leads y newsletter automatizada",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios para optimizar conversiones",
+      "reason": "Análisis de comportamiento de usuarios en artículos",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: monetización via AdSense y afiliados. El cron funciona bien, ahora necesitamos maximizar ingresos del tráfico existente."
+  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, es crítico activar AdSense y afiliados YA. Producción de contenido estable con cron diario."
 }
