@@ -1,72 +1,72 @@
 {
   "lastUpdate": "2026-04-27",
   "article": {
-    "title": "IA Generativa para Crear Productos Digitales que se Vendan Solos en 2026",
-    "slug": "ia-generativa-crear-productos-digitales-2026"
+    "title": "IA Cuántica para Negocios: La Revolución que Llegó en 2026 y Cómo Aprovecharla",
+    "slug": "ia-cuantica-negocios-2026-como-aprovechar"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-26",
-      "task": "Configurar Google AdSense y colocar anuncios estratégicos",
+      "date": "2024-12-20",
+      "task": "Configurar AdSense y crear primeras unidades publicitarias",
       "agent": "Nacho",
       "priority": "alta"
+    },
+    {
+      "date": "2024-12-21",
+      "task": "Investigar programas de afiliados relevantes para IA y tech",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Implementar 3-5 links de afiliados en artículos top",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Optimizar meta descriptions en artículos con más tráfico",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Crear newsletter signup y primera campaña email",
+      "agent": "Nacho",
+      "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Investigar y añadir 5 links de afiliados relevantes en artículos top",
+      "task": "Configurar structured data para artículos",
       "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Optimizar títulos y meta descriptions de 10 artículos con más tráfico",
-      "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     },
     {
       "date": "2024-12-30",
-      "task": "Crear newsletter semanal con mejores artículos del mes",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-31",
-      "task": "Análisis de métricas diciembre y planificación enero 2025",
-      "agent": "Nacho",
+      "task": "Análisis de rendimiento Q4 y planning Q1",
+      "agent": "Sofia",
       "priority": "alta"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Implementar schema markup en artículos principales",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Crear landing page para captura de emails",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente con publicidad contextual",
+      "service": "AdSense",
+      "reason": "Monetizar el tráfico existente de ~155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "Gestionar lista de emails y automatizar newsletters",
+      "service": "Mailchimp",
+      "reason": "Capturar emails y crear audiencia para retención",
       "urgent": false
     },
     {
       "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "Implementar programa de afiliados para generar ingresos pasivos",
-      "urgent": true
+      "service": "Hotjar",
+      "reason": "Entender comportamiento usuarios y optimizar conversión",
+      "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y crecimiento orgánico diario. Prioridad: monetización inmediata con AdSense y afiliados. Analytics funcionando bien, falta optimizar conversión."
+  "weeklyNote": "Proyecto sólido con base de contenido establecida. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, necesitamos focus en revenue streams."
 }
