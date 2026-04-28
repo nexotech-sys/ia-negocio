@@ -1,72 +1,66 @@
 {
-  "lastUpdate": "2026-04-27",
+  "lastUpdate": "2026-04-28",
   "article": {
-    "title": "IA Cuántica para Negocios: La Revolución que Llegó en 2026 y Cómo Aprovecharla",
-    "slug": "ia-cuantica-negocios-2026-como-aprovechar"
+    "title": "Agentes de IA Autonómos: Cómo Crear Empleados Virtuales que Trabajan 24/7 en Tu Empresa",
+    "slug": "agentes-ia-autonomos-empleados-virtuales-empresas"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y crear primeras unidades publicitarias",
+      "task": "Configurar AdSense y optimizar layout para anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar programas de afiliados relevantes para IA y tech",
+      "task": "Investigar y configurar primeros links de afiliados (herramientas IA)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
+      "date": "2024-12-22",
+      "task": "Crear landing page para newsletter y configurar lead magnets",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
       "date": "2024-12-23",
-      "task": "Implementar 3-5 links de afiliados en artículos top",
+      "task": "Optimizar articulos top para mejor SEO y conversión",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Optimizar meta descriptions en artículos con más tráfico",
+      "task": "Configurar sistema de email marketing automatizado",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Crear newsletter signup y primera campaña email",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Configurar structured data para artículos",
+      "task": "Analizar métricas de diciembre y planear estrategia enero",
       "agent": "Nacho",
       "priority": "baja"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Análisis de rendimiento Q4 y planning Q1",
-      "agent": "Sofia",
-      "priority": "alta"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "AdSense",
-      "reason": "Monetizar el tráfico existente de ~155 artículos",
+      "reason": "Con 155 artículos ya tenemos volumen para monetizar con anuncios display",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar emails y crear audiencia para retención",
-      "urgent": false
+      "reason": "Necesitamos capturar leads y hacer email marketing para aumentar retención",
+      "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Entender comportamiento usuarios y optimizar conversión",
+      "service": "Amazon Associates",
+      "reason": "Para comenzar con marketing de afiliados en herramientas IA recomendadas",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con base de contenido establecida. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, necesitamos focus en revenue streams."
+  "weeklyNote": "El proyecto va sólido con 155 artículos y crecimiento orgánico. Es momento de monetizar: AdSense urgente, afiliados para enero, y captura de leads para construir audiencia propia."
 }
