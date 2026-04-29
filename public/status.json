@@ -1,43 +1,43 @@
 {
-  "lastUpdate": "2026-04-28",
+  "lastUpdate": "2026-04-29",
   "article": {
-    "title": "Agentes de IA Autonómos: Cómo Crear Empleados Virtuales que Trabajan 24/7 en Tu Empresa",
-    "slug": "agentes-ia-autonomos-empleados-virtuales-empresas"
+    "title": "IA Cuántica para Empresas: Cómo Preparar tu Negocio para la Revolución de 2026",
+    "slug": "ia-cuantica-empresas-revolucion-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar layout para anuncios",
+      "task": "Configurar AdSense y optimizar colocación de anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y configurar primeros links de afiliados (herramientas IA)",
+      "task": "Investigar y configurar primeros links de afiliados tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Crear landing page para newsletter y configurar lead magnets",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
       "date": "2024-12-23",
-      "task": "Optimizar articulos top para mejor SEO y conversión",
+      "task": "Crear newsletter semanal con top 5 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Configurar sistema de email marketing automatizado",
+      "task": "Optimizar SEO de 10 artículos con mejor potencial",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y planear estrategia enero",
+      "task": "Configurar social media automation para promoción",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Análisis de competencia y keywords de alto valor",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -45,22 +45,28 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Con 155 artículos ya tenemos volumen para monetizar con anuncios display",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Necesitamos capturar leads y hacer email marketing para aumentar retención",
+      "service": "Google AdSense",
+      "reason": "Monetización directa del tráfico existente",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Para comenzar con marketing de afiliados en herramientas IA recomendadas",
+      "reason": "Links de afiliados para productos tech mencionados",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Mailchimp",
+      "reason": "Newsletter para retener audiencia y aumentar engagement",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Buffer",
+      "reason": "Automatizar promoción en redes sociales",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto va sólido con 155 artículos y crecimiento orgánico. Es momento de monetizar: AdSense urgente, afiliados para enero, y captura de leads para construir audiencia propia."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados. El cron diario garantiza crecimiento constante."
 }
