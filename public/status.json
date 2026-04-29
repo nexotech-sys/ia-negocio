@@ -1,52 +1,58 @@
 {
   "lastUpdate": "2026-04-29",
   "article": {
-    "title": "IA Cuántica para Empresas: Cómo Preparar tu Negocio para la Revolución de 2026",
-    "slug": "ia-cuantica-empresas-revolucion-2026"
+    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-computacion-cuantica-empresas-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y optimizar colocación de anuncios",
+      "task": "Configurar AdSense y solicitar aprobación",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y configurar primeros links de afiliados tech",
+      "task": "Investigar programas de afiliados tech relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter semanal con top 5 artículos",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Optimizar SEO de 10 artículos con mejor potencial",
+      "task": "Crear estrategia de newsletter semanal",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Configurar social media automation para promoción",
+      "task": "Optimizar artículos existentes para SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Análisis de competencia y keywords de alto valor",
+      "task": "Implementar primeros links de afiliados",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-30",
+      "task": "Configurar pixel de Facebook/Meta",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2025-01-02",
+      "task": "Análisis de performance diciembre",
+      "agent": "Nacho",
+      "priority": "media"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización directa del tráfico existente",
+      "reason": "Principal fuente de monetización para el sitio",
       "urgent": true
     },
     {
@@ -58,15 +64,15 @@
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Newsletter para retener audiencia y aumentar engagement",
+      "reason": "Newsletter para retener audiencia y mejorar engagement",
       "urgent": false
     },
     {
       "agent": "Nacho",
-      "service": "Buffer",
-      "reason": "Automatizar promoción en redes sociales",
+      "service": "Hotjar",
+      "reason": "Entender comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados. El cron diario garantiza crecimiento constante."
+  "weeklyNote": "Sitio en crecimiento constante con 155 artículos. Prioridad: monetización inmediata con AdSense y afiliados. Analytics funcionando bien."
 }
