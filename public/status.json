@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-04-29",
+  "lastUpdate": "2026-04-30",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
-    "slug": "ia-cuantica-negocios-computacion-cuantica-empresas-2026"
+    "title": "IA Multimodal para PYMEs: Cómo Integrar Video, Audio y Texto en Tu Negocio en 2026",
+    "slug": "ia-multimodal-pymes-video-audio-texto-negocio-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar AdSense y solicitar aprobación",
+      "task": "Configurar Google AdSense y optimizar ads placement",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar programas de afiliados tech relevantes",
+      "task": "Implementar links de afiliados en artículos de tecnología",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Crear estrategia de newsletter semanal",
+      "date": "2024-12-22",
+      "task": "Crear landing page para newsletter y lead magnets",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2024-12-23",
+      "task": "Optimizar SEO de artículos con bajo CTR en Search Console",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Configurar email marketing automation",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
       "date": "2024-12-26",
-      "task": "Optimizar artículos existentes para SEO",
+      "task": "Implementar sistema de comentarios y engagement",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Implementar primeros links de afiliados",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Configurar pixel de Facebook/Meta",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Análisis de performance diciembre",
+      "task": "Crear contenido evergreen para maximizar tráfico",
       "agent": "Nacho",
       "priority": "media"
     }
@@ -52,27 +52,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Principal fuente de monetización para el sitio",
+      "reason": "monetización directa del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech mencionados",
+      "reason": "generar ingresos por afiliación en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Newsletter para retener audiencia y mejorar engagement",
+      "reason": "capturar leads y automatizar email marketing",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Entender comportamiento de usuarios para optimizar conversión",
+      "reason": "analizar comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Sitio en crecimiento constante con 155 artículos. Prioridad: monetización inmediata con AdSense y afiliados. Analytics funcionando bien."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados. El cron diario está funcionando bien."
 }
