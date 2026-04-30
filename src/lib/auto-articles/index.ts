@@ -79,11 +79,13 @@ import { autoArticle_ia_cuantica_negocios_2026_como_aprovechar } from './ia-cuan
 import { autoArticle_agentes_ia_autonomos_empleados_virtuales_empresas } from './agentes-ia-autonomos-empleados-virtuales-empresas';
 import { autoArticle_ia_cuantica_empresas_revolucion_2026 } from './ia-cuantica-empresas-revolucion-2026';
 import { autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026 } from './ia-cuantica-negocios-computacion-cuantica-empresas-2026';
+import { autoArticle_ia_multimodal_pymes_video_audio_texto_negocio_2026 } from './ia-multimodal-pymes-video-audio-texto-negocio-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_multimodal_pymes_video_audio_texto_negocio_2026,
   autoArticle_ia_cuantica_negocios_computacion_cuantica_empresas_2026,
   autoArticle_ia_cuantica_empresas_revolucion_2026,
   autoArticle_agentes_ia_autonomos_empleados_virtuales_empresas,
