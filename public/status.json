@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-04-30",
   "article": {
-    "title": "IA Multimodal para PYMEs: Cómo Integrar Video, Audio y Texto en Tu Negocio en 2026",
-    "slug": "ia-multimodal-pymes-video-audio-texto-negocio-2026"
+    "title": "IA Conversacional vs ChatGPT: ¿Cuál Elegir Para Tu Negocio en 2026?",
+    "slug": "ia-conversacional-vs-chatgpt-cual-elegir-negocio-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-19",
+      "task": "Configurar AdSense y subir ads.txt",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-20",
-      "task": "Configurar Google AdSense y optimizar ads placement",
+      "task": "Investigar programas de afiliados relevantes (Amazon, hosting, herramientas IA)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Implementar links de afiliados en artículos de tecnología",
+      "task": "Implementar 3-5 enlaces de afiliados en artículos existentes sobre herramientas",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "media"
     },
     {
       "date": "2024-12-22",
-      "task": "Crear landing page para newsletter y lead magnets",
+      "task": "Crear landing page para newsletter semanal",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar SEO de artículos con bajo CTR en Search Console",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-24",
-      "task": "Configurar email marketing automation",
+      "task": "Configurar automatización de social media para nuevos artículos",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
       "date": "2024-12-26",
-      "task": "Implementar sistema de comentarios y engagement",
+      "task": "Optimizar 10 artículos más antiguos con keywords trending",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-27",
-      "task": "Crear contenido evergreen para maximizar tráfico",
+      "task": "Implementar schema markup en artículos principales",
       "agent": "Nacho",
       "priority": "media"
     }
@@ -52,27 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización directa del sitio con 155 artículos",
+      "reason": "Monetización principal del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación en artículos tech",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "capturar leads y automatizar email marketing",
+      "service": "Mailchimp/ConvertKit",
+      "reason": "Capturar leads y crear newsletter semanal",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "analizar comportamiento de usuarios para optimizar conversión",
+      "reason": "Analytics de comportamiento para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados. El cron diario está funcionando bien."
+  "weeklyNote": "Proyecto sólido con buen contenido base (155 artículos) y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
