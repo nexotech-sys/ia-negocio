@@ -1,72 +1,78 @@
 {
   "lastUpdate": "2026-05-01",
   "article": {
-    "title": "IA Cuántica para Negocios: La Revolución que Llegará en 2027 y Cómo Prepararte Ahora",
-    "slug": "ia-cuantica-para-negocios-revolucion-2027-como-prepararte"
+    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
+    "slug": "ia-cuantica-para-negocios-computacion-cuantica-empresas-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-20",
+      "task": "Configurar AdSense y revisar políticas",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-21",
-      "task": "Configurar AdSense y colocar primeros anuncios",
+      "task": "Investigar programas de afiliados relevantes para IA/tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Investigar programas de afiliados relevantes para IA",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Implementar 5 links de afiliados en artículos top",
+      "task": "Implementar primeros 5 links de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
+      "date": "2024-12-23",
       "task": "Optimizar SEO en 10 artículos con mejor tráfico",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Crear newsletter signup y primera campaña",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Análisis de competencia y keywords faltantes",
+      "task": "Crear newsletter template y captura de emails",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-28",
-      "task": "Setup social media automation para promoción",
+      "date": "2024-12-27",
+      "task": "Configurar social media auto-posting",
       "agent": "Nacho",
       "priority": "baja"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Análisis de rendimiento AdSense primera semana",
+      "agent": "Nacho",
+      "priority": "alta"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "necesario para monetizar el tráfico existente de 155 artículos",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "capturar emails de visitantes para marketing directo",
+      "reason": "monetización principal del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "links de afiliados para productos de IA y tech",
+      "reason": "links de afiliados para productos tech mencionados",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Mailchimp",
+      "reason": "capturar leads y enviar newsletter semanal",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Buffer",
+      "reason": "automatizar publicación en redes sociales",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto bien encaminado con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona perfectamente."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados. El tráfico orgánico está creciendo bien según Analytics."
 }
