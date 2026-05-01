@@ -1,72 +1,72 @@
 {
-  "lastUpdate": "2026-04-30",
+  "lastUpdate": "2026-05-01",
   "article": {
-    "title": "IA Conversacional vs ChatGPT: ¿Cuál Elegir Para Tu Negocio en 2026?",
-    "slug": "ia-conversacional-vs-chatgpt-cual-elegir-negocio-2026"
+    "title": "IA Cuántica para Negocios: La Revolución que Llegará en 2027 y Cómo Prepararte Ahora",
+    "slug": "ia-cuantica-para-negocios-revolucion-2027-como-prepararte"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-19",
-      "task": "Configurar AdSense y subir ads.txt",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-20",
-      "task": "Investigar programas de afiliados relevantes (Amazon, hosting, herramientas IA)",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-21",
-      "task": "Implementar 3-5 enlaces de afiliados en artículos existentes sobre herramientas",
+      "task": "Configurar AdSense y colocar primeros anuncios",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Crear landing page para newsletter semanal",
+      "task": "Investigar programas de afiliados relevantes para IA",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Configurar automatización de social media para nuevos artículos",
+      "task": "Implementar 5 links de afiliados en artículos top",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Optimizar SEO en 10 artículos con mejor tráfico",
+      "agent": "Nacho",
+      "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Optimizar 10 artículos más antiguos con keywords trending",
+      "task": "Crear newsletter signup y primera campaña",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Análisis de competencia y keywords faltantes",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-27",
-      "task": "Implementar schema markup en artículos principales",
+      "date": "2024-12-28",
+      "task": "Setup social media automation para promoción",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización principal del sitio con 155 artículos",
+      "reason": "necesario para monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Mailchimp/ConvertKit",
-      "reason": "Capturar leads y crear newsletter semanal",
-      "urgent": false
+      "service": "Mailchimp",
+      "reason": "capturar emails de visitantes para marketing directo",
+      "urgent": true
     },
     {
       "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analytics de comportamiento para optimizar conversiones",
+      "service": "Amazon Associates",
+      "reason": "links de afiliados para productos de IA y tech",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen contenido base (155 artículos) y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto bien encaminado con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona perfectamente."
 }
