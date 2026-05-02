@@ -1,78 +1,60 @@
 {
-  "lastUpdate": "2026-05-01",
+  "lastUpdate": "2026-05-02",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo la Computación Cuántica Revolucionará tu Empresa en 2026",
-    "slug": "ia-cuantica-para-negocios-computacion-cuantica-empresas-2026"
+    "title": "IA Cuántica en Negocios: Cómo IBM y Google Están Revolucionando la Toma de Decisiones Empresariales en 2026",
+    "slug": "ia-cuantica-negocios-revolucion-empresarial-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y revisar políticas",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-21",
-      "task": "Investigar programas de afiliados relevantes para IA/tech",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-22",
-      "task": "Implementar primeros 5 links de afiliados en artículos top",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO en 10 artículos con mejor tráfico",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Crear newsletter template y captura de emails",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
       "date": "2024-12-27",
-      "task": "Configurar social media auto-posting",
+      "task": "Configurar AdSense y crear anuncios nativos",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     },
     {
       "date": "2024-12-28",
-      "task": "Análisis de rendimiento AdSense primera semana",
+      "task": "Research programas afiliados tech (Amazon, software)",
       "agent": "Nacho",
       "priority": "alta"
+    },
+    {
+      "date": "2024-12-30",
+      "task": "Implementar links afiliados en 10 artículos top",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-02",
+      "task": "Optimizar SEO de artículos con bajo CTR",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-03",
+      "task": "Crear newsletter semanal para subscribers",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización principal del sitio con 155 artículos",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "links de afiliados para productos tech mencionados",
+      "reason": "Necesita monetizar el tráfico existente, crítico para revenue",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y enviar newsletter semanal",
+      "reason": "Para newsletter y email marketing automation",
       "urgent": false
     },
     {
       "agent": "Nacho",
-      "service": "Buffer",
-      "reason": "automatizar publicación en redes sociales",
+      "service": "Hotjar",
+      "reason": "Analytics de comportamiento para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: activar monetización inmediata con AdSense y afiliados. El tráfico orgánico está creciendo bien según Analytics."
+  "weeklyNote": "Proyecto sólido con 155 artículos y métricas conectadas. Prioridad: monetización inmediata vía AdSense y afiliados. El contenido de IA cuántica muestra expertise técnico valioso."
 }
