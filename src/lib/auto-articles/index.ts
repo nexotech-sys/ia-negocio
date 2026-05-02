@@ -83,11 +83,13 @@ import { autoArticle_ia_multimodal_pymes_video_audio_texto_negocio_2026 } from '
 import { autoArticle_ia_conversacional_vs_chatgpt_cual_elegir_negocio_2026 } from './ia-conversacional-vs-chatgpt-cual-elegir-negocio-2026';
 import { autoArticle_ia_cuantica_para_negocios_revolucion_2027_como_prepararte } from './ia-cuantica-para-negocios-revolucion-2027-como-prepararte';
 import { autoArticle_ia_cuantica_para_negocios_computacion_cuantica_empresas_2026 } from './ia-cuantica-para-negocios-computacion-cuantica-empresas-2026';
+import { autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026 } from './ia-cuantica-negocios-revolucion-empresarial-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026,
   autoArticle_ia_cuantica_para_negocios_computacion_cuantica_empresas_2026,
   autoArticle_ia_cuantica_para_negocios_revolucion_2027_como_prepararte,
   autoArticle_ia_conversacional_vs_chatgpt_cual_elegir_negocio_2026,
