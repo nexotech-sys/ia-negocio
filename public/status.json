@@ -1,60 +1,78 @@
 {
   "lastUpdate": "2026-05-02",
   "article": {
-    "title": "IA Cuántica en Negocios: Cómo IBM y Google Están Revolucionando la Toma de Decisiones Empresariales en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-empresarial-2026"
+    "title": "Agentes de IA Autónomos para Startups: Cómo Automatizar Tu Negocio Completo en 2026",
+    "slug": "agentes-ia-autonomos-startups-automatizar-negocio-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-27",
-      "task": "Configurar AdSense y crear anuncios nativos",
+      "date": "2024-12-28",
+      "task": "Configurar Google AdSense y optimizar ads placement",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-28",
-      "task": "Research programas afiliados tech (Amazon, software)",
+      "date": "2024-12-29",
+      "task": "Investigar y aplicar a programas de afiliados tecnológicos",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-30",
-      "task": "Implementar links afiliados en 10 artículos top",
+      "task": "Optimizar SEO de artículos con bajo CTR en Search Console",
       "agent": "Nacho",
       "priority": "media"
     },
     {
+      "date": "2024-12-31",
+      "task": "Crear newsletter semanal con mejores artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-01",
+      "task": "Analizar métricas Q4 y planificar contenido Q1",
+      "agent": "Nacho",
+      "priority": "baja"
+    },
+    {
       "date": "2025-01-02",
-      "task": "Optimizar SEO de artículos con bajo CTR",
+      "task": "Implementar schema markup en artículos existentes",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2025-01-03",
-      "task": "Crear newsletter semanal para subscribers",
+      "task": "Crear landing pages para keywords de alto volumen",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesita monetizar el tráfico existente, crítico para revenue",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "Generar ingresos por afiliación en artículos tech",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Para newsletter y email marketing automation",
+      "reason": "Automatizar newsletter y nurturing de audience",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Analytics de comportamiento para optimizar conversiones",
+      "reason": "Analizar comportamiento usuario para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y métricas conectadas. Prioridad: monetización inmediata vía AdSense y afiliados. El contenido de IA cuántica muestra expertise técnico valioso."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, ahora enfocarse en revenue streams."
 }
