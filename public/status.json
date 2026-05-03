@@ -1,78 +1,72 @@
 {
   "lastUpdate": "2026-05-03",
   "article": {
-    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Triplicar Conversiones en 2026",
-    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas-2026"
+    "title": "IA Predictiva para PYMES: Cómo Anticipar Tendencias de Mercado en 2026",
+    "slug": "ia-predictiva-pymes-tendencias-mercado-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar AdSense y crear políticas de privacidad",
+      "date": "2025-01-12",
+      "task": "Implementar AdSense en todas las páginas",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-21",
-      "task": "Investigar y seleccionar 3 programas de afiliados relevantes",
+      "date": "2025-01-13",
+      "task": "Crear sistema de links afiliados Amazon",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Implementar primeros enlaces de afiliados en artículos top",
+      "date": "2025-01-14",
+      "task": "Optimizar artículos existentes para SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO de 10 artículos con mejor tráfico",
+      "date": "2025-01-15",
+      "task": "Configurar email marketing para suscriptores",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear newsletter semanal y formulario de suscripción",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y planificar enero",
+      "date": "2025-01-16",
+      "task": "Implementar sistema de comentarios",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-27",
-      "task": "Configurar social media automation para artículos",
+      "date": "2025-01-17",
+      "task": "Crear página de recursos descargables",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "media"
+    },
+    {
+      "date": "2025-01-18",
+      "task": "Auditoría completa de velocidad del sitio",
+      "agent": "Nacho",
+      "priority": "alta"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
+      "reason": "Monetizar el tráfico existente de 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos de tecnología",
+      "reason": "Generar ingresos por afiliación en artículos tecnológicos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Crear sistema de email marketing para retener audiencia",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Analizar comportamiento de usuarios y optimizar conversiones",
+      "reason": "Capturar leads y hacer email marketing",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en buen ritmo con 155 artículos y crecimiento orgánico estable. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto en buen estado con Analytics funcionando. Prioridad: monetización urgente via AdSense y afiliados antes que SEO orgánico traiga más tráfico."
 }
