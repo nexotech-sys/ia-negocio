@@ -1,51 +1,51 @@
 {
-  "lastUpdate": "2026-05-02",
+  "lastUpdate": "2026-05-03",
   "article": {
-    "title": "Agentes de IA Autónomos para Startups: Cómo Automatizar Tu Negocio Completo en 2026",
-    "slug": "agentes-ia-autonomos-startups-automatizar-negocio-2026"
+    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Triplicar Conversiones en 2026",
+    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-28",
-      "task": "Configurar Google AdSense y optimizar ads placement",
+      "date": "2024-12-20",
+      "task": "Configurar AdSense y crear políticas de privacidad",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-29",
-      "task": "Investigar y aplicar a programas de afiliados tecnológicos",
+      "date": "2024-12-21",
+      "task": "Investigar y seleccionar 3 programas de afiliados relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Optimizar SEO de artículos con bajo CTR en Search Console",
+      "date": "2024-12-22",
+      "task": "Implementar primeros enlaces de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-31",
-      "task": "Crear newsletter semanal con mejores artículos",
+      "date": "2024-12-23",
+      "task": "Optimizar SEO de 10 artículos con mejor tráfico",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-01",
-      "task": "Analizar métricas Q4 y planificar contenido Q1",
+      "date": "2024-12-24",
+      "task": "Crear newsletter semanal y formulario de suscripción",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-26",
+      "task": "Analizar métricas de diciembre y planificar enero",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-02",
-      "task": "Implementar schema markup en artículos existentes",
+      "date": "2024-12-27",
+      "task": "Configurar social media automation para artículos",
       "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-03",
-      "task": "Crear landing pages para keywords de alto volumen",
-      "agent": "Nacho",
-      "priority": "alta"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
@@ -58,21 +58,21 @@
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos tech",
+      "reason": "Implementar links de afiliados en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Automatizar newsletter y nurturing de audience",
+      "reason": "Crear sistema de email marketing para retener audiencia",
       "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Analizar comportamiento usuario para optimizar conversiones",
+      "reason": "Analizar comportamiento de usuarios y optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, ahora enfocarse en revenue streams."
+  "weeklyNote": "Proyecto en buen ritmo con 155 artículos y crecimiento orgánico estable. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
