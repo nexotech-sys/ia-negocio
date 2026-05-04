@@ -87,11 +87,13 @@ import { autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026 } from './
 import { autoArticle_agentes_ia_autonomos_startups_automatizar_negocio_2026 } from './agentes-ia-autonomos-startups-automatizar-negocio-2026';
 import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_2026 } from './ia-conversacional-whatsapp-business-automatizar-ventas-2026';
 import { autoArticle_ia_predictiva_pymes_tendencias_mercado_2026 } from './ia-predictiva-pymes-tendencias-mercado-2026';
+import { autoArticle_ia_conversacional_whatsapp_business_chatbots_ventas } from './ia-conversacional-whatsapp-business-chatbots-ventas';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_conversacional_whatsapp_business_chatbots_ventas,
   autoArticle_ia_predictiva_pymes_tendencias_mercado_2026,
   autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_2026,
   autoArticle_agentes_ia_autonomos_startups_automatizar_negocio_2026,
