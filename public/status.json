@@ -1,72 +1,66 @@
 {
-  "lastUpdate": "2026-05-03",
+  "lastUpdate": "2026-05-04",
   "article": {
-    "title": "IA Predictiva para PYMES: Cómo Anticipar Tendencias de Mercado en 2026",
-    "slug": "ia-predictiva-pymes-tendencias-mercado-2026"
+    "title": "IA Conversacional para WhatsApp Business: Cómo Crear Chatbots que Vendan 24/7",
+    "slug": "ia-conversacional-whatsapp-business-chatbots-ventas"
   },
   "calendarTasks": [
     {
-      "date": "2025-01-12",
-      "task": "Implementar AdSense en todas las páginas",
+      "date": "2024-12-18",
+      "task": "Configurar Google AdSense y optimizar ads placement",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-13",
-      "task": "Crear sistema de links afiliados Amazon",
+      "date": "2024-12-19",
+      "task": "Investigar y configurar primeros links de afiliados (Amazon, software)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2025-01-14",
-      "task": "Optimizar artículos existentes para SEO",
+      "date": "2024-12-20",
+      "task": "Crear landing page para newsletter y lead magnets",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-15",
-      "task": "Configurar email marketing para suscriptores",
+      "date": "2024-12-21",
+      "task": "Optimizar SEO de 10 artículos más populares según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-16",
-      "task": "Implementar sistema de comentarios",
+      "date": "2024-12-23",
+      "task": "Configurar campañas de email marketing automatizadas",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-17",
-      "task": "Crear página de recursos descargables",
+      "date": "2024-12-24",
+      "task": "Implementar social sharing buttons y mejorar engagement",
       "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-18",
-      "task": "Auditoría completa de velocidad del sitio",
-      "agent": "Nacho",
-      "priority": "alta"
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155+ artículos",
+      "reason": "Monetizar el tráfico existente con ads display",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Mailchimp/ConvertKit",
+      "reason": "Capturar leads y hacer email marketing",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos tecnológicos",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp",
-      "reason": "Capturar leads y hacer email marketing",
+      "reason": "Generar ingresos por afiliación en artículos tech",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en buen estado con Analytics funcionando. Prioridad: monetización urgente via AdSense y afiliados antes que SEO orgánico traiga más tráfico."
+  "weeklyNote": "Excelente progreso con 155 artículos y Analytics funcionando. Ahora necesitamos monetizar: AdSense urgente, afiliados de Amazon, y captura de leads. El contenido diario está funcionando bien."
 }
