@@ -1,43 +1,49 @@
 {
   "lastUpdate": "2026-05-04",
   "article": {
-    "title": "IA Conversacional para WhatsApp Business: Cómo Crear Chatbots que Vendan 24/7",
-    "slug": "ia-conversacional-whatsapp-business-chatbots-ventas"
+    "title": "IA Cuántica para Negocios: La Nueva Era de Computación que Transformará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-computacion-transformacion-empresas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-18",
-      "task": "Configurar Google AdSense y optimizar ads placement",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-19",
-      "task": "Investigar y configurar primeros links de afiliados (Amazon, software)",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-20",
-      "task": "Crear landing page para newsletter y lead magnets",
+      "task": "Configurar AdSense y implementar ads en artículos existentes",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Optimizar SEO de 10 artículos más populares según Analytics",
+      "task": "Investigar y configurar programa de afiliados Amazon Associates",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-22",
+      "task": "Crear landing page para captura de emails con lead magnet",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Configurar campañas de email marketing automatizadas",
+      "task": "Optimizar artículos top 20 para SEO y velocidad de carga",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-24",
+      "task": "Implementar sistema de newsletter automatizada",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-24",
-      "task": "Implementar social sharing buttons y mejorar engagement",
+      "date": "2024-12-26",
+      "task": "Añadir links de afiliados a artículos de tecnología y herramientas",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Crear contenido promocional para redes sociales",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -46,21 +52,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente con ads display",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Mailchimp/ConvertKit",
-      "reason": "Capturar leads y hacer email marketing",
+      "reason": "monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación en artículos tech",
+      "reason": "generar ingresos por afiliación en artículos de tech",
+      "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "ConvertKit",
+      "reason": "automatizar email marketing y nurturing de leads",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "analizar comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Excelente progreso con 155 artículos y Analytics funcionando. Ahora necesitamos monetizar: AdSense urgente, afiliados de Amazon, y captura de leads. El contenido diario está funcionando bien."
+  "weeklyNote": "Proyecto sólido con buen contenido base. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, necesitamos enfocar en revenue streams."
 }
