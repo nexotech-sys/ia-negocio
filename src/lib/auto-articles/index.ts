@@ -91,11 +91,13 @@ import { autoArticle_ia_conversacional_whatsapp_business_chatbots_ventas } from 
 import { autoArticle_ia_cuantica_negocios_computacion_transformacion_empresas_2026 } from './ia-cuantica-negocios-computacion-transformacion-empresas-2026';
 import { autoArticle_ia_conversacional_atencion_cliente_chatbots_ventas_2026 } from './ia-conversacional-atencion-cliente-chatbots-ventas-2026';
 import { autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026 } from './ia-cuantica-negocios-revolucion-empresarial-2026';
+import { autoArticle_agentes_ia_empresariales_empleado_digital_2026 } from './agentes-ia-empresariales-empleado-digital-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_agentes_ia_empresariales_empleado_digital_2026,
   autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026,
   autoArticle_ia_conversacional_atencion_cliente_chatbots_ventas_2026,
   autoArticle_ia_cuantica_negocios_computacion_transformacion_empresas_2026,
