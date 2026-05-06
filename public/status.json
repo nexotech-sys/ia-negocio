@@ -1,66 +1,66 @@
 {
-  "lastUpdate": "2026-05-05",
+  "lastUpdate": "2026-05-06",
   "article": {
-    "title": "IA Conversacional para Atención al Cliente 2026: Implementa Chatbots que Venden Más",
-    "slug": "ia-conversacional-atencion-cliente-chatbots-ventas-2026"
+    "title": "IA Cuántica para Negocios: La Revolución que Transformará tu Empresa en 2026",
+    "slug": "ia-cuantica-negocios-revolucion-empresarial-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-23",
-      "task": "Configurar Google AdSense en el sitio",
+      "date": "2024-12-20",
+      "task": "Configurar Google AdSense y solicitar aprobación",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-24",
-      "task": "Investigar programas de afiliados para tecnología/IA",
+      "date": "2024-12-21",
+      "task": "Investigar programas de afiliados relevantes para contenido tech/IA",
       "agent": "Nacho",
       "priority": "alta"
+    },
+    {
+      "date": "2024-12-22",
+      "task": "Implementar primeros 5 links de afiliados en artículos top",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Optimizar artículos existentes para mejor SEO",
+      "agent": "Nacho",
+      "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Implementar primeros 5 links de afiliados en artículos populares",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "baja"
     },
     {
       "date": "2024-12-27",
-      "task": "Optimizar SEO de artículos con bajo CTR según Search Console",
+      "task": "Análisis de rendimiento mensual y métricas",
       "agent": "Nacho",
       "priority": "media"
-    },
-    {
-      "date": "2024-12-30",
-      "task": "Crear landing page para captura de emails",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Configurar email marketing automatizado",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente del sitio con anuncios",
+      "reason": "Monetización principal del sitio con 155+ artículos listos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliación con productos tecnológicos",
+      "reason": "Links de afiliados para productos tech mencionados en artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Construir lista de suscriptores para marketing directo",
+      "reason": "Sistema de newsletter para retener audiencia y aumentar engagement",
       "urgent": false
     }
   ],
-  "weeklyNote": "Con 155 artículos y analytics conectados, el sitio está listo para monetización. Prioridad: activar AdSense y afiliados para empezar a generar ingresos del tráfico existente."
+  "weeklyNote": "El proyecto va bien con producción estable de contenido. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
