@@ -1,72 +1,66 @@
 {
   "lastUpdate": "2026-05-08",
   "article": {
-    "title": "IA Cuántica: Cómo las Empresas Latinoamericanas Pueden Prepararse para la Revolución Computacional de 2026",
-    "slug": "ia-cuantica-empresas-latinoamerica-2026"
+    "title": "IA Multimodal para E-commerce: Cómo Revolucionar las Ventas Online con Visión, Audio y Texto en 2026",
+    "slug": "ia-multimodal-ecommerce-ventas-online-2026"
   },
   "calendarTasks": [
     {
+      "date": "2024-12-19",
+      "task": "Configurar AdSense y primeros anuncios",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
       "date": "2024-12-20",
-      "task": "Configurar Google AdSense y conectar con Analytics",
+      "task": "Investigar programas de afiliados tech relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar y agregar 3 programas de afiliados relevantes para IA/tech",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-22",
-      "task": "Optimizar SEO de artículos más populares según Search Console",
+      "task": "Implementar primeros 5 links de afiliados en artículos populares",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Crear newsletter semanal con resumen de artículos",
+      "task": "Optimizar títulos SEO de últimos 10 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Configurar links de afiliados en artículos de hardware/software",
+      "task": "Crear newsletter semanal con mejores artículos",
       "agent": "Nacho",
-      "priority": "alta"
+      "priority": "baja"
     },
     {
       "date": "2024-12-27",
-      "task": "Análisis de performance Q4 y estrategia Q1 2025",
+      "task": "Analizar métricas de diciembre en Analytics",
       "agent": "Nacho",
       "priority": "media"
-    },
-    {
-      "date": "2024-12-28",
-      "task": "Implementar sistema de comentarios y engagement",
-      "agent": "Nacho",
-      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar el tráfico existente de 155 artículos",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech mencionados en artículos",
+      "reason": "Monetización principal del sitio con 155+ artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Newsletter para retener audiencia y aumentar engagement",
+      "reason": "Gestión de newsletters y captación de suscriptores",
       "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "Links de afiliados para productos tech mencionados",
+      "urgent": true
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico para activar AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto sólido con buen contenido y analytics. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
 }
