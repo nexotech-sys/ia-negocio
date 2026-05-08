@@ -1,66 +1,72 @@
 {
-  "lastUpdate": "2026-05-07",
+  "lastUpdate": "2026-05-08",
   "article": {
-    "title": "IA Cuántica para Negocios: La Revolución Exponencial que Transformará Tu Empresa en 2026",
-    "slug": "ia-cuantica-para-negocios-2026-guia-completa"
+    "title": "IA Cuántica: Cómo las Empresas Latinoamericanas Pueden Prepararse para la Revolución Computacional de 2026",
+    "slug": "ia-cuantica-empresas-latinoamerica-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Implementar AdSense en header y sidebar",
+      "task": "Configurar Google AdSense y conectar con Analytics",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Configurar links de afiliados Amazon en artículos tech",
+      "task": "Investigar y agregar 3 programas de afiliados relevantes para IA/tech",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Optimizar SEO de top 10 artículos más visitados",
+      "date": "2024-12-22",
+      "task": "Optimizar SEO de artículos más populares según Search Console",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear newsletter signup con lead magnet",
+      "date": "2024-12-23",
+      "task": "Crear newsletter semanal con resumen de artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Implementar social sharing buttons",
+      "task": "Configurar links de afiliados en artículos de hardware/software",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     },
     {
       "date": "2024-12-27",
-      "task": "Configurar sitemap XML y robots.txt",
+      "task": "Análisis de performance Q4 y estrategia Q1 2025",
       "agent": "Nacho",
       "priority": "media"
+    },
+    {
+      "date": "2024-12-28",
+      "task": "Implementar sistema de comentarios y engagement",
+      "agent": "Nacho",
+      "priority": "baja"
     }
   ],
   "integrationRequests": [
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetización directa del tráfico orgánico",
+      "reason": "Monetizar el tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "links de afiliados para productos tech mencionados",
+      "reason": "Links de afiliados para productos tech mencionados en artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar leads y enviar newsletter semanal",
+      "reason": "Newsletter para retener audiencia y aumentar engagement",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y buen SEO. Prioridad: monetización inmediata con AdSense y afiliados. El cron funciona bien, ahora necesitamos revenue streams."
+  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, es momento crítico para activar AdSense y afiliados antes de fin de año."
 }
