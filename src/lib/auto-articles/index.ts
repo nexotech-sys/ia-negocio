@@ -94,11 +94,13 @@ import { autoArticle_ia_cuantica_negocios_revolucion_empresarial_2026 } from './
 import { autoArticle_agentes_ia_empresariales_empleado_digital_2026 } from './agentes-ia-empresariales-empleado-digital-2026';
 import { autoArticle_agentes_ia_autonomos_empresas_2026 } from './agentes-ia-autonomos-empresas-2026';
 import { autoArticle_ia_cuantica_para_negocios_2026_guia_completa } from './ia-cuantica-para-negocios-2026-guia-completa';
+import { autoArticle_ia_cuantica_empresas_latinoamerica_2026 } from './ia-cuantica-empresas-latinoamerica-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_empresas_latinoamerica_2026,
   autoArticle_ia_cuantica_para_negocios_2026_guia_completa,
   autoArticle_agentes_ia_autonomos_empresas_2026,
   autoArticle_agentes_ia_empresariales_empleado_digital_2026,
