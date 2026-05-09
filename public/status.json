@@ -1,49 +1,49 @@
 {
   "lastUpdate": "2026-05-09",
   "article": {
-    "title": "IA Multimodal para PyMEs: Cómo Procesar Texto, Imagen y Audio Simultáneamente en tu Negocio",
-    "slug": "ia-multimodal-pymes-procesar-texto-imagen-audio-negocio"
+    "title": "Agentes de IA Autónomos: La Nueva Era de Empleados Virtuales que Revolucionarán tu Empresa en 2026",
+    "slug": "agentes-ia-autonomos-empleados-virtuales-empresas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-24",
-      "task": "Configurar cuentas de afiliados Amazon y programas tech",
+      "date": "2024-12-21",
+      "task": "Configurar AdSense y solicitar aprobación",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
+      "date": "2024-12-22",
+      "task": "Investigar programas de afiliados relevantes para tech/AI",
+      "agent": "Nacho",
+      "priority": "alta"
+    },
+    {
+      "date": "2024-12-23",
+      "task": "Crear landing page para newsletter",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
       "date": "2024-12-26",
-      "task": "Implementar primeros 5 links afiliados en artículos IA",
+      "task": "Implementar primeros 3 links de afiliados en artículos existentes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-27",
-      "task": "Crear página de política de afiliados y disclosure",
+      "task": "Configurar Google Tag Manager",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-28",
-      "task": "Optimizar títulos SEO de últimos 10 artículos",
+      "task": "Optimizar artículos top 10 para SEO",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-30",
-      "task": "Configurar Google AdSense y políticas",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-31",
-      "task": "Análisis de métricas Q4 y planning Q1",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-02",
-      "task": "Implementar schema markup en artículos principales",
+      "task": "Crear estrategia de contenido para Q1 2025",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +52,27 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetizar tráfico existente con 155+ artículos",
+      "reason": "Monetizar el tráfico existente con ads contextuales",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Generar ingresos por afiliados en contenido tech/IA",
+      "reason": "Implementar links de afiliados para productos tech mencionados",
       "urgent": true
     },
     {
       "agent": "Nacho",
+      "service": "ConvertKit",
+      "reason": "Capturar emails y hacer nurturing de audiencia",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
       "service": "Hotjar",
-      "reason": "Entender comportamiento usuario para optimizar conversión",
+      "reason": "Analizar comportamiento de usuarios para optimizar conversión",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad: monetización inmediata con AdSense y afiliados. Analytics configurado permite tomar decisiones data-driven."
+  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados. El cron diario está funcionando bien."
 }
