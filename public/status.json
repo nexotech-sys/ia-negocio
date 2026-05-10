@@ -1,49 +1,43 @@
 {
   "lastUpdate": "2026-05-10",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo las Empresas Están Revolucionando la Toma de Decisiones en 2026",
-    "slug": "ia-cuantica-negocios-revolucion-toma-decisiones-2026"
+    "title": "IA Cuántica para Negocios: Cómo IBM Quantum y Google Willow Están Revolucionando las Decisiones Empresariales en 2026",
+    "slug": "ia-cuantica-negocios-ibm-quantum-google-willow-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-21",
-      "task": "Configurar AdSense y revisar políticas de monetización",
+      "date": "2025-01-02",
+      "task": "Configurar Google AdSense y crear primeros anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-22",
-      "task": "Investigar programas de afiliados relevantes para tecnología",
+      "date": "2025-01-03",
+      "task": "Investigar y configurar 3 programas de afiliados relevantes",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-23",
-      "task": "Implementar primeros 3 links de afiliados en artículos existentes",
+      "date": "2025-01-06",
+      "task": "Optimizar 10 artículos top con mejor CTR según Analytics",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Optimizar títulos SEO de últimos 10 artículos según Search Console",
+      "date": "2025-01-08",
+      "task": "Crear newsletter semanal y configurar automación",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-26",
-      "task": "Crear estrategia de newsletter semanal",
-      "agent": "Nacho",
-      "priority": "baja"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Configurar sistema de backup automático",
+      "date": "2025-01-10",
+      "task": "Implementar enlaces internos estratégicos en últimos 20 artículos",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-28",
-      "task": "Analizar métricas de Analytics y crear reporte mensual",
+      "date": "2025-01-13",
+      "task": "Análisis de keywords y planificación contenido Q1",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -51,22 +45,22 @@
   "integrationRequests": [
     {
       "agent": "Nacho",
-      "service": "AdSense",
-      "reason": "Monetizar el contenido existente con 155+ artículos",
+      "service": "Google AdSense",
+      "reason": "monetización principal del sitio con 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos de tecnología",
+      "reason": "generar ingresos por afiliación en artículos de tecnología",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Capturar leads y crear newsletter para retención",
+      "reason": "capturar emails y crear newsletter automatizada",
       "urgent": false
     }
   ],
-  "weeklyNote": "El proyecto avanza bien con contenido consistente. Prioridad inmediata: monetización via AdSense y afiliados. El volumen de 155 artículos es sólido para empezar a generar ingresos."
+  "weeklyNote": "Proyecto sólido con buen contenido y analytics. Prioridad: monetización inmediata con AdSense y afiliados antes de escalar más contenido."
 }
