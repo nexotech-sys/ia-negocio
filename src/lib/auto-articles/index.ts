@@ -100,11 +100,13 @@ import { autoArticle_ia_multimodal_pymes_procesar_texto_imagen_audio_negocio } f
 import { autoArticle_agentes_ia_autonomos_empleados_virtuales_empresas_2026 } from './agentes-ia-autonomos-empleados-virtuales-empresas-2026';
 import { autoArticle_ia_cuantica_negocios_revolucion_toma_decisiones_2026 } from './ia-cuantica-negocios-revolucion-toma-decisiones-2026';
 import { autoArticle_ia_cuantica_negocios_ibm_quantum_google_willow_2026 } from './ia-cuantica-negocios-ibm-quantum-google-willow-2026';
+import { autoArticle_ia_cuantica_negocios_2026_startups_latinoamerica } from './ia-cuantica-negocios-2026-startups-latinoamerica';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_cuantica_negocios_2026_startups_latinoamerica,
   autoArticle_ia_cuantica_negocios_ibm_quantum_google_willow_2026,
   autoArticle_ia_cuantica_negocios_revolucion_toma_decisiones_2026,
   autoArticle_agentes_ia_autonomos_empleados_virtuales_empresas_2026,
