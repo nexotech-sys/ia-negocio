@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-05-11",
+  "lastUpdate": "2026-05-12",
   "article": {
-    "title": "Agentes de IA Multi-Modelo: Cómo Crear Equipos Virtuales que Superan a los Humanos en Productividad",
-    "slug": "agentes-ia-multi-modelo-equipos-virtuales-productividad"
+    "title": "IA Cuántica para Empresas: Cómo la Computación Cuántica Transformará los Negocios en 2026",
+    "slug": "ia-cuantica-empresas-computacion-cuantica-negocios-2026"
   },
   "calendarTasks": [
     {
       "date": "2024-12-20",
-      "task": "Configurar Google AdSense para monetización",
+      "task": "Configurar Google AdSense y generar primeros anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-21",
-      "task": "Investigar programas de afiliados tecnológicos relevantes",
+      "task": "Investigar programas de afiliados relevantes para IA",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Implementar primeros 3 links de afiliados en artículos top",
+      "task": "Implementar primeros 5 links de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar SEO de los 10 artículos más visitados",
+      "task": "Optimizar meta descriptions de artículos con bajo CTR",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2024-12-24",
-      "task": "Crear estrategia de interlinking entre artículos",
+      "date": "2024-12-26",
+      "task": "Crear newsletter semanal con resumen de artículos",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Análisis de keywords de temporada para enero",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2024-12-26",
-      "task": "Analizar métricas de diciembre y planificar enero",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
-      "date": "2024-12-27",
-      "task": "Configurar email marketing para suscriptores",
+      "date": "2024-12-28",
+      "task": "Implementar schema markup en artículos principales",
       "agent": "Nacho",
       "priority": "media"
     }
@@ -52,21 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "monetizar el tráfico existente con publicidad display",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "generar ingresos por afiliación con productos tecnológicos",
+      "reason": "Monetización directa del tráfico existente de 155 artículos",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "capturar y nutrir leads para aumentar retención",
+      "reason": "Capturar leads y enviar newsletter semanal",
       "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Amazon Associates",
+      "reason": "Monetización por afiliados de productos tech/IA",
+      "urgent": true
     }
   ],
-  "weeklyNote": "Proyecto sólido con 155 artículos y analytics funcionando. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto sólido con buena base de contenido. Prioridad: monetización inmediata con AdSense y afiliados antes de fin de año. El cron funciona bien, ahora necesitamos convertir tráfico en ingresos."
 }
