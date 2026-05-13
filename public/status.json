@@ -1,49 +1,49 @@
 {
-  "lastUpdate": "2026-05-12",
+  "lastUpdate": "2026-05-13",
   "article": {
-    "title": "IA Generativa para Crear Productos Digitales: Cómo Generar $10,000+ Mensuales en 2026",
-    "slug": "ia-generativa-crear-productos-digitales-ingresos-2026"
+    "title": "IA Conversacional para WhatsApp Business: Cómo Automatizar Ventas y Triplicar Conversiones en 2026",
+    "slug": "ia-conversacional-whatsapp-business-automatizar-ventas-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-27",
-      "task": "Configurar AdSense e integrar en plantillas",
+      "date": "2024-12-20",
+      "task": "Configurar Google AdSense para monetización",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-28",
-      "task": "Investigar programas de afiliados relevantes para nicho IA",
+      "date": "2024-12-21",
+      "task": "Investigar programas de afiliados relevantes (tech/IA)",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
-      "date": "2024-12-30",
-      "task": "Implementar links de afiliados en artículos existentes top 20",
+      "date": "2024-12-22",
+      "task": "Implementar primeros 3 links de afiliados en artículos top",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-02",
-      "task": "Optimizar velocidad del sitio y Core Web Vitals",
+      "date": "2024-12-23",
+      "task": "Optimizar SEO de los 10 artículos con más tráfico",
       "agent": "Nacho",
       "priority": "media"
     },
     {
-      "date": "2025-01-03",
-      "task": "Configurar email marketing y lead magnets",
-      "agent": "Nacho",
-      "priority": "media"
-    },
-    {
-      "date": "2025-01-06",
-      "task": "Analizar top 10 artículos y crear contenido relacionado",
+      "date": "2024-12-24",
+      "task": "Crear newsletter signup popup",
       "agent": "Nacho",
       "priority": "baja"
     },
     {
-      "date": "2025-01-08",
-      "task": "Implementar schema markup para mejorar SEO",
+      "date": "2024-12-26",
+      "task": "Análisis de keywords con mejor potencial",
+      "agent": "Nacho",
+      "priority": "media"
+    },
+    {
+      "date": "2024-12-27",
+      "task": "Implementar schema markup en artículos",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,27 +52,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Monetización directa del tráfico existente, prioridad máxima para generar ingresos",
+      "reason": "Urgente monetizar el tráfico existente de 155 artículos",
       "urgent": true
+    },
+    {
+      "agent": "Nacho",
+      "service": "Mailchimp",
+      "reason": "Capturar emails para newsletter y retargeting",
+      "urgent": false
     },
     {
       "agent": "Nacho",
       "service": "Amazon Associates",
-      "reason": "Links de afiliados para productos tech y libros mencionados en artículos",
+      "reason": "Primera fuente de ingresos por afiliación",
       "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "ConvertKit",
-      "reason": "Email marketing para capturar leads y nurturing de audiencia",
-      "urgent": false
-    },
-    {
-      "agent": "Nacho",
-      "service": "Hotjar",
-      "reason": "Análisis de comportamiento de usuarios para optimizar conversiones",
-      "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico establecido, prioridad absoluta en AdSense y afiliados. El artículo de hoy sobre IA generativa es perfecto para el nicho."
+  "weeklyNote": "Proyecto sólido con buen volumen de contenido. Prioridad inmediata: monetización via AdSense y afiliados. El cron funciona bien generando contenido diario."
 }
