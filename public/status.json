@@ -1,49 +1,43 @@
 {
   "lastUpdate": "2026-05-14",
   "article": {
-    "title": "IA Cuántica para Negocios: Cómo IBM Watson Quantum está Revolucionando la Optimización Empresarial en 2026",
-    "slug": "ia-cuantica-negocios-watson-quantum-optimizacion-empresarial-2026"
+    "title": "IA Predictiva para Inventarios: Cómo Reducir Costos de Almacenamiento en 40% en 2026",
+    "slug": "ia-predictiva-inventarios-reducir-costos-almacenamiento-2026"
   },
   "calendarTasks": [
     {
-      "date": "2024-12-20",
-      "task": "Configurar Google AdSense para monetización",
-      "agent": "Nacho",
-      "priority": "alta"
-    },
-    {
       "date": "2024-12-21",
-      "task": "Implementar sistema de links de afiliados",
+      "task": "Configurar AdSense y crear primeros anuncios",
       "agent": "Nacho",
       "priority": "alta"
     },
     {
       "date": "2024-12-22",
-      "task": "Análisis de keywords top performing en Search Console",
+      "task": "Investigar programas de afiliados para herramientas de IA",
       "agent": "Nacho",
-      "priority": "media"
+      "priority": "alta"
     },
     {
       "date": "2024-12-23",
-      "task": "Optimizar títulos de los 10 artículos con más tráfico",
+      "task": "Crear landing page para newsletter",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-24",
-      "task": "Crear landing page para captura de emails",
+      "task": "Optimizar articulos top para SEO avanzado",
       "agent": "Nacho",
       "priority": "media"
     },
     {
       "date": "2024-12-26",
-      "task": "Implementar schema markup en artículos principales",
+      "task": "Implementar links de afiliados en articulos relevantes",
       "agent": "Nacho",
-      "priority": "baja"
+      "priority": "alta"
     },
     {
       "date": "2024-12-27",
-      "task": "Configurar newsletter semanal automática",
+      "task": "Crear estrategia de redes sociales",
       "agent": "Nacho",
       "priority": "baja"
     }
@@ -52,21 +46,21 @@
     {
       "agent": "Nacho",
       "service": "Google AdSense",
-      "reason": "Necesario para monetizar el tráfico de los 155 artículos existentes",
-      "urgent": true
-    },
-    {
-      "agent": "Nacho",
-      "service": "Amazon Associates",
-      "reason": "Implementar links de afiliados en artículos de tecnología para generar ingresos adicionales",
+      "reason": "monetizar el trafico del sitio con anuncios",
       "urgent": true
     },
     {
       "agent": "Nacho",
       "service": "Mailchimp",
-      "reason": "Gestionar lista de suscriptores y automatizar newsletters",
+      "reason": "capturar leads y enviar newsletter semanal",
+      "urgent": false
+    },
+    {
+      "agent": "Nacho",
+      "service": "Hotjar",
+      "reason": "analizar comportamiento de usuarios para optimizar conversiones",
       "urgent": false
     }
   ],
-  "weeklyNote": "Proyecto en fase de monetización. Con 155 artículos y tráfico creciente, es momento crítico para implementar AdSense y afiliados antes de fin de año."
+  "weeklyNote": "Proyecto avanza bien con 155 artículos y crecimiento orgánico. Prioridad inmediata: monetización con AdSense y afiliados antes de fin de año."
 }
