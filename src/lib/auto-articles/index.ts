@@ -107,11 +107,13 @@ import { autoArticle_ia_generativa_crear_productos_digitales_ingresos_2026 } fro
 import { autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_2026 } from './ia-conversacional-whatsapp-business-automatizar-ventas-2026';
 import { autoArticle_neuromarketing_ia_leer_mente_clientes_vender_mas_2026 } from './neuromarketing-ia-leer-mente-clientes-vender-mas-2026';
 import { autoArticle_ia_cuantica_negocios_watson_quantum_optimizacion_empresarial_2026 } from './ia-cuantica-negocios-watson-quantum-optimizacion-empresarial-2026';
+import { autoArticle_ia_predictiva_inventarios_reducir_costos_almacenamiento_2026 } from './ia-predictiva-inventarios-reducir-costos-almacenamiento-2026';
 
 // Auto-generated articles by Marco (AI Agent) — managed autonomously
 // Sofia (CEO) gives directives, Marco writes, system publishes
 
 export const autoArticles: Article[] = [
+  autoArticle_ia_predictiva_inventarios_reducir_costos_almacenamiento_2026,
   autoArticle_ia_cuantica_negocios_watson_quantum_optimizacion_empresarial_2026,
   autoArticle_neuromarketing_ia_leer_mente_clientes_vender_mas_2026,
   autoArticle_ia_conversacional_whatsapp_business_automatizar_ventas_2026,
